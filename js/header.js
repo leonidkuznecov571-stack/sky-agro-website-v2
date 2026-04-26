@@ -132,8 +132,8 @@
                 <li><a href="${ROOT}/products/equipment/processing/cip/" class="category-nav__dropdown-link">CIP</a></li>
                 <li><a href="${ROOT}/products/equipment/processing/pasteurisation/" class="category-nav__dropdown-link">Pasteurisation</a></li>
                 <li><a href="${ROOT}/products/equipment/processing/blending-carbonation/" class="category-nav__dropdown-link">Blending &amp; Carbonation</a></li>
-                <li><a href="${ROOT}/products/equipment/processing/dealcoholisation/" class="category-nav__dropdown-link">Dealcoholisation</a></li>
-                <li><a href="${ROOT}/products/equipment/processing/water-treatment/" class="category-nav__dropdown-link">Water Treatment</a></li>
+                <li><a href="${ROOT}/products/equipment/processing/dealcoholiser/" class="category-nav__dropdown-link">Dealcoholiser</a></li>
+                <li><a href="${ROOT}/products/equipment/processing/water-treatment/deaeration-system/" class="category-nav__dropdown-link">Deaeration</a></li>
                 <li><a href="${ROOT}/products/equipment/processing/keg-equipment/" class="category-nav__dropdown-link">Keg Equipment</a></li>
               </ul>
             </li>
@@ -216,8 +216,8 @@
               <li><a href="${ROOT}/products/equipment/processing/cip/" class="mobile-nav__link mobile-nav__link--sub">CIP</a></li>
               <li><a href="${ROOT}/products/equipment/processing/pasteurisation/" class="mobile-nav__link mobile-nav__link--sub">Pasteurisation</a></li>
               <li><a href="${ROOT}/products/equipment/processing/blending-carbonation/" class="mobile-nav__link mobile-nav__link--sub">Blending &amp; Carbonation</a></li>
-              <li><a href="${ROOT}/products/equipment/processing/dealcoholisation/" class="mobile-nav__link mobile-nav__link--sub">Dealcoholisation</a></li>
-              <li><a href="${ROOT}/products/equipment/processing/water-treatment/" class="mobile-nav__link mobile-nav__link--sub">Water Treatment</a></li>
+              <li><a href="${ROOT}/products/equipment/processing/dealcoholiser/" class="mobile-nav__link mobile-nav__link--sub">Dealcoholiser</a></li>
+              <li><a href="${ROOT}/products/equipment/processing/water-treatment/deaeration-system/" class="mobile-nav__link mobile-nav__link--sub">Deaeration</a></li>
               <li><a href="${ROOT}/products/equipment/processing/keg-equipment/" class="mobile-nav__link mobile-nav__link--sub">Keg Equipment</a></li>
               <li><a href="${ROOT}/products/equipment/additional-equipment/" class="mobile-nav__link mobile-nav__link--sub">Additional Equipment</a></li>
               <li><a href="${ROOT}/products/equipment/other-beverages/" class="mobile-nav__link mobile-nav__link--sub">Other Beverages</a></li>

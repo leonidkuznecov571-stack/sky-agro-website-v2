@@ -24,7 +24,7 @@
         <ol class="breadcrumb__list">
           <li class="breadcrumb__item"><a href="../../../../../index.html">Home</a></li>
           <li class="breadcrumb__item"><a href="/products/equipment/">Equipment</a></li>
-          <li class="breadcrumb__item"><a href="../../keg-equipment/">Keg Equipment</a></li>
+          <li class="breadcrumb__item"><a href="/products/equipment/processing/keg-equipment/">Keg Equipment</a></li>
           <li class="breadcrumb__item" aria-current="page">Keg Washer</li>
         </ol>
       </div>
@@ -40,8 +40,10 @@
         <div class="product-info">
           <p class="product-info__eyebrow eyebrow">Cleaning stage</p>
           <h1 class="product-info__title">Keg Washer</h1>
-          <p class="product-info__colour">Function: Wash and sanitise | Control: PLC touchscreen</p>
-          <p class="product-info__summary">Dedicated keg washing system for rinse, chemical cleaning, and sanitation cycles prior to fill operations. Designed for repeatable turnaround and hygienic process preparation in keg packaging lines.</p>
+          <div class="product-info__colours">
+          <p class="product-info__colour">Function: Wash and sanitise</p><p class="product-info__colour">Control: PLC touchscreen</p>
+                    </div>
+<p class="product-info__summary">Dedicated keg washing system for rinse, chemical cleaning, and sanitation cycles prior to fill operations. Designed for repeatable turnaround and hygienic process preparation in keg packaging lines.</p>
           <div class="product-info__divider" aria-hidden="true"></div>
           <fieldset class="packaging-options">
             <legend class="packaging-options__legend">Configuration</legend>
@@ -53,45 +55,85 @@
           </fieldset>
           <div class="product-info__purchase">
             <div class="product-info__price-block product-info__price-block--stacked">
-              <div class="product-info__price-line"><span class="product-info__price-prefix">From</span><span class="product-info__price" id="selected-price" aria-live="polite">£19,500</span></div>
-              <span class="product-info__price-unit" id="selected-unit">/ single-head washer, ex. shipping</span>
+              <div class="product-info__price-line"><span class="product-info__price-prefix">From</span><span class="product-info__price" id="selected-price" aria-live="polite">[ADD PRICE]</span></div>
+              <span class="product-info__price-unit" id="selected-unit"></span>
             </div>
           </div>
           <div class="product-info__actions">
             <div class="product-info__action-row">
               <a href="../../../../../contact.html" class="btn btn--green product-info__add-to-cart">Request a quote<svg class="btn__icon" viewBox="0 0 100 125" aria-hidden="true" focusable="false"><path fill="currentColor" d="M97.64 55.753 64.72 22.833a8.06 8.06 0 1 0-11.4 11.39l19.46 19.43H8.06a8.06 8.06 0 0 0 0 16.12H72.6L53.32 89.084a8.06 8.06 0 0 0 11.4 11.39L97.64 67.553A8 8 0 0 0 100 61.853a1.27 1.27 0 0 0 0-.2 1.41 1.41 0 0 0 0-.2 8.07 8.07 0 0 0-2.36-5.7Z"/></svg></a>
             </div>
-            <a href="#" class="product-info__download-link">Technical sheet coming soon<svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v13M7 11l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 20h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="related-products" aria-labelledby="related-products-title">
+    <section class="quote-request quote-request--plain" aria-labelledby="quote-request-heading">
       <div class="container">
-        <div class="related-products__header">
-          <div><p class="eyebrow">Related keg equipment</p><h2 id="related-products-title" class="related-products__title">Related Products</h2></div>
-          <div class="related-products__controls" aria-label="Related products slider controls">
-            <button type="button" class="related-products__control" aria-label="Previous related products" data-related-prev><span aria-hidden="true">←</span></button>
-            <button type="button" class="related-products__control" aria-label="Next related products" data-related-next><span aria-hidden="true">→</span></button>
+        <div class="quote-request__panel">
+          <div class="quote-request__intro">
+            <div class="quote-request__heading">
+              <p class="quote-request__eyebrow eyebrow">CONTACT US</p>
+              <h3 id="quote-request-heading" class="quote-request__title">Request a quote</h3>
+            </div>
+            
+            <p class="quote-request__lede">Send us your details and we'll be in touch to walk you through configurations, pricing and lead time.</p>
+
+            <div class="quote-request__contact-card">
+              <p class="quote-request__contact-label">Prefer to call?</p>
+              <a href="tel:+447460379173" class="quote-request__contact-link">
+                <img src="../../../../../assets/icons/contact-icons/phone-icon.svg" alt="" width="26" height="26" class="quote-request__contact-icon">
+                <span>+44 7460 379173</span>
+              </a>
+              <a href="mailto:info@sky-agro.com" class="quote-request__contact-link">
+                <img src="../../../../../assets/icons/contact-icons/email-icon.svg" alt="" width="26" height="26" class="quote-request__contact-icon">
+                <span>info@sky-agro.com</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="quote-request__form-wrap">
+            <form class="quote-request__form" action="#" method="post">
+              <div class="quote-request__field">
+                <label for="quote-name">Your name</label>
+                <input type="text" id="quote-name" name="name" placeholder="Full name" autocomplete="name" required>
+              </div>
+
+              <div class="quote-request__field">
+                <label for="quote-company">Company</label>
+                <input type="text" id="quote-company" name="company" placeholder="Company name" autocomplete="organization" required>
+              </div>
+
+              <div class="quote-request__field">
+                <label for="quote-email">Email</label>
+                <input type="email" id="quote-email" name="email" placeholder="Email" autocomplete="email" required>
+              </div>
+
+              <div class="quote-request__field">
+                <label for="quote-phone">Phone <span class="quote-request__optional">(optional)</span></label>
+                <input type="tel" id="quote-phone" name="phone" placeholder="Phone number" autocomplete="tel">
+              </div>
+
+              <div class="quote-request__field quote-request__field--full">
+                <label for="quote-message">Your message</label>
+                <textarea id="quote-message" name="message" rows="4" placeholder="Please describe your enquiry"></textarea>
+              </div>
+
+              <div class="quote-request__form-footer">
+                <div class="quote-request__captcha" aria-hidden="true">
+                  <span class="quote-request__captcha-box"></span>
+                  <span>I'm not a robot</span>
+                  <span class="quote-request__captcha-note">reCAPTCHA</span>
+                </div>
+                <button type="submit" class="btn btn--green quote-request__submit">
+                  Send quote request
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
-        <ul class="related-products__track" role="list" data-related-track>
-          <li class="prod-card">
-            <a href="../keg-filler/" class="prod-card__content-link">
-              <div class="prod-card__img-wrap"><img src="../../../../../assets/product-images/equipment/additional-products/keg-washer-and-filler.webp" alt="Keg filler" class="prod-card__img" width="1100" height="1100" loading="lazy"></div>
-              <div class="prod-card__body"><div class="prod-card__heading"><h3 class="prod-card__name">Keg Filler</h3><p class="prod-card__meta">Controlled filling stage equipment</p></div></div>
-            </a>
-            <div class="prod-card__footer"><p class="prod-card__price">From &pound;23,500</p><div class="prod-card__actions"><a href="../keg-filler/" class="btn btn--ghost prod-card__action">View Product</a></div></div>
-          </li>
-          <li class="prod-card">
-            <a href="../../keg-equipment/" class="prod-card__content-link">
-              <div class="prod-card__img-wrap"><img src="../../../../../assets/product-images/equipment/additional-products/keg-washer.webp" alt="Keg equipment range" class="prod-card__img" width="1100" height="1100" loading="lazy"></div>
-              <div class="prod-card__body"><div class="prod-card__heading"><h3 class="prod-card__name">Keg Equipment Range</h3><p class="prod-card__meta">Browse all keg equipment systems</p></div></div>
-            </a>
-            <div class="prod-card__footer"><p class="prod-card__price">View all</p><div class="prod-card__actions"><a href="../../keg-equipment/" class="btn btn--ghost prod-card__action">View Range</a></div></div>
-          </li>
-        </ul>
       </div>
     </section>
   </main>
@@ -99,9 +141,9 @@
   <script>
     (function () {
       var PRICES = {
-        'single': { label: '£19,500', unit: 'single-head washer, ex. shipping' },
-        'double': { label: '£26,500', unit: 'double-head washer, ex. shipping' },
-        'automated': { label: '£34,000', unit: 'automated station, ex. shipping' }
+        'single': { label: '[ADD PRICE]', unit: '' },
+        'double': { label: '[ADD PRICE]', unit: '' },
+        'automated': { label: '[ADD PRICE]', unit: '' }
       };
       var priceEl = document.getElementById('selected-price');
       var unitEl = document.getElementById('selected-unit');
@@ -109,7 +151,7 @@
         var format = document.querySelector('input[name="format"]:checked').value;
         var option = PRICES[format];
         priceEl.textContent = option.label;
-        unitEl.textContent = '/ ' + option.unit;
+        unitEl.textContent = '';
       }
       document.querySelectorAll('input[name="format"]').forEach(function (radio) { radio.addEventListener('change', update); });
     }());

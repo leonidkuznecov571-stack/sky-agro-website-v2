@@ -29,8 +29,8 @@
       <div class="container">
         <ol class="breadcrumb__list">
           <li class="breadcrumb__item"><a href="../../../../index.html">Home</a></li>
-          <li class="breadcrumb__item"><a href="../../../chemical-products/">Chemical Products</a></li>
-          <li class="breadcrumb__item"><a href="../">Additional Products</a></li>
+          <li class="breadcrumb__item"><a href="/products/chemical-products/">Chemical Products</a></li>
+          <li class="breadcrumb__item"><a href="/products/chemical-products/additional-products/">Additional Products</a></li>
           <li class="breadcrumb__item" aria-current="page">IPA 98%</li>
         </ol>
       </div>
@@ -60,10 +60,9 @@
         <div class="product-info">
           <p class="product-info__eyebrow eyebrow">Isopropyl Alcohol</p>
           <h1 class="product-info__title">IPA 98%</h1>
-          <p class="product-info__colour">IPA concentration: 98% v/v</p>
 
           <p class="product-info__summary">
-            A high-purity isopropyl alcohol intended for controlled technical cleaning, solvent wipe-downs, and process tasks where rapid evaporation and minimal water content are preferred. Suitable for maintenance benches, packaging-line components, instrumentation housings, and dry-cleaning applications in brewery and beverage environments.
+            IPA 98 is a high-strength alcohol disinfectant for rapid surface sanitation in breweries. It evaporates quickly without residue and requires no rinse, making it suitable for quick cleaning of equipment and contact surfaces between operations.
           </p>
 
           <div class="product-info__divider" aria-hidden="true"></div>
@@ -84,8 +83,8 @@
 
           <div class="product-info__purchase">
             <div class="product-info__price-block">
-              <span class="product-info__price" id="selected-price" aria-live="polite">£75.50</span>
-              <span class="product-info__price-unit" id="selected-unit">/ 25 L</span>
+              <span class="product-info__price" id="selected-price" aria-live="polite">Price on request</span>
+              <span class="product-info__price-unit" id="selected-unit"></span>
             </div>
             <div class="product-info__qty" id="qty-block">
               <label for="qty" class="product-info__qty-label">Qty</label>
@@ -122,15 +121,30 @@
         <div class="product-tabs">
           <div class="product-tabs__bar" role="tablist" aria-label="Product information">
             <button role="tab" id="tab-description" aria-controls="panel-description" aria-selected="true" tabindex="0" class="product-tabs__tab">Description</button>
+            <button role="tab" id="tab-applications" aria-controls="panel-applications" aria-selected="false" tabindex="-1" class="product-tabs__tab">Applications</button>
             <button role="tab" id="tab-specs" aria-controls="panel-specs" aria-selected="false" tabindex="-1" class="product-tabs__tab">Specifications</button>
-            <button role="tab" id="tab-usage" aria-controls="panel-usage" aria-selected="false" tabindex="-1" class="product-tabs__tab">Usage &amp; application</button>
-            <button role="tab" id="tab-additional" aria-controls="panel-additional" aria-selected="false" tabindex="-1" class="product-tabs__tab">Additional info</button>
+            <button role="tab" id="tab-additional" aria-controls="panel-additional" aria-selected="false" tabindex="-1" class="product-tabs__tab">Safety Information</button>
           </div>
 
           <div role="tabpanel" id="panel-description" aria-labelledby="tab-description" class="product-tabs__panel">
             <div class="product-tabs__content prose">
-              <p>IPA 98% is a high-purity solvent-grade isopropyl alcohol intended for applications where low water content and fast evaporation are important. It is suited to dry wipe-downs, technical bench work, and cleaning of instrumentation or mechanical parts before reassembly.</p>
-              <p>Compared with a 70% solution, the 98% grade is less suitable as a ready-to-use sanitiser but can be preferable where residue control, moisture sensitivity, or solvent performance are the priority.</p>
+              <p>IPA (Isopropyl Alcohol Disinfectant) is a fast-acting alcohol-based disinfectant widely used for surface sanitation in the food and beverage industry. The product is designed for rapid microbial control on equipment, tools, and contact surfaces.</p>
+              <p>Isopropanol is most effective when used as a 70% solution, where the presence of water enhances protein denaturation and improves penetration into microbial cells. This results in efficient destruction of bacteria and other microorganisms while ensuring optimal contact time.</p>
+              <p>Due to its rapid evaporation, IPA leaves no residue and does not require rinsing, making it ideal for quick disinfection of surfaces in operational environments. It can be applied via spray or cloth, providing flexible and efficient sanitation for industrial use.</p>
+            </div>
+          </div>
+
+          <!-- Applications -->
+          <div role="tabpanel" id="panel-applications" aria-labelledby="tab-applications" class="product-tabs__panel" hidden>
+            <div class="product-tabs__content prose">
+              <p>IPA 98 (Isopropyl Alcohol Disinfectant) is designed for rapid disinfection of surfaces where fast drying and no residue are required, and is suitable for:</p>
+              <ul>
+                <li>Surface disinfection of equipment and tools</li>
+                <li>Food processing environments</li>
+                <li>Brewing and beverage production facilities</li>
+                <li>Manual cleaning and sanitation</li>
+                <li>Quick hygiene control applications</li>
+              </ul>
             </div>
           </div>
 
@@ -146,46 +160,53 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr><td>Active ingredient</td><td>Isopropanol (propan-2-ol)</td><td>—</td></tr>
-                  <tr><td>IPA concentration</td><td>98</td><td>% v/v minimum</td></tr>
-                  <tr><td>Appearance</td><td>Clear, colourless liquid</td><td>—</td></tr>
-                  <tr><td>Water content</td><td>Low</td><td>Suitable for dry-cleaning tasks</td></tr>
-                  <tr><td>Flash point</td><td>Low</td><td>Flammable liquid — refer to SDS</td></tr>
+                  <tr>
+                    <td>Recommended for</td>
+                    <td>Rapid surface disinfection and sanitising</td>
+                    <td>—</td>
+                  </tr>
+                  <tr>
+                    <td>Composition</td>
+                    <td>Isopropyl alcohol (propan-2-ol, ~97%)</td>
+                    <td>—</td>
+                  </tr>
+                  <tr>
+                    <td>Working concentration:</td>
+                    <td>Typically used at 70% solution</td>
+                    <td>—</td>
+                  </tr>
                 </tbody>
               </table>
-              <p class="spec-table__note">Technical and safety documentation will be supplied on request.</p>
-            </div>
-          </div>
-
-          <div role="tabpanel" id="panel-usage" aria-labelledby="tab-usage" class="product-tabs__panel" hidden>
-            <div class="product-tabs__content prose">
-              <p>Use on clean, dry, non-porous surfaces where a high-purity alcohol wipe is required. Apply with a lint-free cloth or wipe and allow to evaporate fully before bringing the component back into service.</p>
-              <p>Not intended as a direct substitute for routine detergent cleaning or validated sanitising steps. Always confirm material compatibility before first use.</p>
             </div>
           </div>
 
           <div role="tabpanel" id="panel-additional" aria-labelledby="tab-additional" class="product-tabs__panel" hidden>
             <div class="product-tabs__content prose">
-              <table class="info-table">
-                <tbody>
-                  <tr>
-                    <th scope="row">Storage</th>
-                    <td>Store in a cool, well-ventilated area away from ignition sources and oxidising agents.</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Shelf life</th>
-                    <td>24 months in original, unopened packaging.</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Regulatory</th>
-                    <td>Flammable solvent product. Full transport and handling classification available on request.</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">PPE required</th>
-                    <td>Use gloves, eye protection, and adequate ventilation during handling.</td>
-                  </tr>
-                </tbody>
-              </table>
+              <p>IPA (Isopropyl Alcohol Disinfectant) 98 is a highly flammable liquid and must be handled with care.</p>
+              <ul>
+                <li>Highly flammable liquid and vapour (H225)</li>
+                <li>Causes serious eye irritation (H319)</li>
+                <li>May cause drowsiness or dizziness (H336)</li>
+              </ul>
+              <h4>Safety precautions:</h4>
+              <ul>
+                <li>Keep away from heat, sparks, open flames, and hot surfaces</li>
+                <li>Do not smoke during use</li>
+                <li>Use only in well-ventilated areas</li>
+                <li>Avoid breathing vapour or spray</li>
+                <li>Wear protective gloves and eye protection</li>
+                <li> In case of exposure, follow first aid instructions and seek medical attention if symptoms persist. </li>
+              </ul>
+              <h4>Handling and Storage:</h4>
+              <ul>
+                <li>Store in a cool, well-ventilated place</li>
+                <li>Keep container tightly closed</li>
+                <li>Store in original container</li>
+                <li>Keep away from heat, sparks, and ignition sources</li>
+                <li>Keep away from oxidising agents</li>
+                <li>Avoid direct sunlight and freezing</li>
+                <li>Use appropriate protective equipment during handling</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -210,7 +231,7 @@
 
         <ul class="related-products__track" role="list" data-related-track>
           <li class="prod-card">
-            <a href="../ipa-70/" class="prod-card__content-link">
+            <a href="/products/chemical-products/additional-products/ipa-70/" class="prod-card__content-link">
               <div class="prod-card__img-wrap">
                 <img src="../../../../assets/product-images/placeholder.png" alt="Placeholder product image for IPA 70%" class="prod-card__img" width="1100" height="1100" loading="lazy">
               </div>
@@ -224,13 +245,13 @@
             <div class="prod-card__footer">
               <p class="prod-card__price">&pound;75.50</p>
               <div class="prod-card__actions">
-                <a href="../ipa-70/" class="btn btn--ghost prod-card__action">View Product</a>
+                <a href="/products/chemical-products/additional-products/ipa-70/" class="btn btn--ghost prod-card__action">View Product</a>
               </div>
             </div>
           </li>
 
           <li class="prod-card">
-            <a href="../glycol-mpg/" class="prod-card__content-link">
+            <a href="/products/chemical-products/additional-products/glycol-mpg/" class="prod-card__content-link">
               <div class="prod-card__img-wrap">
                 <img src="../../../../assets/product-images/placeholder.png" alt="Placeholder product image for Glycol MPG" class="prod-card__img" width="1100" height="1100" loading="lazy">
               </div>
@@ -244,13 +265,13 @@
             <div class="prod-card__footer">
               <p class="prod-card__price">From &pound;152.00</p>
               <div class="prod-card__actions">
-                <a href="../glycol-mpg/" class="btn btn--ghost prod-card__action">View Product</a>
+                <a href="/products/chemical-products/additional-products/glycol-mpg/" class="btn btn--ghost prod-card__action">View Product</a>
               </div>
             </div>
           </li>
 
           <li class="prod-card">
-            <a href="../peracetic-test-strips/" class="prod-card__content-link">
+            <a href="/products/chemical-products/additional-products/peracetic-test-strips/" class="prod-card__content-link">
               <div class="prod-card__img-wrap">
                 <img src="../../../../assets/product-images/additional-products/peracetic-test-strips.webp" alt="Peracetic test strips vial" class="prod-card__img" width="1100" height="1100" loading="lazy">
               </div>
@@ -264,13 +285,13 @@
             <div class="prod-card__footer">
               <p class="prod-card__price">&pound;25.00</p>
               <div class="prod-card__actions">
-                <a href="../peracetic-test-strips/" class="btn btn--ghost prod-card__action">View Product</a>
+                <a href="/products/chemical-products/additional-products/peracetic-test-strips/" class="btn btn--ghost prod-card__action">View Product</a>
               </div>
             </div>
           </li>
 
           <li class="prod-card">
-            <a href="../ph-test-strips/" class="prod-card__content-link">
+            <a href="/products/chemical-products/additional-products/ph-test-strips/" class="prod-card__content-link">
               <div class="prod-card__img-wrap">
                 <img src="../../../../assets/product-images/additional-products/pH-strips.webp" alt="pH test strips vial" class="prod-card__img" width="1100" height="1100" loading="lazy">
               </div>
@@ -284,7 +305,7 @@
             <div class="prod-card__footer">
               <p class="prod-card__price">&pound;20.00</p>
               <div class="prod-card__actions">
-                <a href="../ph-test-strips/" class="btn btn--ghost prod-card__action">View Product</a>
+                <a href="/products/chemical-products/additional-products/ph-test-strips/" class="btn btn--ghost prod-card__action">View Product</a>
               </div>
             </div>
           </li>
@@ -300,7 +321,7 @@
   <script>
     (function () {
       var PRICES = {
-        '25l': { price: 75.50, unit: '25 L' }
+        '25l': { price: 75.50, unit: '' }
       };
 
       var priceEl = document.getElementById('selected-price');

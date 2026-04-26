@@ -29,8 +29,8 @@
       <div class="container">
         <ol class="breadcrumb__list">
           <li class="breadcrumb__item"><a href="../../../../index.html">Home</a></li>
-          <li class="breadcrumb__item"><a href="../../../chemical-products/">Chemical Products</a></li>
-          <li class="breadcrumb__item"><a href="../">Additional Products</a></li>
+          <li class="breadcrumb__item"><a href="/products/chemical-products/">Chemical Products</a></li>
+          <li class="breadcrumb__item"><a href="/products/chemical-products/additional-products/">Additional Products</a></li>
           <li class="breadcrumb__item" aria-current="page">Water Test Strips</li>
         </ol>
       </div>
@@ -52,10 +52,12 @@
         <div class="product-info">
           <p class="product-info__eyebrow eyebrow">Test Strips</p>
           <h1 class="product-info__title">Water Test Strips</h1>
+          <div class="product-info__colours">
           <p class="product-info__colour">Routine water-quality screening</p>
 
-          <p class="product-info__summary">
-            Water test strips give brewery teams a quick check on incoming water, rinse water, and utility streams where a fast visual result is useful. They are suited to routine monitoring and troubleshooting when operators want a rapid indication before moving to full analytical testing.
+                    </div>
+<p class="product-info__summary">
+            Water Test Strips are semi-quantitative indicator strips for rapid measurement of water hardness in brewing liquor. They provide quick checks of total calcium and magnesium content, supporting accurate liquor treatment decisions and informing the use of caustic detergents and sequestrants.
           </p>
 
           <div class="product-info__divider" aria-hidden="true"></div>
@@ -84,8 +86,8 @@
 
           <div class="product-info__purchase">
             <div class="product-info__price-block">
-              <span class="product-info__price" id="selected-price" aria-live="polite">£25.00</span>
-              <span class="product-info__price-unit" id="selected-unit">/ pack of 100</span>
+              <span class="product-info__price" id="selected-price" aria-live="polite">Price on request</span>
+              <span class="product-info__price-unit" id="selected-unit"></span>
             </div>
             <div class="product-info__qty" id="qty-block">
               <label for="qty" class="product-info__qty-label">Qty</label>
@@ -122,66 +124,30 @@
         <div class="product-tabs">
           <div class="product-tabs__bar" role="tablist" aria-label="Product information">
             <button role="tab" id="tab-description" aria-controls="panel-description" aria-selected="true" tabindex="0" class="product-tabs__tab">Description</button>
-            <button role="tab" id="tab-specs" aria-controls="panel-specs" aria-selected="false" tabindex="-1" class="product-tabs__tab">Specifications</button>
-            <button role="tab" id="tab-usage" aria-controls="panel-usage" aria-selected="false" tabindex="-1" class="product-tabs__tab">Usage &amp; application</button>
-            <button role="tab" id="tab-additional" aria-controls="panel-additional" aria-selected="false" tabindex="-1" class="product-tabs__tab">Additional info</button>
+            <button role="tab" id="tab-applications" aria-controls="panel-applications" aria-selected="false" tabindex="-1" class="product-tabs__tab">Applications</button>
           </div>
 
           <div role="tabpanel" id="panel-description" aria-labelledby="tab-description" class="product-tabs__panel">
             <div class="product-tabs__content prose">
-              <p>Water test strips provide a practical first-line check when breweries want to monitor routine water quality without sending every sample for laboratory analysis. They are useful for quick trend checks on hardness, alkalinity, or similar water parameters depending on the strip grade supplied.</p>
-              <p>They support day-to-day decision-making around liquor preparation, rinse checks, and utility monitoring, especially where a pass/fail or indicative result is sufficient.</p>
+              <p>Water Test Strips are simple, single-use indicator strips designed for the rapid measurement of total water hardness in brewing liquor and source water. They provide a practical, low-cost check of dissolved calcium and magnesium levels, supporting day-to-day brewing decisions on liquor treatment, mineral additions, and CIP chemical selection.</p>
+              <p>These test strips work by reacting with calcium and magnesium ions in solution to produce a colour change, which is matched to a printed reference chart to determine total hardness in parts per million (ppm) as calcium carbonate (CaCO3). Results are typically available within seconds, providing an immediate read on whether source water is soft, moderate, hard, or very hard. While not a substitute for a full ionic water analysis, they are an effective tool for routine monitoring and for spotting changes in source water hardness over time, particularly relevant where source water is drawn from boreholes or where seasonal variation in mains supply is expected.</p>
+              <p>Water hardness has direct implications across the brewing process. In liquor treatment, calcium and magnesium contribute to mash pH, enzyme activity, and yeast nutrition. In CIP, hardness ions can interfere with caustic detergent performance and form insoluble scales on heat transfer surfaces, so harder water typically calls for higher EDTA-sequestered caustic formulations such as Sky Labs Caustic Extra or Caustic Super, or the addition of a sequestrant. Knowing your water hardness is the first step in selecting the right products and concentrations for both brewing and cleaning.</p>
             </div>
           </div>
 
-          <div role="tabpanel" id="panel-specs" aria-labelledby="tab-specs" class="product-tabs__panel" hidden>
-            <div class="product-tabs__content">
-              <table class="spec-table">
-                <caption class="sr-only">Water Test Strips — product specification</caption>
-                <thead>
-                  <tr><th scope="col">Parameter</th><th scope="col">Value</th><th scope="col">Unit / notes</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td>Use</td><td>Water-quality screening</td><td>Routine operational checks</td></tr>
-                  <tr><td>Format</td><td>Single-use strips</td><td>Visual colour comparison</td></tr>
-                  <tr><td>Application area</td><td>Brewing liquor, rinse water, utilities</td><td>Grade dependent</td></tr>
-                  <tr><td>Read style</td><td>Fast visual result</td><td>Refer to supplied chart</td></tr>
-                  <tr><td>Pack options</td><td>100 / 500</td><td><!-- TODO: confirm --> Assumed pack sizes</td></tr>
-                </tbody>
-              </table>
-              <p class="spec-table__note">Exact parameter ranges vary by strip type and should be confirmed against the supplied pack insert.</p>
-            </div>
-          </div>
-
-          <div role="tabpanel" id="panel-usage" aria-labelledby="tab-usage" class="product-tabs__panel" hidden>
+          <div role="tabpanel" id="panel-applications" aria-labelledby="tab-applications" class="product-tabs__panel" hidden>
             <div class="product-tabs__content prose">
-              <p>Expose the strip to the sample as directed, wait the recommended read time, and compare the pad colours with the supplied scale. Use clean sample containers and avoid cross-contaminating the strip pack during routine testing.</p>
-              <p>Where a measured result is critical to recipe or compliance decisions, confirm the reading with the appropriate calibrated instrument or laboratory test.</p>
-            </div>
-          </div>
-
-          <div role="tabpanel" id="panel-additional" aria-labelledby="tab-additional" class="product-tabs__panel" hidden>
-            <div class="product-tabs__content prose">
-              <table class="info-table">
-                <tbody>
-                  <tr>
-                    <th scope="row">Storage</th>
-                    <td>Store dry, sealed, and away from direct sunlight, steam, and damp environments.</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Shelf life</th>
-                    <td>See printed expiry on the vial or carton supplied.</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Use note</th>
-                    <td>Select strip chemistry that matches the parameter you need to monitor in your brewing water programme.</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Support</th>
-                    <td>Contact SKY LABS if you need help choosing strips for hardness, alkalinity, sanitiser residues, or general utility checks.</td>
-                  </tr>
-                </tbody>
-              </table>
+              <p>Water Test Strips are suitable for:</p>
+              <ul>
+                <li>Source water hardness monitoring</li>
+                <li>Brewing liquor characterisation</li>
+                <li>Selecting the appropriate caustic detergent formulation</li>
+                <li>Verifying water softening or treatment system performance</li>
+                <li>Identifying seasonal variation in mains water supply</li>
+                <li>Routine quality assurance documentation</li>
+                <li>Supporting decisions on sequestrant additions</li>
+                <li>Troubleshooting scale formation in heat exchangers and CIP loops</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -207,7 +173,7 @@
 
         <ul class="related-products__track" role="list" data-related-track>
           <li class="prod-card">
-            <a href="../ph-test-strips/" class="prod-card__content-link">
+            <a href="/products/chemical-products/additional-products/ph-test-strips/" class="prod-card__content-link">
               <div class="prod-card__img-wrap">
                 <img src="../../../../assets/product-images/additional-products/pH-strips.webp" alt="pH test strips vial" class="prod-card__img" width="1100" height="1100" loading="lazy">
               </div>
@@ -221,13 +187,13 @@
             <div class="prod-card__footer">
               <p class="prod-card__price">&pound;20.00</p>
               <div class="prod-card__actions">
-                <a href="../ph-test-strips/" class="btn btn--ghost prod-card__action">View Product</a>
+                <a href="/products/chemical-products/additional-products/ph-test-strips/" class="btn btn--ghost prod-card__action">View Product</a>
               </div>
             </div>
           </li>
 
           <li class="prod-card">
-            <a href="../peracetic-test-strips/" class="prod-card__content-link">
+            <a href="/products/chemical-products/additional-products/peracetic-test-strips/" class="prod-card__content-link">
               <div class="prod-card__img-wrap">
                 <img src="../../../../assets/product-images/additional-products/peracetic-test-strips.webp" alt="Peracetic test strips vial" class="prod-card__img" width="1100" height="1100" loading="lazy">
               </div>
@@ -241,13 +207,13 @@
             <div class="prod-card__footer">
               <p class="prod-card__price">&pound;25.00</p>
               <div class="prod-card__actions">
-                <a href="../peracetic-test-strips/" class="btn btn--ghost prod-card__action">View Product</a>
+                <a href="/products/chemical-products/additional-products/peracetic-test-strips/" class="btn btn--ghost prod-card__action">View Product</a>
               </div>
             </div>
           </li>
 
           <li class="prod-card">
-            <a href="../atp-swabs/" class="prod-card__content-link">
+            <a href="/products/chemical-products/additional-products/atp-swabs/" class="prod-card__content-link">
               <div class="prod-card__img-wrap">
                 <img src="../../../../assets/product-images/additional-products/ATP-swabs.webp" alt="ATP surface hygiene swabs" class="prod-card__img" width="1100" height="1100" loading="lazy">
               </div>
@@ -261,13 +227,13 @@
             <div class="prod-card__footer">
               <p class="prod-card__price">&pound;25.00 – &pound;50.00</p>
               <div class="prod-card__actions">
-                <a href="../atp-swabs/" class="btn btn--ghost prod-card__action">View Product</a>
+                <a href="/products/chemical-products/additional-products/atp-swabs/" class="btn btn--ghost prod-card__action">View Product</a>
               </div>
             </div>
           </li>
 
           <li class="prod-card">
-            <a href="../phenolphthalein-test-strips/" class="prod-card__content-link">
+            <a href="/products/chemical-products/additional-products/phenolphthalein-test-strips/" class="prod-card__content-link">
               <div class="prod-card__img-wrap">
                 <img src="../../../../assets/product-images/additional-products/phenolphtalein-test-strips.webp" alt="Phenolphthalein test strips vial" class="prod-card__img" width="1100" height="1100" loading="lazy">
               </div>
@@ -281,7 +247,7 @@
             <div class="prod-card__footer">
               <p class="prod-card__price">&pound;20.00</p>
               <div class="prod-card__actions">
-                <a href="../phenolphthalein-test-strips/" class="btn btn--ghost prod-card__action">View Product</a>
+                <a href="/products/chemical-products/additional-products/phenolphthalein-test-strips/" class="btn btn--ghost prod-card__action">View Product</a>
               </div>
             </div>
           </li>
@@ -297,8 +263,8 @@
   <script>
     (function () {
       var PRICES = {
-        'pack100': { price: 25.00, unit: 'pack of 100' },
-        'pack500': { price: 50.00, unit: 'pack of 500' }
+        'pack100': { price: 25.00, unit: '' },
+        'pack500': { price: 50.00, unit: '' }
       };
 
       var priceEl = document.getElementById('selected-price');
