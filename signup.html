@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account | SKY AGRO</title>
+  <meta name="description" content="Create a SKY AGRO trade account for wholesale pricing, order history, and product catalogues.">
+
+  <link rel="preload" href="assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <script src="js/header.js" defer></script>
+  <script src="js/footer.js" defer></script>
+
+</head>
+<body class="page-signup">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header class="site-header"></header>
+
+  <main id="main-content">
+
+    <div class="auth-form-panel">
+      <div class="auth-form-wrap">
+
+        <h2 class="auth-form-wrap__heading">Sign up</h2>
+        <p class="auth-form-wrap__sub">Takes less than two minutes.</p>
+
+        <form action="#" method="post" id="signup-form" novalidate>
+
+          <p class="form-section-label" aria-hidden="true">Your details</p>
+
+          <div class="field-row">
+            <div class="field" id="field-first-name">
+              <label for="first-name">First name <span class="field__required" aria-label="required">*</span></label>
+              <div class="field__input-wrap">
+                <input type="text" id="first-name" name="first_name" autocomplete="given-name" required aria-required="true" aria-describedby="first-name-error">
+              </div>
+              <span class="field__error" id="first-name-error" role="alert"></span>
+            </div>
+
+            <div class="field" id="field-last-name">
+              <label for="last-name">Last name <span class="field__required" aria-label="required">*</span></label>
+              <div class="field__input-wrap">
+                <input type="text" id="last-name" name="last_name" autocomplete="family-name" required aria-required="true" aria-describedby="last-name-error">
+              </div>
+              <span class="field__error" id="last-name-error" role="alert"></span>
+            </div>
+          </div>
+
+          <div class="field" id="field-email">
+            <label for="email">Work email <span class="field__required" aria-label="required">*</span></label>
+            <div class="field__input-wrap">
+              <input type="email" id="email" name="email" autocomplete="email" required aria-required="true" aria-describedby="email-error" placeholder="you@brewery.com">
+            </div>
+            <span class="field__error" id="email-error" role="alert"></span>
+          </div>
+
+          <p class="form-section-label" aria-hidden="true">Your business</p>
+
+          <div class="field" id="field-company">
+            <label for="company">Company name <span class="field__required" aria-label="required">*</span></label>
+            <div class="field__input-wrap">
+              <input type="text" id="company" name="company" autocomplete="organization" required aria-required="true" aria-describedby="company-error" placeholder="Your brewery or business">
+            </div>
+            <span class="field__error" id="company-error" role="alert"></span>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone number <span class="field__hint">(optional)</span></label>
+            <div class="field__input-wrap">
+              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+44 7000 000000">
+            </div>
+          </div>
+
+          <p class="form-section-label" aria-hidden="true">Set a password</p>
+
+          <div class="field field--password" id="field-password">
+            <label for="password">Password <span class="field__required" aria-label="required">*</span></label>
+            <div class="field__input-wrap">
+              <input type="password" id="password" name="password" autocomplete="new-password" required aria-required="true" aria-describedby="password-error password-strength-label">
+              <button type="button" class="field__toggle" id="toggle-password" aria-label="Show password" aria-pressed="false">
+                <svg id="icon-eye-show" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M1 10s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                  <circle cx="10" cy="10" r="2.5" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+                <svg id="icon-eye-hide" viewBox="0 0 20 20" fill="none" aria-hidden="true" style="display:none">
+                  <path d="M3 3l14 14M8.5 8.6A2.5 2.5 0 0012.4 12.5M6.5 5.5C4.4 6.8 2.6 8.8 1 10c1.5 2 5 6 9 6a8.6 8.6 0 004.5-1.5M10 4c4 0 7.5 4 9 6a13 13 0 01-2 2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="pw-strength" aria-live="polite">
+              <div class="pw-strength__bar" aria-hidden="true">
+                <div class="pw-strength__seg" id="seg1"></div>
+                <div class="pw-strength__seg" id="seg2"></div>
+                <div class="pw-strength__seg" id="seg3"></div>
+                <div class="pw-strength__seg" id="seg4"></div>
+              </div>
+              <span class="pw-strength__label" id="password-strength-label"></span>
+            </div>
+            <span class="field__error" id="password-error" role="alert"></span>
+          </div>
+
+          <div class="field field--password" id="field-confirm">
+            <label for="confirm-password">Confirm password <span class="field__required" aria-label="required">*</span></label>
+            <div class="field__input-wrap">
+              <input type="password" id="confirm-password" name="confirm_password" autocomplete="new-password" required aria-required="true" aria-describedby="confirm-error">
+              <button type="button" class="field__toggle" id="toggle-confirm" aria-label="Show confirm password" aria-pressed="false">
+                <svg id="icon-eye-show-2" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M1 10s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                  <circle cx="10" cy="10" r="2.5" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+                <svg id="icon-eye-hide-2" viewBox="0 0 20 20" fill="none" aria-hidden="true" style="display:none">
+                  <path d="M3 3l14 14M8.5 8.6A2.5 2.5 0 0012.4 12.5M6.5 5.5C4.4 6.8 2.6 8.8 1 10c1.5 2 5 6 9 6a8.6 8.6 0 004.5-1.5M10 4c4 0 7.5 4 9 6a13 13 0 01-2 2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </button>
+            </div>
+            <span class="field__error" id="confirm-error" role="alert"></span>
+          </div>
+
+          <hr class="auth-divider">
+
+          <div class="checkbox-row" id="field-terms">
+            <input type="checkbox" id="terms" name="terms" required aria-required="true" aria-describedby="terms-error">
+            <label for="terms">
+              I have read and agree to the
+              <a href="/legal/terms" target="_blank" rel="noopener">Terms &amp; Conditions</a>
+              and <a href="/legal/privacy" target="_blank" rel="noopener">Privacy Policy</a>
+            </label>
+          </div>
+          <span class="field__error" id="terms-error" role="alert" style="margin-block: calc(-1 * var(--space-4)) var(--space-5); display:none;"></span>
+
+          <button type="submit" class="auth-submit">Create account</button>
+
+          <div class="auth-footer-links">
+            <span>Already have an account?</span>
+            <a href="/login">Log in</a>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer"></footer>
+
+  <script>
+    function makeToggle(btnId, inputId, showId, hideId) {
+      const btn  = document.getElementById(btnId);
+      const inp  = document.getElementById(inputId);
+      const show = document.getElementById(showId);
+      const hide = document.getElementById(hideId);
+      btn.addEventListener('click', () => {
+        const isHidden = inp.type === 'password';
+        inp.type = isHidden ? 'text' : 'password';
+        show.style.display = isHidden ? 'none' : '';
+        hide.style.display = isHidden ? ''     : 'none';
+        btn.setAttribute('aria-label',   isHidden ? 'Hide password' : 'Show password');
+        btn.setAttribute('aria-pressed', String(isHidden));
+      });
+    }
+
+    makeToggle('toggle-password', 'password',         'icon-eye-show',   'icon-eye-hide');
+    makeToggle('toggle-confirm',  'confirm-password', 'icon-eye-show-2', 'icon-eye-hide-2');
+
+    const pwInput = document.getElementById('password');
+    const segs    = [1,2,3,4].map(n => document.getElementById('seg' + n));
+    const strengthLabel = document.getElementById('password-strength-label');
+    const levels  = ['', 'Weak', 'Fair', 'Good', 'Strong'];
+    const colours = ['', 'active-1', 'active-2', 'active-3', 'active-4'];
+
+    function scorePassword(pw) {
+      if (!pw) return 0;
+      let score = 0;
+      if (pw.length >= 8)  score++;
+      if (pw.length >= 12) score++;
+      if (/[A-Z]/.test(pw) && /[a-z]/.test(pw)) score++;
+      if (/\d/.test(pw))   score++;
+      if (/[^A-Za-z0-9]/.test(pw)) score++;
+      return Math.min(4, score);
+    }
+
+    pwInput.addEventListener('input', () => {
+      const score = scorePassword(pwInput.value);
+      segs.forEach((seg, i) => {
+        seg.className = 'pw-strength__seg';
+        if (i < score) seg.classList.add(colours[score]);
+      });
+      strengthLabel.textContent = pwInput.value ? levels[score] : '';
+    });
+
+    function showError(fieldId, errorId, msg) {
+      const field = document.getElementById(fieldId);
+      if (field) { const input = field.querySelector('input'); if (input) input.classList.add('is-error'); }
+      const err = document.getElementById(errorId);
+      if (err) { err.textContent = msg; err.classList.add('is-visible'); err.style.display = ''; }
+    }
+
+    function clearError(inputEl, errorId) {
+      if (inputEl) inputEl.classList.remove('is-error');
+      const err = document.getElementById(errorId);
+      if (err) { err.textContent = ''; err.classList.remove('is-visible'); }
+    }
+
+    ['first-name','last-name','email','company','password','confirm-password'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.addEventListener('input', () => clearError(el, id + '-error'));
+    });
+
+    // TODO: wire to backend
+    const form  = document.getElementById('signup-form');
+    const terms = document.getElementById('terms');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      let valid = true;
+
+      const firstName = document.getElementById('first-name');
+      const lastName  = document.getElementById('last-name');
+      const email     = document.getElementById('email');
+      const company   = document.getElementById('company');
+      const pw        = document.getElementById('password');
+      const confirm   = document.getElementById('confirm-password');
+
+      if (!firstName.value.trim()) { showError('field-first-name', 'first-name-error', 'First name is required.'); valid = false; }
+      if (!lastName.value.trim())  { showError('field-last-name',  'last-name-error',  'Last name is required.');  valid = false; }
+
+      if (!email.value.trim()) {
+        showError('field-email', 'email-error', 'Email address is required.'); valid = false;
+      } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
+        showError('field-email', 'email-error', 'Please enter a valid email address.'); valid = false;
+      }
+
+      if (!company.value.trim()) { showError('field-company', 'company-error', 'Company name is required.'); valid = false; }
+
+      if (!pw.value) {
+        showError('field-password', 'password-error', 'Please choose a password.'); valid = false;
+      } else if (pw.value.length < 8) {
+        showError('field-password', 'password-error', 'Password must be at least 8 characters.'); valid = false;
+      }
+
+      if (pw.value && confirm.value !== pw.value) {
+        showError('field-confirm', 'confirm-error', 'Passwords do not match.'); valid = false;
+      }
+
+      if (!terms.checked) {
+        terms.classList.add('is-error');
+        const termsErr = document.getElementById('terms-error');
+        termsErr.textContent = 'You must agree to the terms to continue.';
+        termsErr.classList.add('is-visible');
+        termsErr.style.display = '';
+        valid = false;
+      }
+
+      if (valid) {
+        // TODO: wire to backend
+      }
+    });
+
+    terms.addEventListener('change', () => {
+      if (terms.checked) {
+        terms.classList.remove('is-error');
+        const termsErr = document.getElementById('terms-error');
+        termsErr.classList.remove('is-visible');
+        termsErr.style.display = 'none';
+      }
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SKY AGRO — Brewing Ingredients, Chemicals &amp; Equipment</title>
+  <meta name="description" content="SKY AGRO supplies premium brewing ingredients, hygiene chemicals, processing aids, and brewing equipment to UK and international breweries.">
+
+    <link rel="preload" href="assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+
+      <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <script src="js/header.js" defer></script>
+  <script src="js/footer.js" defer></script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════════ -->
+  <header class="site-header"></header>
+
+  <!-- ═══════════════════════════════════════════
+       MAIN CONTENT
+  ═══════════════════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════════
+         HERO SLIDER
+    ═══════════════════════════════════════════ -->
+    <section
+      class="hero-slider"
+      aria-label="Hero banner"
+      aria-roledescription="carousel"
+    >
+
+      <div class="hero-slider__track">
+
+        <!-- Slide 1: Malt -->
+        <div class="hero-slide hero-slide--malt" role="group" aria-roledescription="slide" aria-label="Slide 1 of 5: Base and Speciality Malts">
+          <img
+            src="assets/home/hero-slider/hero-banner-malt.webp"
+            alt="From field to glass — SKY Base and Speciality Malts"
+            class="hero-slide__img"
+            width="1920"
+            height="700"
+            loading="eager"
+          >
+          <div class="hero-slide__cta hero-slide__cta--below-copy">
+            <a href="products/brewing-ingredients/malts/" class="btn btn--orange">
+              Discover our Malts
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Slide 2: Equipment -->
+        <div class="hero-slide hero-slide--equipment" role="group" aria-roledescription="slide" aria-label="Slide 2 of 5: End-to-end Brewing Equipment">
+          <img
+            src="assets/home/hero-slider/hero-banner-equipment.webp"
+            alt="End-to-end brewing equipment — supply, installation and service"
+            class="hero-slide__img"
+            width="1920"
+            height="700"
+            loading="lazy"
+          >
+          <div class="hero-slide__cta hero-slide__cta--below-copy">
+            <a href="equipment/index.html" class="btn btn--orange">
+              Explore Equipment
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Slide 3: Chemicals -->
+        <div class="hero-slide" role="group" aria-roledescription="slide" aria-label="Slide 3 of 5: Chemical Solutions">
+          <img
+            src="assets/home/hero-slider/hero-banner-chemicals.webp"
+            alt="Chemical solutions — hygiene and processing aids from SKY LABS"
+            class="hero-slide__img"
+            width="1920"
+            height="700"
+            loading="lazy"
+          >
+        </div>
+
+        <!-- Slide 4: One-way Kegs -->
+        <div class="hero-slide" role="group" aria-roledescription="slide" aria-label="Slide 4 of 5: One-way Kegs by Talos">
+          <img
+            src="assets/home/hero-slider/hero-banner-kegs.webp"
+            alt="One-way kegs available from 3L to 30L — by Talos"
+            class="hero-slide__img"
+            width="1920"
+            height="700"
+            loading="lazy"
+          >
+        </div>
+
+        <!-- Slide 5: AEB Brewing / Yeast & Fermentation -->
+        <div class="hero-slide" role="group" aria-roledescription="slide" aria-label="Slide 5 of 5: Inspiration in brewing — AEB Brewing">
+          <img
+            src="assets/home/hero-slider/hero-banner-yeast.webp"
+            alt="Are you looking for inspiration in brewing? AEB Brewing — be creative, be passionate, be AEB"
+            class="hero-slide__img"
+            width="1920"
+            height="700"
+            loading="lazy"
+          >
+        </div>
+
+      </div>
+
+      <!-- Arrow controls -->
+      <button class="hero-slider__prev" aria-label="Previous slide">
+        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" aria-hidden="true">
+          <path d="M9 1L1 9l8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <button class="hero-slider__next" aria-label="Next slide">
+        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" aria-hidden="true">
+          <path d="M1 1l8 8-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <!-- Dot indicators — populated by slider.js -->
+      <div class="hero-slider__dots" role="list" aria-label="Slide indicators"></div>
+
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         OUR PRODUCT SELECTION
+    ═══════════════════════════════════════════ -->
+    <section class="product-selection" aria-labelledby="product-selection-heading">
+      <div class="container">
+
+        <header class="section-header section-header--center">
+          <span class="eyebrow">Browse by category</span>
+          <h2 id="product-selection-heading">Our Product Selection</h2>
+        </header>
+
+
+        <ul class="cat-grid" role="list">
+
+          <li>
+            <a href="products/brewing-ingredients/malts/?type=base" class="cat-card">
+              <div class="cat-card__img-wrap">
+                <img src="assets/home/our-product-selection/base-malts.webp" alt="Base Malts" class="cat-card__img" width="1100" height="1100" loading="lazy">
+              </div>
+              <div class="cat-card__body">
+                <h3 class="cat-card__title">Base Malts</h3>
+                <p class="cat-card__desc">Pilsner, Pale and Wheat</p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="products/brewing-ingredients/malts/?type=speciality" class="cat-card">
+              <div class="cat-card__img-wrap">
+                <img src="assets/home/our-product-selection/speciality-malts.webp" alt="Speciality Malts" class="cat-card__img" width="1100" height="1100" loading="lazy">
+              </div>
+              <div class="cat-card__body">
+                <h3 class="cat-card__title">Speciality Malts</h3>
+                <p class="cat-card__desc">Crystal and Roasted Malts</p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="products/brewing-ingredients/yeast-fermentation/" class="cat-card">
+              <div class="cat-card__img-wrap">
+                <img src="assets/home/our-product-selection/yeast.png" alt="Yeast &amp; Fermentation" class="cat-card__img" width="1000" height="1308" loading="lazy">
+              </div>
+              <div class="cat-card__body">
+                <h3 class="cat-card__title">Yeast &amp; Fermentation</h3>
+                <p class="cat-card__desc">Top Sellers from AEB Brewing</p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="products/chemical-products/finings-clarification/" class="cat-card">
+              <div class="cat-card__img-wrap">
+                <img src="assets/home/our-product-selection/finings.jpg" alt="Finings &amp; Clarification" class="cat-card__img" width="1100" height="1100" loading="lazy">
+              </div>
+              <div class="cat-card__body">
+                <h3 class="cat-card__title">Finings &amp; Clarification</h3>
+                <p class="cat-card__desc">Clarification and Fining Agents</p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="products/chemical-products/hygiene-chemicals/" class="cat-card">
+              <div class="cat-card__img-wrap">
+                <img src="assets/home/our-product-selection/hygiene-chemicals.jpg" alt="Hygiene Chemicals" class="cat-card__img" width="1100" height="1100" loading="lazy">
+              </div>
+              <div class="cat-card__body">
+                <h3 class="cat-card__title">Hygiene Chemicals</h3>
+                <p class="cat-card__desc">Caustics, Acids, Sanitisers</p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="products/chemical-products/processing-aids/" class="cat-card">
+              <div class="cat-card__img-wrap">
+                <img src="assets/home/our-product-selection/processing-aids.jpg" alt="Processing Aids" class="cat-card__img" width="1100" height="1100" loading="lazy">
+              </div>
+              <div class="cat-card__body">
+                <h3 class="cat-card__title">Processing Aids</h3>
+                <p class="cat-card__desc">Antifoam, Enzymes, Nutrients</p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="equipment/index.html" class="cat-card">
+              <div class="cat-card__img-wrap">
+                <img src="assets/home/our-product-selection/equipment.png" alt="Equipment" class="cat-card__img" width="2000" height="2000" loading="lazy">
+              </div>
+              <div class="cat-card__body">
+                <h3 class="cat-card__title">Equipment</h3>
+                <p class="cat-card__desc">Complete Brewing Solutions</p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="products/kegs-packaging/one-way-kegs/" class="cat-card">
+              <div class="cat-card__img-wrap">
+                <img src="assets/home/our-product-selection/kegs.png" alt="One-way Kegs" class="cat-card__img" width="1000" height="1000" loading="lazy">
+              </div>
+              <div class="cat-card__body">
+                <h3 class="cat-card__title">One-way Kegs</h3>
+                <p class="cat-card__desc">Sustainable, 3L to 30L</p>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         FEATURED PRODUCTS TABS
+    ═══════════════════════════════════════════ -->
+    <section class="featured-products" aria-labelledby="featured-products-heading">
+      <div class="container">
+
+        <div class="featured-products__bar">
+          <h2 id="featured-products-heading" class="featured-products__heading">Featured Products</h2>
+          <div class="featured-products__tabs" role="tablist" aria-label="Product type">
+            <button
+              class="featured-products__tab featured-products__tab--active"
+              role="tab"
+              id="tab-btn-new"
+              aria-selected="true"
+              aria-controls="panel-new"
+            >New Arrivals</button>
+            <button
+              class="featured-products__tab"
+              role="tab"
+              id="tab-btn-deals"
+              aria-selected="false"
+              aria-controls="panel-deals"
+              tabindex="-1"
+            >Deals</button>
+            <button
+              class="featured-products__tab"
+              role="tab"
+              id="tab-btn-top"
+              aria-selected="false"
+              aria-controls="panel-top"
+              tabindex="-1"
+            >Best Sellers</button>
+          </div>
+        </div>
+
+        <!-- Panel: New Arrivals -->
+        <div id="panel-new" class="featured-products__panel" role="tabpanel" aria-labelledby="tab-btn-new">
+          <ul class="prod-grid" role="list">
+
+            <li class="prod-card prod-card--compact">
+              <a href="products/brewing-ingredients/malts/pale-ale-malt/" class="prod-card__content-link">
+                <div class="prod-card__img-wrap">
+                  <img src="assets/product-images/malt/pale-ale.webp" alt="Pale Ale Malt" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                </div>
+                <div class="prod-card__body">
+                  <div class="prod-card__heading">
+                    <h3 class="prod-card__name">Pale Ale Malt</h3>
+                    <p class="prod-card__meta">4.8–5.4 EBC</p>
+                  </div>
+                  <p class="prod-card__desc">Best for Ales and IPAs</p>
+                </div>
+              </a>
+              <div class="prod-card__footer">
+                <p class="prod-card__price">£25.00 – £50.00</p>
+                <div class="prod-card__actions">
+                  <a href="products/brewing-ingredients/malts/pale-ale-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="prod-card prod-card--compact">
+              <a href="products/brewing-ingredients/yeast-fermentation/fermoale-new-e/" class="prod-card__content-link">
+                <div class="prod-card__img-wrap">
+                  <img src="assets/product-images/yeast/fermoale-new-e.webp" alt="Fermoale New-E" class="prod-card__img" width="1000" height="1308" loading="lazy">
+                </div>
+                <div class="prod-card__body">
+                  <div class="prod-card__heading">
+                    <h3 class="prod-card__name">Fermoale New-E</h3>
+                    <p class="prod-card__meta">Dry ale yeast</p>
+                  </div>
+                  <p class="prod-card__desc">Dry yeast for New England-style IPAs</p>
+                </div>
+              </a>
+              <div class="prod-card__footer">
+                <p class="prod-card__price">£12.50 – £58.00</p>
+                <div class="prod-card__actions">
+                  <a href="products/brewing-ingredients/yeast-fermentation/fermoale-new-e/" class="btn btn--ghost prod-card__action">View Product</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="prod-card prod-card--compact">
+              <a href="products/chemical-products/processing-aids/hot-liquor-treatment/" class="prod-card__content-link">
+                <div class="prod-card__img-wrap">
+                  <img src="assets/product-images/processing-aids/hot-liquor-treatment.webp" alt="Hot Liquor Treatment" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                </div>
+                <div class="prod-card__body">
+                  <div class="prod-card__heading">
+                    <h3 class="prod-card__name">Hot Liquor Treatment</h3>
+                    <p class="prod-card__meta">Liquor treatment</p>
+                  </div>
+                  <p class="prod-card__desc">Removes bicarbonate from brewing liquor</p>
+                </div>
+              </a>
+              <div class="prod-card__footer">
+                <p class="prod-card__price">£14.50 – £52.00</p>
+                <div class="prod-card__actions">
+                  <a href="products/chemical-products/processing-aids/hot-liquor-treatment/" class="btn btn--ghost prod-card__action">View Product</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="prod-card prod-card--compact">
+              <a href="products/chemical-products/hygiene-chemicals/paa-15/" class="prod-card__content-link">
+                <div class="prod-card__img-wrap">
+                  <img src="assets/product-images/hygiene-chemicals/paa-15.webp" alt="PAA 15" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                </div>
+                <div class="prod-card__body">
+                  <div class="prod-card__heading">
+                    <h3 class="prod-card__name">PAA 15</h3>
+                    <p class="prod-card__meta">Peracetic acid</p>
+                  </div>
+                  <p class="prod-card__desc">No-rinse sanitiser for CIP and spray</p>
+                </div>
+              </a>
+              <div class="prod-card__footer">
+                <p class="prod-card__price">£22.00 – £88.00</p>
+                <div class="prod-card__actions">
+                  <a href="products/chemical-products/hygiene-chemicals/paa-15/" class="btn btn--ghost prod-card__action">View Product</a>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Panel: Deals -->
+        <div id="panel-deals" class="featured-products__panel" role="tabpanel" aria-labelledby="tab-btn-deals" hidden>
+          <ul class="prod-grid" role="list">
+
+            <li class="prod-card prod-card--compact">
+              <a href="products/brewing-ingredients/malts/pilsner-malt/" class="prod-card__content-link">
+                <div class="prod-card__img-wrap">
+                  <img src="assets/product-images/malt/pilsner.webp" alt="Pilsner Malt" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                </div>
+                <div class="prod-card__body">
+                  <div class="prod-card__heading">
+                    <h3 class="prod-card__name">Pilsner Malt</h3>
+                    <p class="prod-card__meta">3.5–4.2 EBC</p>
+                  </div>
+                  <p class="prod-card__desc">Our most popular base malt</p>
+                </div>
+              </a>
+              <div class="prod-card__footer">
+                <p class="prod-card__price">£22.00 – £45.00</p>
+                <div class="prod-card__actions">
+                  <a href="products/brewing-ingredients/malts/pilsner-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="prod-card prod-card--compact">
+              <a href="products/chemical-products/hygiene-chemicals/caustic-plus/" class="prod-card__content-link">
+                <div class="prod-card__img-wrap">
+                  <img src="assets/product-images/hygiene-chemicals/caustic-plus.webp" alt="Caustic Plus" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                </div>
+                <div class="prod-card__body">
+                  <div class="prod-card__heading">
+                    <h3 class="prod-card__name">Caustic Plus</h3>
+                    <p class="prod-card__meta">Caustic CIP cleaner</p>
+                  </div>
+                  <p class="prod-card__desc">Caustic solution for CIP systems</p>
+                </div>
+              </a>
+              <div class="prod-card__footer">
+                <p class="prod-card__price">£28.00 – £95.00</p>
+                <div class="prod-card__actions">
+                  <a href="products/chemical-products/hygiene-chemicals/caustic-plus/" class="btn btn--ghost prod-card__action">View Product</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="prod-card prod-card--compact">
+              <a href="products/kegs-packaging/one-way-kegs/20l-kegs-inner-bags/" class="prod-card__content-link">
+                <div class="prod-card__img-wrap">
+                  <img src="assets/product-images/one-way-kegs/20L-keg-with-inner-bag.webp" alt="TalosKeg 20L with inner bag" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                </div>
+                <div class="prod-card__body">
+                  <div class="prod-card__heading">
+                    <h3 class="prod-card__name">TalosKeg 20L</h3>
+                    <p class="prod-card__meta">One-way keg</p>
+                  </div>
+                  <p class="prod-card__desc">Single-use with inner bag, suits lager and ale</p>
+                </div>
+              </a>
+              <div class="prod-card__footer">
+                <p class="prod-card__price">from £4.50 each</p>
+                <div class="prod-card__actions">
+                  <a href="products/kegs-packaging/one-way-kegs/20l-kegs-inner-bags/" class="btn btn--ghost prod-card__action">View Product</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="prod-card prod-card--compact">
+              <a href="products/brewing-ingredients/malts/light-crystal-malt/" class="prod-card__content-link">
+                <div class="prod-card__img-wrap">
+                  <img src="assets/product-images/malt/light-crystal.webp" alt="Light Crystal Malt" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                </div>
+                <div class="prod-card__body">
+                  <div class="prod-card__heading">
+                    <h3 class="prod-card__name">Light Crystal Malt</h3>
+                    <p class="prod-card__meta">90–110 EBC</p>
+                  </div>
+                  <p class="prod-card__desc">Amber colour and light toffee character</p>
+                </div>
+              </a>
+              <div class="prod-card__footer">
+                <p class="prod-card__price">£27.00 – £52.00</p>
+                <div class="prod-card__actions">
+                  <a href="products/brewing-ingredients/malts/light-crystal-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Panel: Best Sellers -->
+        <div id="panel-top" class="featured-products__panel" role="tabpanel" aria-labelledby="tab-btn-top" hidden>
+          <ul class="prod-grid" role="list">
+
+            <li class="prod-card prod-card--compact">
+              <a href="products/brewing-ingredients/malts/pilsner-malt/" class="prod-card__content-link">
+                <div class="prod-card__img-wrap">
+                  <img src="assets/product-images/malt/pilsner-25kg.webp" alt="Pilsner Malt 25kg" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                </div>
+                <div class="prod-card__body">
+                  <div class="prod-card__heading">
+                    <h3 class="prod-card__name">Pilsner Malt 25kg</h3>
+                    <p class="prod-card__meta">3.5–4.2 EBC</p>
+                  </div>
+                  <p class="prod-card__desc">Our most popular base malt</p>
+                </div>
+              </a>
+              <div class="prod-card__footer">
+                <p class="prod-card__price">£45.00 per bag</p>
+                <div class="prod-card__actions">
+                  <a href="products/brewing-ingredients/malts/pilsner-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="prod-card prod-card--compact">
+              <a href="products/chemical-products/hygiene-chemicals/caustic-extra/" class="prod-card__content-link">
+                <div class="prod-card__img-wrap">
+                  <img src="assets/product-images/hygiene-chemicals/caustic-extra.webp" alt="Caustic Extra" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                </div>
+                <div class="prod-card__body">
+                  <div class="prod-card__heading">
+                    <h3 class="prod-card__name">Caustic Extra</h3>
+                    <p class="prod-card__meta">Liquid caustic</p>
+                  </div>
+                  <p class="prod-card__desc">Industry-standard CIP cleaner, 32% NaOH</p>
+                </div>
+              </a>
+              <div class="prod-card__footer">
+                <p class="prod-card__price">£30.00 – £110.00</p>
+                <div class="prod-card__actions">
+                  <a href="products/chemical-products/hygiene-chemicals/caustic-extra/" class="btn btn--ghost prod-card__action">View Product</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="prod-card prod-card--compact">
+              <a href="products/brewing-ingredients/yeast-fermentation/fermoale-ay3/" class="prod-card__content-link">
+                <div class="prod-card__img-wrap">
+                  <img src="assets/product-images/yeast/fermoale-ay3.webp" alt="Fermoale AY3" class="prod-card__img" width="1000" height="1308" loading="lazy">
+                </div>
+                <div class="prod-card__body">
+                  <div class="prod-card__heading">
+                    <h3 class="prod-card__name">Fermoale AY3</h3>
+                    <p class="prod-card__meta">English ale yeast</p>
+                  </div>
+                  <p class="prod-card__desc">Consistent performance batch after batch</p>
+                </div>
+              </a>
+              <div class="prod-card__footer">
+                <p class="prod-card__price">£12.00 – £55.00</p>
+                <div class="prod-card__actions">
+                  <a href="products/brewing-ingredients/yeast-fermentation/fermoale-ay3/" class="btn btn--ghost prod-card__action">View Product</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="prod-card prod-card--compact">
+              <a href="products/chemical-products/finings-clarification/sky-granules/" class="prod-card__content-link">
+                <div class="prod-card__img-wrap">
+                  <img src="assets/product-images/finings/sky-granules.webp" alt="Sky Granules" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                </div>
+                <div class="prod-card__body">
+                  <div class="prod-card__heading">
+                    <h3 class="prod-card__name">Sky Granules</h3>
+                    <p class="prod-card__meta">Kettle finings</p>
+                  </div>
+                  <p class="prod-card__desc">Granular Irish moss for clearer wort</p>
+                </div>
+              </a>
+              <div class="prod-card__footer">
+                <p class="prod-card__price">£18.00 – £65.00</p>
+                <div class="prod-card__actions">
+                  <a href="products/chemical-products/finings-clarification/sky-granules/" class="btn btn--ghost prod-card__action">View Product</a>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="featured-products__footer">
+          <a href="products/brewing-ingredients/" class="featured-products__browse-link">
+            Browse all products
+            <svg width="12" height="9" viewBox="0 0 12 9" fill="none" aria-hidden="true">
+              <path d="M1 4.5h10M7 1l4 3.5L7 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ─────────────────────────────────────────────────
+         THREE DIVISIONS. ONE COMPANY.
+    ───────────────────────────────────────────────── -->
+    <section class="divisions" aria-labelledby="divisions-heading">
+      <div class="container">
+
+        <header class="section-header section-header--center">
+          <span class="eyebrow">The SKY AGRO Group</span>
+          <h2 id="divisions-heading">Our Divisions and Partners</h2>
+        </header>
+
+        <ul class="divisions__grid" role="list">
+
+          <!-- SKY MALT -->
+          <li class="division-card division-card--malt">
+            <div class="division-card__inner">
+              <p class="division-card__tag">INGREDIENTS</p>
+              <a href="sky-malt.html" class="division-card__logo-link" tabindex="-1" aria-hidden="true">
+                <img src="assets/logos/SKY-MALT-logo.svg" alt="" class="division-card__logo" width="196" height="67" loading="lazy">
+              </a>
+              <p class="division-card__desc">Base and speciality malts, and yeast — covering the full spectrum of brewing ingredients for every style and scale.</p>
+              <div class="division-card__partner">
+                <p class="division-card__partner-label">OUR PARTNERS</p>
+                <a href="https://www.aeb-group.com/it" class="division-card__partner-link" target="_blank" rel="noopener noreferrer" aria-label="Visit AEB Group website">
+                  <img src="assets/logos/AEB-logo.svg" alt="AEB Brewing" class="division-card__partner-logo" loading="lazy">
+                </a>
+              </div>
+              <a href="products/brewing-ingredients/" class="btn btn--green division-card__cta">
+                View Ingredients
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </li>
+
+          <!-- SKY LABS -->
+          <li class="division-card division-card--labs">
+            <div class="division-card__inner">
+              <p class="division-card__tag">CHEMICALS</p>
+              <a href="sky-labs.html" class="division-card__logo-link" tabindex="-1" aria-hidden="true">
+                <img src="assets/logos/SKY-LABS-logo.svg" alt="" class="division-card__logo" width="196" height="67" loading="lazy">
+              </a>
+              <p class="division-card__desc">Hygiene chemicals and processing aids — caustics, acids, sanitisers, enzymatic cleaners and clarifiers. </p>
+              <div class="division-card__partner">
+                <p class="division-card__partner-label">OUR PARTNERS</p>
+                <a href="https://realco.be/en/?lang=en" class="division-card__partner-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Realco website">
+                  <img src="assets/logos/Realco-logo.svg" alt="Realco" class="division-card__partner-logo" loading="lazy">
+                </a>
+              </div>
+              <a href="products/chemical-products/" class="btn btn--navy division-card__cta">
+                View Chemicals
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </li>
+
+          <!-- SKY TECH -->
+          <li class="division-card division-card--tech">
+            <div class="division-card__inner">
+              <p class="division-card__tag">EQUIPMENT</p>
+              <a href="sky-tech.html" class="division-card__logo-link" tabindex="-1" aria-hidden="true">
+                <img src="assets/logos/SKY-TECH-logo.svg" alt="" class="division-card__logo" width="196" height="67" loading="lazy">
+              </a>
+              <p class="division-card__desc">End-to-end brewing equipment, plus one-way kegs from 2L to 50L, for cellar and dispense.</p>
+              <div class="division-card__partner">
+                <p class="division-card__partner-label">OUR PARTNERS</p>
+                <a href="https://www.chinatalos.com/" class="division-card__partner-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Talos website">
+                  <img src="assets/logos/Talos-logo.svg" alt="Talos" class="division-card__partner-logo" loading="lazy">
+                </a>
+              </div>
+              <a href="equipment/index.html" class="btn btn--steel division-card__cta">
+                View Equipment
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- ─────────────────────────────────────────────────
+         ABOUT SKY AGRO
+    ───────────────────────────────────────────────── -->
+    <section class="about-intro" aria-labelledby="about-intro-heading">
+      <div class="container about-intro__inner">
+
+        <div class="about-intro__copy">
+          <span class="eyebrow">About SKY AGRO</span>
+          <h2 id="about-intro-heading">About SKY AGRO</h2>
+          <p>We supply UK breweries with ingredients, hygiene chemicals, processing aids and equipment, from a single, dependable source, combining technical expertise with quality service.</p>
+          <p>We are a young, ambitious company — built on deep brewing industry experience. Our founding team brings together expertise in malts, chemistry and engineering to give UK breweries a single, reliable partner for everything they need.<!-- TODO: client to supply company background copy --></p>
+          <a href="about.html" class="btn btn--green about-intro__cta">
+            Learn more about us
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="about-intro__media">
+          <img src="assets/home/General/malt-pouring.png" alt="Malt being poured during the brewing process" class="about-intro__img" width="2528" height="1684" loading="lazy">
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ─────────────────────────────────────────────────
+         FIND US ON SOCIAL MEDIA
+    ───────────────────────────────────────────────── -->
+    <section class="social-band" aria-labelledby="social-band-heading">
+      <div class="container social-band__inner">
+
+        <div class="social-band__media">
+          <img src="assets/home/social-media/Cristian-Gerard.jpg" alt="Members of the SKY AGRO team at a brewing industry event" class="social-band__img" width="2500" height="1667" loading="lazy">
+        </div>
+
+        <div class="social-band__copy">
+          <span class="eyebrow">Find us here</span>
+          <h2 id="social-band-heading">Find Us on Social Media</h2>
+          <p>Follow along for product drops, technical tips, and photos from the conferences, trade shows and breweries we visit across the UK and Europe. Informal, occasional, and worth the follow if you're in the trade.</p>
+          <p>You'll catch us at BeerX, LBA meetings, and IBD events — plus smaller regional events throughout the year. If you're going, come say hello.</p>
+          <div class="social-band__icons">
+            <a href="https://uk.linkedin.com/company/skyagroltd" class="social-band__icon-link" aria-label="SKY AGRO on LinkedIn" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/social-media-icons/linkedin-icon-dark.svg" alt="LinkedIn" width="28" height="28">
+            </a>
+            <a href="https://www.facebook.com/people/Sky-Malt/61567143255365/" class="social-band__icon-link" aria-label="SKY AGRO on Facebook" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/social-media-icons/facebook-icon-dark.svg" alt="Facebook" width="28" height="28">
+            </a>
+            <a href="https://www.instagram.com/skymalt.uk/" class="social-band__icon-link" aria-label="SKY AGRO on Instagram" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/social-media-icons/instagram-icon-dark.svg" alt="Instagram" width="28" height="28">
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ─────────────────────────────────────────────────
+         NEWS AND KNOW-HOW — Blog preview
+    ───────────────────────────────────────────────── -->
+    <section class="blog-preview" aria-labelledby="blog-preview-heading">
+      <div class="container">
+
+        <header class="section-header section-header--center">
+          <span class="eyebrow">Our Blog</span>
+          <h2 id="blog-preview-heading">News and Know-how</h2>
+          <p class="blog-preview__subtitle">Technical notes, industry updates and practical advice from the team.</p>
+        </header>
+
+        <ul class="blog-grid" role="list">
+
+          <li>
+            <article class="blog-card">
+              <a href="blog/water-chemistry-basics.html" class="blog-card__img-link" tabindex="-1" aria-hidden="true">
+                <div class="blog-card__img-wrap">
+                  <img src="assets/home/blog/water-hardness.png" alt="Water being poured into a glass" class="blog-card__img" width="280" height="280" loading="lazy">
+                </div>
+              </a>
+              <div class="blog-card__body">
+                <span class="blog-tag blog-tag--tech">Technical Guide</span>
+                <h3 class="blog-card__title">
+                  <a href="blog/water-chemistry-basics.html" class="blog-card__link">Brewing Water Chemistry: pH &amp; Mineral Adjustment Guide</a>
+                </h3>
+                <p class="blog-card__meta"><time datetime="2026-03">4 min read · March 2026</time></p>
+              </div>
+            </article>
+          </li>
+
+          <li>
+            <article class="blog-card">
+              <a href="blog/malt-barley-prices.html" class="blog-card__img-link" tabindex="-1" aria-hidden="true">
+                <div class="blog-card__img-wrap">
+                  <img src="assets/home/blog/malt-prices.png" alt="Combine harvester working a barley field at harvest" class="blog-card__img" width="280" height="280" loading="lazy">
+                </div>
+              </a>
+              <div class="blog-card__body">
+                <span class="blog-tag blog-tag--news">Industry News</span>
+                <h3 class="blog-card__title">
+                  <a href="blog/malt-barley-prices.html" class="blog-card__link">Malt &amp; Barley Prices Explained: Market Trends &amp; Costs</a>
+                </h3>
+                <p class="blog-card__meta"><time datetime="2026-03">6 min read · March 2026</time></p>
+              </div>
+            </article>
+          </li>
+
+          <li>
+            <article class="blog-card">
+              <a href="blog/non-alcoholic-low-abv.html" class="blog-card__img-link" tabindex="-1" aria-hidden="true">
+                <div class="blog-card__img-wrap">
+                  <img src="assets/home/blog/non-alcoholic-brewing.png" alt="Beer being poured from a tap into a glass" class="blog-card__img" width="280" height="280" loading="lazy">
+                </div>
+              </a>
+              <div class="blog-card__body">
+                <span class="blog-tag blog-tag--tech">Technical Guide</span>
+                <h3 class="blog-card__title">
+                  <a href="blog/non-alcoholic-low-abv.html" class="blog-card__link">How Non-Alcoholic &amp; Low ABV Beer Is Made</a>
+                </h3>
+                <p class="blog-card__meta"><time datetime="2026-01">5 min read · January 2026</time></p>
+              </div>
+            </article>
+          </li>
+
+          <li>
+            <article class="blog-card">
+              <a href="blog/gluten-testing.html" class="blog-card__img-link" tabindex="-1" aria-hidden="true">
+                <div class="blog-card__img-wrap">
+                  <img src="assets/home/blog/gluten-testing.png" alt="GlutenTox Pro testing kit and equipment" class="blog-card__img" width="280" height="280" loading="lazy">
+                </div>
+              </a>
+              <div class="blog-card__body">
+                <span class="blog-tag blog-tag--new">New Products</span>
+                <h3 class="blog-card__title">
+                  <a href="blog/gluten-testing.html" class="blog-card__link">Gluten Testing in Brewing: Why It Matters</a>
+                </h3>
+                <p class="blog-card__meta"><time datetime="2026-04">7 min read · April 2026</time></p>
+              </div>
+            </article>
+          </li>
+
+        </ul>
+
+        <div class="blog-preview__cta">
+          <a href="blog.html" class="btn btn--gold">
+            View all articles
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="site-footer"></footer>
+
+
+  <script src="js/slider.js"></script>
+  <script src="js/tabs.js"></script>
+</body>
+</html>

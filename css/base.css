@@ -1,0 +1,304 @@
+/* Base styles — typography, links, buttons, forms, utilities */
+
+/* ─── Local fonts ─── */
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ─── Page defaults ─── */
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-body);
+  color: var(--color-ink);
+  background-color: var(--color-cream);
+}
+
+/* ─── Skip link ─── */
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-4);
+  z-index: 9999;
+  padding: var(--space-2) var(--space-5);
+  background: var(--color-green);
+  color: var(--color-white);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  transition: top 0.15s;
+}
+
+.skip-link:focus {
+  top: var(--space-4);
+}
+
+/* ─── Screen reader only ─── */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ─── Typography ─── */
+
+h1 {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-tight);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--ls-tight);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-snug);
+}
+
+h4 {
+  font-size: var(--fs-h4);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-normal);
+}
+
+h5 {
+  font-size: var(--fs-h5);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-normal);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-block-start: 2em;
+  margin-block-end: 0.5em;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+  margin-block-start: 0;
+}
+
+p {
+  margin-block: 0 1em;
+  max-width: 65ch;
+}
+
+p:last-child {
+  margin-block-end: 0;
+}
+
+/* ─── Links ─── */
+
+a {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  text-decoration-color: transparent;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-green);
+  outline-offset: 0.125rem;
+  border-radius: 0.125rem;
+}
+
+/* ─── Buttons ─── */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-height: 2.75rem;
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+  font-family: var(--font-body);
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-green);
+  outline-offset: 0.125rem;
+}
+
+.btn__icon {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+/* Primary green */
+.btn--green {
+  background-color: var(--color-green);
+  color: var(--color-white);
+  border-color: var(--color-green);
+}
+
+.btn--green:hover {
+  background-color: var(--color-green-dark);
+  border-color: var(--color-green-dark);
+}
+
+/* Orange hero CTA */
+.btn--orange {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  border-color: var(--color-orange);
+}
+
+.btn--orange:hover {
+  background-color: #d0632f;
+  border-color: #d0632f;
+}
+
+/* Gold secondary */
+.btn--gold {
+  background-color: var(--color-gold);
+  color: var(--color-white);
+  border-color: var(--color-gold);
+}
+
+.btn--gold:hover {
+  background-color: #b5893f;
+  border-color: #b5893f;
+}
+
+/* Navy — SKY LABS division */
+.btn--navy {
+  background-color: var(--color-navy);
+  color: var(--color-white);
+  border-color: var(--color-navy);
+}
+
+.btn--navy:hover {
+  background-color: #152f58;
+  border-color: #152f58;
+}
+
+/* Steel — SKY TECH division */
+.btn--steel {
+  background-color: var(--color-steel);
+  color: var(--color-white);
+  border-color: var(--color-steel);
+}
+
+.btn--steel:hover {
+  background-color: #222222;
+  border-color: #222222;
+}
+
+/* Ghost */
+.btn--ghost {
+  background-color: transparent;
+  color: var(--color-green);
+  border-color: var(--color-green);
+}
+
+.btn--ghost:hover {
+  background-color: var(--color-green);
+  color: var(--color-white);
+}
+
+/* Ghost white — for dark/image backgrounds */
+.btn--ghost-white {
+  background-color: transparent;
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+.btn--ghost-white:hover {
+  background-color: var(--color-white);
+  color: var(--color-ink);
+}
+
+/* ─── Form base ─── */
+
+label {
+  display: block;
+  font-size: var(--fs-small);
+  font-weight: var(--fw-medium);
+  margin-block-end: var(--space-2);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+textarea,
+select {
+  display: block;
+  width: 100%;
+  min-height: 2.75rem;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-white);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  transition: border-color 0.15s, outline 0.15s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="search"]:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid var(--color-green);
+  outline-offset: 0.125rem;
+  border-color: var(--color-green);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-ink-soft);
+}
+
+/* Remove default search input clear button */
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}

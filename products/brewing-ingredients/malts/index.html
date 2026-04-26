@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malts — SKY AGRO</title>
+  <meta name="description" content="Base and speciality malts for UK and international breweries. Pale, pilsner, Vienna, Munich, crystal, chocolate and more — available for next-day delivery.">
+
+    <link rel="preload" href="../../../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+
+      <link rel="stylesheet" href="../../../css/reset.css">
+  <link rel="stylesheet" href="../../../css/tokens.css">
+  <link rel="stylesheet" href="../../../css/base.css">
+  <link rel="stylesheet" href="../../../css/layout.css">
+  <link rel="stylesheet" href="../../../css/components.css">
+  <link rel="stylesheet" href="../../../css/pages.css">
+  <script src="../../../js/header.js" defer></script>
+  <script src="../../../js/footer.js" defer></script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════════ -->
+  <header class="site-header"></header>
+
+  <!-- ═══════════════════════════════════════════
+       MAIN CONTENT
+  ═══════════════════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <div class="container">
+        <ol class="breadcrumb__list">
+          <li class="breadcrumb__item"><a href="../../../index.html">Home</a></li>
+          <li class="breadcrumb__item"><a href="../../brewing-ingredients/">Brewing Ingredients</a></li>
+          <li class="breadcrumb__item" aria-current="page">Malts</li>
+        </ol>
+      </div>
+    </nav>
+
+    <!-- Products -->
+    <section class="cat-products" aria-label="Malts product listing">
+      <div class="container">
+        <div class="cat-products__layout">
+          <aside class="prod-filters" aria-label="Product filters">
+            <div class="prod-filters__panel">
+              <p class="eyebrow">Filter products</p>
+
+              <div class="prod-filter-group" aria-label="Filter malts by type">
+                <h3 class="prod-filter-group__title">Malt type</h3>
+                <div class="prod-filter-group__options">
+                  <a href="./" class="prod-filter-pill prod-filter-pill--active" aria-current="page">All Malts</a>
+                  <a href="./?type=base" class="prod-filter-pill">Base Malts</a>
+                  <a href="./?type=speciality" class="prod-filter-pill">Speciality Malts</a>
+                  <a href="./?type=crystal" class="prod-filter-pill">Crystal Malts</a>
+                  <a href="./?type=roasted" class="prod-filter-pill">Roasted Malts</a>
+                </div>
+              </div>
+
+              <div class="prod-filter-group" aria-label="Filter malts by colour">
+                <h3 class="prod-filter-group__title">Colour (EBC)</h3>
+                <div class="prod-filter-group__options">
+                  <a href="./" class="prod-filter-pill prod-filter-pill--active" aria-current="page">All Colours</a>
+                  <a href="./?ebc=0-10" class="prod-filter-pill">0–10 EBC</a>
+                  <a href="./?ebc=11-30" class="prod-filter-pill">11–30 EBC</a>
+                  <a href="./?ebc=31-100" class="prod-filter-pill">31–100 EBC</a>
+                  <a href="./?ebc=101-300" class="prod-filter-pill">101–300 EBC</a>
+                  <a href="./?ebc=301-plus" class="prod-filter-pill">301+ EBC</a>
+                </div>
+              </div>
+
+              <div class="prod-filter-callout">
+                <h3 class="prod-filter-callout__title">Need bulk pricing or a specific malt variety?</h3>
+                <a href="../../../contact.html" class="btn prod-filter-callout__link">
+                  Talk to our team
+                  <svg class="prod-filter-callout__icon" viewBox="0 0 100 125" aria-hidden="true" focusable="false">
+                    <path fill="currentColor" d="M97.64 55.753 64.72 22.833a8.06 8.06 0 1 0-11.4 11.39l19.46 19.43H8.06a8.06 8.06 0 0 0 0 16.12H72.6L53.32 89.084a8.06 8.06 0 0 0 11.4 11.39L97.64 67.553A8 8 0 0 0 100 61.853a1.27 1.27 0 0 0 0-.2 1.41 1.41 0 0 0 0-.2 8.07 8.07 0 0 0-2.36-5.7Z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </aside>
+
+          <div class="prod-results">
+            <!-- Toolbar -->
+            <div class="prod-toolbar">
+              <div class="prod-toolbar__right">
+                <label for="sort-malts" class="sr-only">Sort products</label>
+                <select id="sort-malts" class="prod-sort-select">
+                  <option value="featured">Sort: Featured</option>
+                  <option value="name-asc">Name A–Z</option>
+                  <option value="name-desc">Name Z–A</option>
+                  <option value="ebc-asc">EBC: Low to high</option>
+                  <option value="ebc-desc">EBC: High to low</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Product grid -->
+            <ul class="prod-grid" role="list">
+
+              <!-- 1: Pilsner Malt -->
+              <li class="prod-card">
+                <a href="pilsner-malt/" class="prod-card__content-link">
+                  <div class="prod-card__img-wrap">
+                    <img src="../../../assets/product-images/malt/pilsner.webp" alt="Pilsner Malt — light golden grain" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                  </div>
+                  <div class="prod-card__body">
+                    <div class="prod-card__heading">
+                      <h2 class="prod-card__name">Pilsner Malt</h2>
+                      <p class="prod-card__meta">3.5-4.2 EBC</p>
+                    </div>
+                    <p class="prod-card__desc">Light base malt for lagers, clean flavour, high extract, excellent enzymatic power.</p>
+                  </div>
+                </a>
+                <div class="prod-card__footer">
+                  <p class="prod-card__price">&pound;25.00 – &pound;50.00</p>
+                  <div class="prod-card__actions">
+                    <a href="pilsner-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+                    <button type="button" class="btn btn--green prod-card__action">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+              <!-- 2: Pale Ale Malt -->
+              <li class="prod-card">
+                <a href="pale-ale-malt/" class="prod-card__content-link">
+                  <div class="prod-card__img-wrap">
+                    <img src="../../../assets/product-images/malt/pale-ale.webp" alt="Pale Ale Malt — pale golden grain" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                  </div>
+                  <div class="prod-card__body">
+                    <div class="prod-card__heading">
+                      <h2 class="prod-card__name">Pale Ale Malt</h2>
+                      <p class="prod-card__meta">4.8–5.4 EBC</p>
+                    </div>
+                    <p class="prod-card__desc">Versatile base malt with biscuit and caramel notes, adding body and fullness.</p>
+                  </div>
+                </a>
+                <div class="prod-card__footer">
+                  <p class="prod-card__price">&pound;25.00 – &pound;50.00</p>
+                  <div class="prod-card__actions">
+                    <a href="pale-ale-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+                    <button type="button" class="btn btn--green prod-card__action">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+              <!-- 3: Wheat Malt -->
+              <li class="prod-card">
+                <a href="wheat-malt/" class="prod-card__content-link">
+                  <div class="prod-card__img-wrap">
+                    <img src="../../../assets/product-images/malt/wheat.webp" alt="Wheat Malt" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                  </div>
+                  <div class="prod-card__body">
+                    <div class="prod-card__heading">
+                      <h2 class="prod-card__name">Wheat Malt</h2>
+                      <p class="prod-card__meta">4.0–5.0 EBC</p>
+                    </div>
+                    <p class="prod-card__desc">Enhances mouthfeel and head retention, essential for wheat beers and adjunct use.</p>
+                  </div>
+                </a>
+                <div class="prod-card__footer">
+                  <p class="prod-card__price">&pound;25.00 – &pound;50.00</p>
+                  <div class="prod-card__actions">
+                    <a href="wheat-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+                    <button type="button" class="btn btn--green prod-card__action">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+              <!-- 4: Vienna Malt -->
+              <li class="prod-card">
+                <a href="vienna-malt/" class="prod-card__content-link">
+                  <div class="prod-card__img-wrap">
+                    <img src="../../../assets/product-images/malt/vienna.webp" alt="Vienna Malt — light amber grain" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                  </div>
+                  <div class="prod-card__body">
+                    <div class="prod-card__heading">
+                      <h2 class="prod-card__name">Vienna Malt</h2>
+                      <p class="prod-card__meta">8–12 EBC</p>
+                    </div>
+                    <p class="prod-card__desc">Lightly kilned malt adding golden colour and soft biscuit, bread and caramel notes.</p>
+                  </div>
+                </a>
+                <div class="prod-card__footer">
+                  <p class="prod-card__price">&pound;25.00 – &pound;50.00</p>
+                  <div class="prod-card__actions">
+                    <a href="vienna-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+                    <button type="button" class="btn btn--green prod-card__action">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+              <!-- 5: Light Munich Malt -->
+              <li class="prod-card">
+                <a href="light-munich-malt/" class="prod-card__content-link">
+                  <div class="prod-card__img-wrap">
+                    <img src="../../../assets/product-images/malt/light-munich.webp" alt="Light Munich Malt" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                  </div>
+                  <div class="prod-card__body">
+                    <div class="prod-card__heading">
+                      <h2 class="prod-card__name">Light Munich Malt</h2>
+                      <p class="prod-card__meta">12–18 EBC</p>
+                    </div>
+                    <p class="prod-card__desc">Malty, bread-like sweetness with added depth, ideal for richer lagers and ales.</p>
+                  </div>
+                </a>
+                <div class="prod-card__footer">
+                  <p class="prod-card__price">&pound;25.00 – &pound;50.00</p>
+                  <div class="prod-card__actions">
+                    <a href="light-munich-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+                    <button type="button" class="btn btn--green prod-card__action">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+              <!-- 6: Dark Munich Malt -->
+              <li class="prod-card">
+                <a href="dark-munich-malt/" class="prod-card__content-link">
+                  <div class="prod-card__img-wrap">
+                    <img src="../../../assets/product-images/malt/dark-munich.webp" alt="Dark Munich Malt" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                  </div>
+                  <div class="prod-card__body">
+                    <div class="prod-card__heading">
+                      <h2 class="prod-card__name">Dark Munich Malt</h2>
+                      <p class="prod-card__meta">18–25 EBC</p>
+                    </div>
+                    <p class="prod-card__desc">Deep malty backbone with nutty notes, enhancing colour and intensity.</p>
+                  </div>
+                </a>
+                <div class="prod-card__footer">
+                  <p class="prod-card__price">&pound;25.00 – &pound;50.00</p>
+                  <div class="prod-card__actions">
+                    <a href="dark-munich-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+                    <button type="button" class="btn btn--green prod-card__action">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+              <!-- 7: Melanoidin Malt -->
+              <li class="prod-card">
+                <a href="melanoidin-malt/" class="prod-card__content-link">
+                  <div class="prod-card__img-wrap">
+                    <img src="../../../assets/product-images/malt/melanoidin.webp" alt="Melanoidin Malt" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                  </div>
+                  <div class="prod-card__body">
+                    <div class="prod-card__heading">
+                      <h2 class="prod-card__name">Melanoidin Malt</h2>
+                      <p class="prod-card__meta">70–90 EBC</p>
+                    </div>
+                    <p class="prod-card__desc">Intensely malty, rich aroma, boosts body, colour stability and reddish hues.</p>
+                  </div>
+                </a>
+                <div class="prod-card__footer">
+                  <p class="prod-card__price">&pound;25.00 – &pound;50.00</p>
+                  <div class="prod-card__actions">
+                    <a href="melanoidin-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+                    <button type="button" class="btn btn--green prod-card__action">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+              <!-- 8: Light Crystal Malt -->
+              <li class="prod-card">
+                <a href="light-crystal-malt/" class="prod-card__content-link">
+                  <div class="prod-card__img-wrap">
+                    <img src="../../../assets/product-images/malt/light-crystal.webp" alt="Light Crystal Malt — amber grain" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                  </div>
+                  <div class="prod-card__body">
+                    <div class="prod-card__heading">
+                      <h2 class="prod-card__name">Light Crystal Malt</h2>
+                      <p class="prod-card__meta">60–80 EBC</p>
+                    </div>
+                    <p class="prod-card__desc">Caramel and toffee notes, improves body, colour and head retention.</p>
+                  </div>
+                </a>
+                <div class="prod-card__footer">
+                  <p class="prod-card__price">&pound;25.00 – &pound;50.00</p>
+                  <div class="prod-card__actions">
+                    <a href="light-crystal-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+                    <button type="button" class="btn btn--green prod-card__action">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+              <!-- 9: Medium Crystal Malt -->
+              <li class="prod-card">
+                <a href="medium-crystal-malt/" class="prod-card__content-link">
+                  <div class="prod-card__img-wrap">
+                    <img src="../../../assets/product-images/malt/medium-crystal.webp" alt="Medium Crystal Malt" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                  </div>
+                  <div class="prod-card__body">
+                    <div class="prod-card__heading">
+                      <h2 class="prod-card__name">Medium Crystal Malt</h2>
+                      <p class="prod-card__meta">100–150 EBC</p>
+                    </div>
+                    <p class="prod-card__desc">Balanced caramel malt with almond and bread crust notes, smooth body.</p>
+                  </div>
+                </a>
+                <div class="prod-card__footer">
+                  <p class="prod-card__price">&pound;25.00 – &pound;50.00</p>
+                  <div class="prod-card__actions">
+                    <a href="medium-crystal-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+                    <button type="button" class="btn btn--green prod-card__action">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+              <!-- 10: Dark Crystal Malt -->
+              <li class="prod-card">
+                <a href="dark-crystal-malt/" class="prod-card__content-link">
+                  <div class="prod-card__img-wrap">
+                    <img src="../../../assets/product-images/malt/dark-crystal.webp" alt="Dark Crystal Malt — deep amber grain" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                  </div>
+                  <div class="prod-card__body">
+                    <div class="prod-card__heading">
+                      <h2 class="prod-card__name">Dark Crystal Malt</h2>
+                      <p class="prod-card__meta">150–200 EBC</p>
+                    </div>
+                    <p class="prod-card__desc">Bold caramel and biscuit flavours, deep colour, enhances body and head retention.</p>
+                  </div>
+                </a>
+                <div class="prod-card__footer">
+                  <p class="prod-card__price">&pound;25.00 – &pound;50.00</p>
+                  <div class="prod-card__actions">
+                    <a href="dark-crystal-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+                    <button type="button" class="btn btn--green prod-card__action">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+              <!-- 11: Chocolate Malt -->
+              <li class="prod-card">
+                <a href="chocolate-malt/" class="prod-card__content-link">
+                  <div class="prod-card__img-wrap">
+                    <img src="../../../assets/product-images/malt/chocolate.webp" alt="Chocolate Malt — dark roasted grain" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                  </div>
+                  <div class="prod-card__body">
+                    <div class="prod-card__heading">
+                      <h2 class="prod-card__name">Chocolate Malt</h2>
+                      <p class="prod-card__meta">800–1000 EBC</p>
+                    </div>
+                    <p class="prod-card__desc">Roasted malt delivering chocolate and coffee notes, adds colour and complexity.</p>
+                  </div>
+                </a>
+                <div class="prod-card__footer">
+                  <p class="prod-card__price">&pound;25.00 – &pound;50.00</p>
+                  <div class="prod-card__actions">
+                    <a href="chocolate-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+                    <button type="button" class="btn btn--green prod-card__action">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+              <!-- 12: Black Malt -->
+              <li class="prod-card">
+                <a href="black-malt/" class="prod-card__content-link">
+                  <div class="prod-card__img-wrap">
+                    <img src="../../../assets/product-images/malt/black.webp" alt="Black Malt — very dark roasted grain" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                  </div>
+                  <div class="prod-card__body">
+                    <div class="prod-card__heading">
+                      <h2 class="prod-card__name">Black Malt</h2>
+                      <p class="prod-card__meta">1000–1200 EBC</p>
+                    </div>
+                    <p class="prod-card__desc">Highly roasted malt for intense colour, subtle to sharp roasted character.</p>
+                  </div>
+                </a>
+                <div class="prod-card__footer">
+                  <p class="prod-card__price">&pound;25.00 – &pound;50.00</p>
+                  <div class="prod-card__actions">
+                    <a href="black-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+                    <button type="button" class="btn btn--green prod-card__action">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+              <!-- 13: Roasted Barley -->
+              <li class="prod-card">
+                <a href="roasted-barley/" class="prod-card__content-link">
+                  <div class="prod-card__img-wrap">
+                    <img src="../../../assets/product-images/malt/black.webp" alt="Roasted Barley — very dark grain" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                  </div>
+                  <div class="prod-card__body">
+                    <div class="prod-card__heading">
+                      <h2 class="prod-card__name">Roasted Barley</h2>
+                      <p class="prod-card__meta">1200–1400 EBC</p>
+                    </div>
+                    <p class="prod-card__desc">Unmalted roasted barley delivering dry roast, coffee bitterness and deep colour.</p>
+                  </div>
+                </a>
+                <div class="prod-card__footer">
+                  <p class="prod-card__price">&pound;25.00 – &pound;50.00</p>
+                  <div class="prod-card__actions">
+                    <a href="roasted-barley/" class="btn btn--ghost prod-card__action">View Product</a>
+                    <button type="button" class="btn btn--green prod-card__action">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="site-footer"></footer>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart — SKY AGRO</title>
+  <meta name="description" content="Review your SKY AGRO trade cart before requesting a quote or continuing to browse products.">
+
+  <link rel="preload" href="assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <script src="js/header.js" defer></script>
+  <script src="js/footer.js" defer></script>
+</head>
+<body class="cart-page">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header class="site-header"></header>
+
+  <main id="main-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <div class="container">
+        <ol class="breadcrumb__list">
+          <li class="breadcrumb__item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb__item" aria-current="page">Cart</li>
+        </ol>
+      </div>
+    </nav>
+
+    <section class="cart-shell" aria-labelledby="cart-heading">
+      <div class="container cart-shell__grid">
+        <div class="cart-panel cart-empty">
+          <div class="cart-empty__icon" aria-hidden="true">
+            <svg viewBox="0 0 100 125" focusable="false">
+              <path fill="currentColor" d="M95.4 23.7C93.6 21.4 90.8 20 87.9 20H27l-1.9-7.4c-1.1-4.3-4.9-7.3-9.3-7.3H5.6a3.1 3.1 0 1 0 0 6.2h10.2c1.5 0 2.8 1 3.2 2.5l12.2 48.6c1.1 4.3 4.9 7.3 9.3 7.3h39.9c4.4 0 8.3-3 9.3-7.3l7.5-30.8c.7-2.8.1-5.8-1.8-8.1Zm-4.3 6.7-7.5 30.8c-.4 1.5-1.7 2.5-3.2 2.5H40.5c-1.5 0-2.8-1-3.2-2.5l-8.7-34.9h59.3c1 0 2 .5 2.6 1.3.6.8.9 1.8.6 2.8Z"/>
+              <path fill="currentColor" d="M42.6 73.9c-5.7 0-10.4 4.7-10.4 10.4s4.7 10.4 10.4 10.4S53 90 53 84.3s-4.7-10.4-10.4-10.4Zm34.4 0c-5.7 0-10.4 4.7-10.4 10.4S71.3 94.7 77 94.7s10.4-4.7 10.4-10.4S82.8 73.9 77 73.9Z"/>
+            </svg>
+          </div>
+
+          <div class="cart-empty__copy">
+            <h2 id="cart-heading">Your cart is currently empty</h2>
+            <p>Add products to your cart as you browse, or contact us directly if you already know what you need. For trade orders, our team can confirm pack sizes, lead times and delivery before checkout is enabled.</p>
+          </div>
+
+          <div class="cart-empty__actions">
+            <a href="products/brewing-ingredients/" class="btn btn--green">Browse Products</a>
+            <a href="contact.html" class="btn btn--ghost">Request a Quote</a>
+          </div>
+        </div>
+
+        <aside class="cart-summary" aria-labelledby="cart-summary-heading">
+          <div class="cart-summary__card">
+            <p class="eyebrow">Order Summary</p>
+            <h2 id="cart-summary-heading">No Items Added</h2>
+
+            <dl class="cart-summary__list">
+              <div>
+                <dt>Products</dt>
+                <dd>0</dd>
+              </div>
+              <div>
+                <dt>Subtotal</dt>
+                <dd>&pound;0.00</dd>
+              </div>
+              <div>
+                <dt>Delivery</dt>
+                <dd>Quoted</dd>
+              </div>
+            </dl>
+
+            <p class="cart-summary__note">Trade pricing, delivery and pallet quantities are confirmed by the SKY AGRO team before order completion.</p>
+            <a href="contact.html" class="btn btn--gold cart-summary__cta">Go to Checkout</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"></footer>
+</body>
+</html>

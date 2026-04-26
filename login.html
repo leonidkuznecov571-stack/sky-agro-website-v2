@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In | SKY AGRO</title>
+  <meta name="description" content="Log in to your SKY AGRO trade account to access order history, pricing, and account details.">
+
+  <link rel="preload" href="assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <script src="js/header.js" defer></script>
+  <script src="js/footer.js" defer></script>
+
+</head>
+<body class="page-login">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header class="site-header"></header>
+
+  <main id="main-content">
+
+    <div class="auth-form-panel">
+      <div class="auth-form-wrap">
+
+        <h2 class="auth-form-wrap__heading">Welcome back</h2>
+        <p class="auth-form-wrap__sub">Log in to your SKY AGRO account.</p>
+
+        <form action="#" method="post" id="login-form" novalidate>
+
+          <div class="field" id="field-email">
+            <label for="email">
+              Email address
+              <span class="field__required" aria-label="required">*</span>
+            </label>
+            <div class="field__input-wrap">
+              <input type="email" id="email" name="email" autocomplete="username" required aria-required="true" aria-describedby="email-error" placeholder="you@brewery.com">
+            </div>
+            <span class="field__error" id="email-error" role="alert"></span>
+          </div>
+
+          <div class="field field--password" id="field-password">
+            <label for="password">
+              Password
+              <span class="field__required" aria-label="required">*</span>
+            </label>
+            <div class="field__input-wrap">
+              <input type="password" id="password" name="password" autocomplete="current-password" required aria-required="true" aria-describedby="password-error">
+              <button type="button" class="field__toggle" id="toggle-password" aria-label="Show password" aria-pressed="false">
+                <svg id="icon-eye-show" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M1 10s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                  <circle cx="10" cy="10" r="2.5" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+                <svg id="icon-eye-hide" viewBox="0 0 20 20" fill="none" aria-hidden="true" style="display:none">
+                  <path d="M3 3l14 14M8.5 8.6A2.5 2.5 0 0012.4 12.5M6.5 5.5C4.4 6.8 2.6 8.8 1 10c1.5 2 5 6 9 6a8.6 8.6 0 004.5-1.5M10 4c4 0 7.5 4 9 6a13 13 0 01-2 2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </button>
+            </div>
+            <span class="field__error" id="password-error" role="alert"></span>
+          </div>
+
+          <!-- TODO: replace with real Cloudflare Turnstile widget -->
+          <div class="captcha-placeholder" aria-label="Security check" role="group">
+            <div class="captcha-placeholder__check">
+              <div class="captcha-placeholder__box" aria-hidden="true"></div>
+              I'm not a robot
+            </div>
+            <div class="captcha-placeholder__brand" aria-hidden="true">
+              <svg viewBox="0 0 40 24" fill="none">
+                <rect x="8" y="14" width="24" height="8" rx="2" fill="#F48120"/>
+                <ellipse cx="20" cy="14" rx="10" ry="8" fill="#F6821F"/>
+                <ellipse cx="20" cy="12" rx="8" ry="6" fill="#FBAD41"/>
+              </svg>
+              <span class="captcha-placeholder__brand-text">Cloudflare</span>
+            </div>
+          </div>
+
+          <div class="checkbox-row">
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">Remember me</label>
+          </div>
+
+          <button type="submit" class="auth-submit">Log in</button>
+
+          <div class="auth-footer-links">
+            <a href="/reset-password">Lost your password?</a>
+            <a href="signup.html" class="auth-footer-links__cta">
+              Create an account
+              <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer"></footer>
+
+  <script>
+    const toggleBtn = document.getElementById('toggle-password');
+    const pwInput   = document.getElementById('password');
+    const eyeShow   = document.getElementById('icon-eye-show');
+    const eyeHide   = document.getElementById('icon-eye-hide');
+
+    toggleBtn.addEventListener('click', () => {
+      const isHidden = pwInput.type === 'password';
+      pwInput.type   = isHidden ? 'text' : 'password';
+      eyeShow.style.display = isHidden ? 'none' : '';
+      eyeHide.style.display = isHidden ? ''     : 'none';
+      toggleBtn.setAttribute('aria-label',   isHidden ? 'Hide password' : 'Show password');
+      toggleBtn.setAttribute('aria-pressed', String(isHidden));
+    });
+
+    // TODO: wire to backend
+    const form  = document.getElementById('login-form');
+    const email = document.getElementById('email');
+    const pw    = document.getElementById('password');
+
+    function showError(fieldId, errorId, msg) {
+      document.getElementById(fieldId).querySelector('input').classList.add('is-error');
+      const err = document.getElementById(errorId);
+      err.textContent = msg;
+      err.classList.add('is-visible');
+    }
+
+    function clearError(input, errorId) {
+      input.classList.remove('is-error');
+      const err = document.getElementById(errorId);
+      err.textContent = '';
+      err.classList.remove('is-visible');
+    }
+
+    email.addEventListener('input', () => clearError(email, 'email-error'));
+    pw.addEventListener('input',    () => clearError(pw, 'password-error'));
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      let valid = true;
+
+      if (!email.value.trim()) {
+        showError('field-email', 'email-error', 'Please enter your email address.');
+        valid = false;
+      } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
+        showError('field-email', 'email-error', 'Please enter a valid email address.');
+        valid = false;
+      }
+
+      if (!pw.value) {
+        showError('field-password', 'password-error', 'Please enter your password.');
+        valid = false;
+      }
+
+      if (valid) {
+        // TODO: wire to backend
+      }
+    });
+  </script>
+
+</body>
+</html>

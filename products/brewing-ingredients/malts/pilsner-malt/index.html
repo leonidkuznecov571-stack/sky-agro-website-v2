@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pilsner Malt — SKY MALT</title>
+  <meta name="description" content="Crisp, clean base malt delivering a soft, biscuity character. Suitable for up to 100% of the grist. Available in 25 kg bags and 500 kg big bags.">
+
+  <link rel="preload" href="../../../../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+
+  <link rel="stylesheet" href="../../../../css/reset.css">
+  <link rel="stylesheet" href="../../../../css/tokens.css">
+  <link rel="stylesheet" href="../../../../css/base.css">
+  <link rel="stylesheet" href="../../../../css/layout.css">
+  <link rel="stylesheet" href="../../../../css/components.css">
+  <link rel="stylesheet" href="../../../../css/pages.css">
+
+  <script src="../../../../js/header.js" defer></script>
+  <script src="../../../../js/footer.js" defer></script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header class="site-header"></header>
+
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <div class="container">
+        <ol class="breadcrumb__list">
+          <li class="breadcrumb__item"><a href="../../../../index.html">Home</a></li>
+          <li class="breadcrumb__item"><a href="../../../brewing-ingredients/">Brewing Ingredients</a></li>
+          <li class="breadcrumb__item"><a href="../">Malts</a></li>
+          <li class="breadcrumb__item" aria-current="page">Pilsner Malt</li>
+        </ol>
+      </div>
+    </nav>
+
+    <!-- Product hero: two-column -->
+    <section class="product-page" aria-label="Product details">
+      <div class="container product-page__layout">
+
+        <!-- Left: image gallery -->
+        <div class="product-gallery">
+          <div class="product-gallery__main">
+            <img
+              id="gallery-main-img"
+              src="../../../../assets/product-images/malt/pilsner.webp"
+              alt="Pilsner Malt grain"
+              width="600"
+              height="600"
+              class="product-gallery__main-img"
+            >
+          </div>
+          <div class="product-gallery__thumbs" role="list" aria-label="Product images">
+            <button class="product-gallery__thumb is-active" aria-label="View image 1" data-src="../../../../assets/product-images/malt/pilsner.webp">
+              <img src="../../../../assets/product-images/malt/pilsner.webp" alt="" width="80" height="80">
+            </button>
+            <button class="product-gallery__thumb" aria-label="View image 2" data-src="../../../../assets/product-images/malt/pilsner-25kg.webp">
+              <img src="../../../../assets/product-images/malt/pilsner-25kg.webp" alt="" width="80" height="80">
+            </button>
+          </div>
+        </div>
+
+        <!-- Right: product info -->
+        <div class="product-info">
+
+          <p class="product-info__eyebrow eyebrow">Base Malt</p>
+          <h1 class="product-info__title">Pilsner Malt</h1>
+          <p class="product-info__colour">Colour: 3.5–4.2 EBC</p>
+          <p class="product-info__colour">Best for: Pilsner, Light Lager, Helles</p>
+
+          <p class="product-info__summary">
+            Pilsner Malt is ideal for lagers and pilsners, delivering a clean, neutral flavour profile with high extract and strong enzymatic activity for efficient conversion and consistent brewhouse performance.
+          </p>
+
+          <div class="product-info__divider" aria-hidden="true"></div>
+
+          <!-- Format selection -->
+          <fieldset class="packaging-options">
+            <legend class="packaging-options__legend">Format</legend>
+            <div class="packaging-options__grid">
+
+              <label class="packaging-option">
+                <input type="radio" name="format" value="bag" checked>
+                <span class="packaging-option__card">
+                  <span class="packaging-option__size">25 kg bag</span>
+                </span>
+              </label>
+
+              <label class="packaging-option">
+                <input type="radio" name="format" value="pallet">
+                <span class="packaging-option__card">
+                  <span class="packaging-option__size">1000 kg pallet</span>
+                </span>
+              </label>
+
+            </div>
+          </fieldset>
+
+          <!-- Milling -->
+          <fieldset class="packaging-options" id="milling-row">
+            <legend class="packaging-options__legend">Milling</legend>
+            <div class="packaging-options__grid">
+              <label class="packaging-option">
+                <input type="radio" name="milling" value="milled" checked>
+                <span class="packaging-option__card">
+                  <span class="packaging-option__size">Milled</span>
+                </span>
+              </label>
+              <label class="packaging-option">
+                <input type="radio" name="milling" value="whole">
+                <span class="packaging-option__card">
+                  <span class="packaging-option__size">Whole</span>
+                </span>
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- Price + quantity -->
+          <div class="product-info__purchase">
+            <div class="product-info__price-block">
+              <span class="product-info__price" id="selected-price" aria-live="polite">£22.50</span>
+              <span class="product-info__price-unit" id="selected-unit">/ bag</span>
+            </div>
+            <div class="product-info__qty" id="qty-block">
+              <label for="qty" class="product-info__qty-label">Qty</label>
+              <div class="qty-control">
+                <button class="qty-control__btn" aria-label="Decrease quantity" data-qty="-1">−</button>
+                <input type="number" id="qty" name="qty" class="qty-control__input" value="1" min="1" max="99" aria-label="Quantity">
+                <button class="qty-control__btn" aria-label="Increase quantity" data-qty="1">+</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="product-info__actions">
+            <div class="product-info__action-row">
+              <button type="button" class="btn btn--green product-info__add-to-cart" id="add-to-cart-btn">
+                Add to cart
+                <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7 20.5a1.75 1.75 0 1 0 0-3.5 1.75 1.75 0 0 0 0 3.5Zm10 0a1.75 1.75 0 1 0 0-3.5 1.75 1.75 0 0 0 0 3.5ZM3.2 4a1 1 0 0 0 0 2h1.1l2.1 8.3A2.25 2.25 0 0 0 8.6 16h8.7a2.25 2.25 0 0 0 2.16-1.63l1.5-5.25A1.5 1.5 0 0 0 19.52 7H6.65l-.38-1.47A2 2 0 0 0 4.34 4H3.2Z"/></svg>
+              </button>
+              <a href="#" class="btn btn--gold product-info__checkout">
+                Continue to Checkout
+                <svg class="btn__icon" viewBox="0 0 100 125" aria-hidden="true" focusable="false"><path fill="currentColor" d="M97.64 55.753 64.72 22.833a8.06 8.06 0 1 0-11.4 11.39l19.46 19.43H8.06a8.06 8.06 0 0 0 0 16.12H72.6L53.32 89.084a8.06 8.06 0 0 0 11.4 11.39L97.64 67.553A8 8 0 0 0 100 61.853a1.27 1.27 0 0 0 0-.2 1.41 1.41 0 0 0 0-.2 8.07 8.07 0 0 0-2.36-5.7Z"/></svg>
+              </a>
+            </div>
+            <a href="#" class="product-info__download-link">
+              Download Specifications
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v13M7 11l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 20h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Product detail tabs -->
+    <section class="product-tabs-section">
+      <div class="container">
+
+        <div class="product-tabs">
+          <div class="product-tabs__bar" role="tablist" aria-label="Product information">
+            <button
+              role="tab"
+              id="tab-description"
+              aria-controls="panel-description"
+              aria-selected="true"
+              tabindex="0"
+              class="product-tabs__tab"
+            >Description</button>
+            <button
+              role="tab"
+              id="tab-specs-iob"
+              aria-controls="panel-specs-iob"
+              aria-selected="false"
+              tabindex="-1"
+              class="product-tabs__tab"
+            >Specifications (IoB)</button>
+            <button
+              role="tab"
+              id="tab-specs-ebc"
+              aria-controls="panel-specs-ebc"
+              aria-selected="false"
+              tabindex="-1"
+              class="product-tabs__tab"
+            >Specifications (EBC)</button>
+            <button
+              role="tab"
+              id="tab-additional"
+              aria-controls="panel-additional"
+              aria-selected="false"
+              tabindex="-1"
+              class="product-tabs__tab"
+            >Additional info</button>
+          </div>
+
+          <!-- Description -->
+          <div role="tabpanel" id="panel-description" aria-labelledby="tab-description" class="product-tabs__panel">
+            <div class="product-tabs__content prose">
+              <p>
+                Produced from premium two-row spring barley and lightly kilned, this malt provides a pale colour and a crisp, refined flavour profile. Its high enzymatic activity ensures reliable conversion across both single-step infusion and decoction mashing regimes.
+              </p>
+              <p>
+                Designed for consistency at scale, it offers strong extract efficiency and stable brewhouse performance. It performs effectively as a 100% base for lagers and pilsners, or as a neutral foundation in more complex grists where clarity and drinkability are critical.
+              </p>
+            </div>
+          </div>
+
+          <!-- Specifications (IoB) -->
+          <div role="tabpanel" id="panel-specs-iob" aria-labelledby="tab-specs-iob" class="product-tabs__panel" hidden>
+            <div class="product-tabs__content">
+              <table class="spec-table">
+                <caption class="sr-only">Pilsner Malt — IoB specification</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Parameter</th>
+                    <th scope="col">Typical value</th>
+                    <th scope="col">Unit</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Moisture</td>
+                    <td>≤ 4.5</td>
+                    <td>%</td>
+                  </tr>
+                  <tr>
+                    <td>Extract</td>
+                    <td>≥ 310</td>
+                    <td>°L/kg</td>
+                  </tr>
+                  <tr>
+                    <td>Colour</td>
+                    <td>3.2–3.8</td>
+                    <td>EBC</td>
+                  </tr>
+                  <tr>
+                    <td>Total nitrogen</td>
+                    <td>1.40–1.75</td>
+                    <td>%</td>
+                  </tr>
+                  <tr>
+                    <td>Soluble nitrogen ratio (SNR)</td>
+                    <td>38–42</td>
+                    <td>%</td>
+                  </tr>
+                  <tr>
+                    <td>Diastatic power</td>
+                    <td>≥ 78</td>
+                    <td>°L</td>
+                  </tr>
+                  <tr>
+                    <td>Free amino nitrogen (FAN)</td>
+                    <td>≥ 115</td>
+                    <td>mg/L</td>
+                  </tr>
+                  <tr>
+                    <td>Beta-glucans</td>
+                    <td>≤ 90</td>
+                    <td>mg/L</td>
+                  </tr>
+                  <tr>
+                    <td>Viscosity</td>
+                    <td>≤ 1.55</td>
+                    <td>mPa·s</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="spec-table__note">Values represent typical analysis. Full CoA available on request or via the specifications download above.</p>
+            </div>
+          </div>
+
+          <!-- Specifications (EBC) -->
+          <div role="tabpanel" id="panel-specs-ebc" aria-labelledby="tab-specs-ebc" class="product-tabs__panel" hidden>
+            <div class="product-tabs__content">
+              <table class="spec-table">
+                <caption class="sr-only">Pilsner Malt — EBC specification</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Parameter</th>
+                    <th scope="col">Typical value</th>
+                    <th scope="col">Unit</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Moisture</td>
+                    <td>≤ 4.5</td>
+                    <td>%</td>
+                  </tr>
+                  <tr>
+                    <td>Extract</td>
+                    <td>≥ 81.0</td>
+                    <td>%</td>
+                  </tr>
+                  <tr>
+                    <td>Fine-coarse difference</td>
+                    <td>≤ 1.5</td>
+                    <td>%</td>
+                  </tr>
+                  <tr>
+                    <td>Colour</td>
+                    <td>3.5–4.2</td>
+                    <td>EBC</td>
+                  </tr>
+                  <tr>
+                    <td>Total Protein</td>
+                    <td>9.5–11.0</td>
+                    <td>%</td>
+                  </tr>
+                  <tr>
+                    <td>Kolbach Index</td>
+                    <td>38–42</td>
+                    <td>%</td>
+                  </tr>
+                  <tr>
+                    <td>Diastatic power</td>
+                    <td>≥ 260</td>
+                    <td>WK</td>
+                  </tr>
+                  <tr>
+                    <td>Free amino nitrogen (FAN)</td>
+                    <td>≥ 130</td>
+                    <td>mg / 100 g</td>
+                  </tr>
+                  <tr>
+                    <td>Beta-glucans</td>
+                    <td>≤ 200</td>
+                    <td>mg / l</td>
+                  </tr>
+                  <tr>
+                    <td>Viscosity</td>
+                    <td>≤ 1.55</td>
+                    <td>mPa·s</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="spec-table__note">Values represent typical analysis. Full CoA available on request or via the specifications download above.</p>
+            </div>
+          </div>
+
+          <!-- Additional info -->
+          <div role="tabpanel" id="panel-additional" aria-labelledby="tab-additional" class="product-tabs__panel" hidden>
+            <div class="product-tabs__content prose">
+              <table class="info-table">
+                <tbody>
+                  <tr>
+                    <th scope="row">Storage</th>
+                    <td>Store in a cool, dry place, away from strong odours. Recommended maximum storage temperature: 20 °C.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Shelf life</th>
+                    <td>12 months from date of manufacture when stored correctly.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Allergens</th>
+                    <td>Contains gluten (barley).</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="related-products" aria-labelledby="related-products-title">
+      <div class="container">
+        <div class="related-products__header">
+          <div>
+            <p class="eyebrow">Related malts</p>
+            <h2 id="related-products-title" class="related-products__title">Related Products</h2>
+          </div>
+          <div class="related-products__controls" aria-label="Related products slider controls">
+            <button type="button" class="related-products__control" aria-label="Previous related products" data-related-prev>
+              <span aria-hidden="true">←</span>
+            </button>
+            <button type="button" class="related-products__control" aria-label="Next related products" data-related-next>
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </div>
+
+        <ul class="related-products__track" role="list" data-related-track>
+
+          <li class="prod-card">
+            <a href="../pale-ale-malt/" class="prod-card__content-link">
+              <div class="prod-card__img-wrap">
+                <img src="../../../../assets/product-images/malt/pale-ale.webp" alt="Pale Ale Malt — pale golden grain" class="prod-card__img" width="1100" height="1100" loading="lazy">
+              </div>
+              <div class="prod-card__body">
+                <div class="prod-card__heading">
+                  <h3 class="prod-card__name">Pale Ale Malt</h3>
+                  <p class="prod-card__meta">4.8–5.4 EBC</p>
+                </div>
+              </div>
+            </a>
+            <div class="prod-card__footer">
+              <p class="prod-card__price">&pound;25.00 – &pound;50.00</p>
+              <div class="prod-card__actions">
+                <a href="../pale-ale-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="prod-card">
+            <a href="../wheat-malt/" class="prod-card__content-link">
+              <div class="prod-card__img-wrap">
+                <img src="../../../../assets/product-images/malt/wheat.webp" alt="Wheat Malt" class="prod-card__img" width="1100" height="1100" loading="lazy">
+              </div>
+              <div class="prod-card__body">
+                <div class="prod-card__heading">
+                  <h3 class="prod-card__name">Wheat Malt</h3>
+                  <p class="prod-card__meta">4.0–5.0 EBC</p>
+                </div>
+              </div>
+            </a>
+            <div class="prod-card__footer">
+              <p class="prod-card__price">&pound;25.00 – &pound;50.00</p>
+              <div class="prod-card__actions">
+                <a href="../wheat-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="prod-card">
+            <a href="../vienna-malt/" class="prod-card__content-link">
+              <div class="prod-card__img-wrap">
+                <img src="../../../../assets/product-images/malt/vienna.webp" alt="Vienna Malt — light amber grain" class="prod-card__img" width="1100" height="1100" loading="lazy">
+              </div>
+              <div class="prod-card__body">
+                <div class="prod-card__heading">
+                  <h3 class="prod-card__name">Vienna Malt</h3>
+                  <p class="prod-card__meta">8–12 EBC</p>
+                </div>
+              </div>
+            </a>
+            <div class="prod-card__footer">
+              <p class="prod-card__price">&pound;25.00 – &pound;50.00</p>
+              <div class="prod-card__actions">
+                <a href="../vienna-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="prod-card">
+            <a href="../light-munich-malt/" class="prod-card__content-link">
+              <div class="prod-card__img-wrap">
+                <img src="../../../../assets/product-images/malt/light-munich.webp" alt="Light Munich Malt" class="prod-card__img" width="1100" height="1100" loading="lazy">
+              </div>
+              <div class="prod-card__body">
+                <div class="prod-card__heading">
+                  <h3 class="prod-card__name">Light Munich Malt</h3>
+                  <p class="prod-card__meta">12–18 EBC</p>
+                </div>
+              </div>
+            </a>
+            <div class="prod-card__footer">
+              <p class="prod-card__price">&pound;25.00 – &pound;50.00</p>
+              <div class="prod-card__actions">
+                <a href="../light-munich-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="prod-card">
+            <a href="../dark-munich-malt/" class="prod-card__content-link">
+              <div class="prod-card__img-wrap">
+                <img src="../../../../assets/product-images/malt/dark-munich.webp" alt="Dark Munich Malt" class="prod-card__img" width="1100" height="1100" loading="lazy">
+              </div>
+              <div class="prod-card__body">
+                <div class="prod-card__heading">
+                  <h3 class="prod-card__name">Dark Munich Malt</h3>
+                  <p class="prod-card__meta">18–25 EBC</p>
+                </div>
+              </div>
+            </a>
+            <div class="prod-card__footer">
+              <p class="prod-card__price">&pound;25.00 – &pound;50.00</p>
+              <div class="prod-card__actions">
+                <a href="../dark-munich-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="prod-card">
+            <a href="../melanoidin-malt/" class="prod-card__content-link">
+              <div class="prod-card__img-wrap">
+                <img src="../../../../assets/product-images/malt/melanoidin.webp" alt="Melanoidin Malt" class="prod-card__img" width="1100" height="1100" loading="lazy">
+              </div>
+              <div class="prod-card__body">
+                <div class="prod-card__heading">
+                  <h3 class="prod-card__name">Melanoidin Malt</h3>
+                  <p class="prod-card__meta">70–90 EBC</p>
+                </div>
+              </div>
+            </a>
+            <div class="prod-card__footer">
+              <p class="prod-card__price">&pound;25.00 – &pound;50.00</p>
+              <div class="prod-card__actions">
+                <a href="../melanoidin-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="prod-card">
+            <a href="../light-crystal-malt/" class="prod-card__content-link">
+              <div class="prod-card__img-wrap">
+                <img src="../../../../assets/product-images/malt/light-crystal.webp" alt="Light Crystal Malt — amber grain" class="prod-card__img" width="1100" height="1100" loading="lazy">
+              </div>
+              <div class="prod-card__body">
+                <div class="prod-card__heading">
+                  <h3 class="prod-card__name">Light Crystal Malt</h3>
+                  <p class="prod-card__meta">60–80 EBC</p>
+                </div>
+              </div>
+            </a>
+            <div class="prod-card__footer">
+              <p class="prod-card__price">&pound;25.00 – &pound;50.00</p>
+              <div class="prod-card__actions">
+                <a href="../light-crystal-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="prod-card">
+            <a href="../medium-crystal-malt/" class="prod-card__content-link">
+              <div class="prod-card__img-wrap">
+                <img src="../../../../assets/product-images/malt/medium-crystal.webp" alt="Medium Crystal Malt" class="prod-card__img" width="1100" height="1100" loading="lazy">
+              </div>
+              <div class="prod-card__body">
+                <div class="prod-card__heading">
+                  <h3 class="prod-card__name">Medium Crystal Malt</h3>
+                  <p class="prod-card__meta">100–150 EBC</p>
+                </div>
+              </div>
+            </a>
+            <div class="prod-card__footer">
+              <p class="prod-card__price">&pound;25.00 – &pound;50.00</p>
+              <div class="prod-card__actions">
+                <a href="../medium-crystal-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="prod-card">
+            <a href="../dark-crystal-malt/" class="prod-card__content-link">
+              <div class="prod-card__img-wrap">
+                <img src="../../../../assets/product-images/malt/dark-crystal.webp" alt="Dark Crystal Malt — deep amber grain" class="prod-card__img" width="1100" height="1100" loading="lazy">
+              </div>
+              <div class="prod-card__body">
+                <div class="prod-card__heading">
+                  <h3 class="prod-card__name">Dark Crystal Malt</h3>
+                  <p class="prod-card__meta">150–200 EBC</p>
+                </div>
+              </div>
+            </a>
+            <div class="prod-card__footer">
+              <p class="prod-card__price">&pound;25.00 – &pound;50.00</p>
+              <div class="prod-card__actions">
+                <a href="../dark-crystal-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="prod-card">
+            <a href="../chocolate-malt/" class="prod-card__content-link">
+              <div class="prod-card__img-wrap">
+                <img src="../../../../assets/product-images/malt/chocolate.webp" alt="Chocolate Malt — dark roasted grain" class="prod-card__img" width="1100" height="1100" loading="lazy">
+              </div>
+              <div class="prod-card__body">
+                <div class="prod-card__heading">
+                  <h3 class="prod-card__name">Chocolate Malt</h3>
+                  <p class="prod-card__meta">800–1000 EBC</p>
+                </div>
+              </div>
+            </a>
+            <div class="prod-card__footer">
+              <p class="prod-card__price">&pound;25.00 – &pound;50.00</p>
+              <div class="prod-card__actions">
+                <a href="../chocolate-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="prod-card">
+            <a href="../black-malt/" class="prod-card__content-link">
+              <div class="prod-card__img-wrap">
+                <img src="../../../../assets/product-images/malt/black.webp" alt="Black Malt — very dark roasted grain" class="prod-card__img" width="1100" height="1100" loading="lazy">
+              </div>
+              <div class="prod-card__body">
+                <div class="prod-card__heading">
+                  <h3 class="prod-card__name">Black Malt</h3>
+                  <p class="prod-card__meta">1000–1200 EBC</p>
+                </div>
+              </div>
+            </a>
+            <div class="prod-card__footer">
+              <p class="prod-card__price">&pound;25.00 – &pound;50.00</p>
+              <div class="prod-card__actions">
+                <a href="../black-malt/" class="btn btn--ghost prod-card__action">View Product</a>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="prod-card">
+            <a href="../roasted-barley/" class="prod-card__content-link">
+              <div class="prod-card__img-wrap">
+                <img src="../../../../assets/product-images/malt/black.webp" alt="Roasted Barley — very dark grain" class="prod-card__img" width="1100" height="1100" loading="lazy">
+              </div>
+              <div class="prod-card__body">
+                <div class="prod-card__heading">
+                  <h3 class="prod-card__name">Roasted Barley</h3>
+                  <p class="prod-card__meta">1200–1400 EBC</p>
+                </div>
+              </div>
+            </a>
+            <div class="prod-card__footer">
+              <p class="prod-card__price">&pound;25.00 – &pound;50.00</p>
+              <div class="prod-card__actions">
+                <a href="../roasted-barley/" class="btn btn--ghost prod-card__action">View Product</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer"></footer>
+
+  <script src="../../../../js/tabs.js"></script>
+  <script src="../../../../js/related-products.js"></script>
+  <script>
+    (function () {
+      var PRICES = {
+        bag:    { milled: { price: 22.50,  unit: 'bag'    },
+                  whole:  { price: 22.50,  unit: 'bag'    } },
+        pallet: { milled: { price: 850.00, unit: 'pallet' },
+                  whole:  { price: 840.00, unit: 'pallet' } }
+      };
+
+      var priceEl = document.getElementById('selected-price');
+      var unitEl  = document.getElementById('selected-unit');
+
+      function update() {
+        var format  = document.querySelector('input[name="format"]:checked').value;
+        var milling = document.querySelector('input[name="milling"]:checked').value;
+        var p = PRICES[format][milling];
+        priceEl.textContent = '£' + p.price.toFixed(2);
+        unitEl.textContent  = '/ ' + p.unit;
+      }
+
+      document.querySelectorAll('input[name="format"], input[name="milling"]').forEach(function (r) {
+        r.addEventListener('change', update);
+      });
+
+      // Quantity +/- buttons
+      var qtyInput = document.getElementById('qty');
+      document.querySelectorAll('.qty-control__btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var delta = parseInt(this.dataset.qty, 10);
+          qtyInput.value = Math.max(1, Math.min(99, parseInt(qtyInput.value, 10) + delta));
+        });
+      });
+
+      // Gallery thumbnail switcher
+      var mainImg = document.getElementById('gallery-main-img');
+      document.querySelectorAll('.product-gallery__thumb').forEach(function (thumb) {
+        thumb.addEventListener('click', function () {
+          document.querySelectorAll('.product-gallery__thumb').forEach(function (t) { t.classList.remove('is-active'); });
+          this.classList.add('is-active');
+          mainImg.src = this.dataset.src;
+        });
+      });
+
+    }());
+  </script>
+
+</body>
+</html>

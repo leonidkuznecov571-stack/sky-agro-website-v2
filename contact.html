@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | SKY AGRO</title>
+  <meta name="description" content="Contact SKY AGRO for brewing ingredients, hygiene chemicals, processing aids, and equipment support across the UK and international markets.">
+
+    <link rel="preload" href="assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+
+      <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <script src="js/header.js" defer></script>
+  <script src="js/footer.js" defer></script>
+</head>
+<body class="contact-page">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header"></header>
+
+  <main id="main-content">
+    <section class="contact-hero">
+      <div class="container contact-hero__inner">
+        <div class="contact-hero__content">
+          <span class="eyebrow contact-hero__eyebrow">Contact us</span>
+          <h1>Get in Touch</h1>
+          <p class="contact-hero__lede">Whether you need technical guidance or just want to place an order, one of our specialists will have the answer.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-page__section contact-page__section--intro" aria-label="Department contact details and enquiry form">
+      <div class="container">
+        <div class="contact-connect">
+          <div class="contact-connect__grid">
+            <div class="contact-connect__panel">
+              <header class="contact-connect__header">
+                <h2>Direct Contacts</h2>
+              </header>
+
+              <div class="contact-team-list">
+                <article class="contact-team-card">
+                  <div class="contact-team-card__body">
+                    <h3>Orders and accounts</h3>
+                  </div>
+                  <div class="contact-team-card__details">
+                    <a href="mailto:sales@sky-agro.com">
+                      <img src="assets/icons/contact-icons/email-icon.svg" alt="" width="20" height="20" aria-hidden="true">
+                      sales@sky-agro.com
+                    </a>
+                    <a href="tel:+441234567890">
+                      <img src="assets/icons/contact-icons/phone-icon.svg" alt="" width="20" height="20" aria-hidden="true">
+                      +44 1234567890
+                    </a>
+                  </div>
+                </article>
+
+                <article class="contact-team-card">
+                  <div class="contact-team-card__body">
+                    <h3>Brewing ingredients</h3>
+                  </div>
+                  <div class="contact-team-card__details">
+                    <a href="mailto:ingredients@sky-agro.com">
+                      <img src="assets/icons/contact-icons/email-icon.svg" alt="" width="20" height="20" aria-hidden="true">
+                      ingredients@sky-agro.com
+                    </a>
+                    <a href="tel:+441234567890">
+                      <img src="assets/icons/contact-icons/phone-icon.svg" alt="" width="20" height="20" aria-hidden="true">
+                      +44 1234567890
+                    </a>
+                  </div>
+                </article>
+
+                <article class="contact-team-card">
+                  <div class="contact-team-card__body">
+                    <h3>Chemicals</h3>
+                  </div>
+                  <div class="contact-team-card__details">
+                    <a href="mailto:chemicals@sky-agro.com">
+                      <img src="assets/icons/contact-icons/email-icon.svg" alt="" width="20" height="20" aria-hidden="true">
+                      chemicals@sky-agro.com
+                    </a>
+                    <a href="tel:+441234567890">
+                      <img src="assets/icons/contact-icons/phone-icon.svg" alt="" width="20" height="20" aria-hidden="true">
+                      +44 1234567890
+                    </a>
+                  </div>
+                </article>
+
+                <article class="contact-team-card">
+                  <div class="contact-team-card__body">
+                    <h3>Equipment</h3>
+                  </div>
+                  <div class="contact-team-card__details">
+                    <a href="mailto:equipment@sky-agro.com">
+                      <img src="assets/icons/contact-icons/email-icon.svg" alt="" width="20" height="20" aria-hidden="true">
+                      equipment@sky-agro.com
+                    </a>
+                    <a href="tel:+441234567890">
+                      <img src="assets/icons/contact-icons/phone-icon.svg" alt="" width="20" height="20" aria-hidden="true">
+                      +44 1234567890
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="contact-hours-card">
+                <p class="contact-hours-card__label">Office hours</p>
+                <p>Monday to Friday, 09:00-17:00, <br> excluding bank holidays.</p>
+              </div>
+            </div>
+
+            <aside class="contact-form-panel" aria-label="Contact form">
+              <div class="contact-form-panel__header">
+                <h2>Contact Form</h2>
+              </div>
+
+              <!-- TODO: wire to backend -->
+              <form class="contact-form" action="#" method="post">
+                <div class="contact-form__row">
+                  <div class="contact-form__field">
+                    <label for="contact-name">Name <span aria-hidden="true">*</span></label>
+                    <input type="text" id="contact-name" name="name" autocomplete="name" placeholder="Full name" required>
+                  </div>
+
+                  <div class="contact-form__field">
+                    <label for="contact-company">Company name <span aria-hidden="true">*</span></label>
+                    <input type="text" id="contact-company" name="company" autocomplete="organization" placeholder="Company name" required>
+                  </div>
+                </div>
+
+                <div class="contact-form__row">
+                  <div class="contact-form__field">
+                    <label for="contact-email">Email <span aria-hidden="true">*</span></label>
+                    <input type="email" id="contact-email" name="email" autocomplete="email" placeholder="Email" required>
+                  </div>
+
+                  <div class="contact-form__field">
+                    <label for="contact-phone">Phone number <span aria-hidden="true">*</span></label>
+                    <input type="tel" id="contact-phone" name="phone" autocomplete="tel" placeholder="Phone number" required>
+                  </div>
+                </div>
+
+                <fieldset class="contact-form__topics">
+                  <legend>What can we help with? <span aria-hidden="true">*</span></legend>
+                  <div class="contact-form__topic-list">
+                    <label class="contact-topic">
+                      <input type="radio" name="topic" value="general" checked>
+                      <span>General</span>
+                    </label>
+                    <label class="contact-topic">
+                      <input type="radio" name="topic" value="orders">
+                      <span>Orders</span>
+                    </label>
+                    <label class="contact-topic">
+                      <input type="radio" name="topic" value="ingredients">
+                      <span>Ingredients</span>
+                    </label>
+                    <label class="contact-topic">
+                      <input type="radio" name="topic" value="chemicals">
+                      <span>Chemicals</span>
+                    </label>
+                    <label class="contact-topic">
+                      <input type="radio" name="topic" value="equipment">
+                      <span>Equipment</span>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <div class="contact-form__field">
+                  <label for="contact-message">Your message <span aria-hidden="true">*</span></label>
+                  <textarea id="contact-message" name="message" rows="7" placeholder="Please describe your enquiry" required></textarea>
+                </div>
+
+                <div class="contact-form__footer">
+                  <div class="contact-form__captcha" aria-hidden="true">
+                    <span class="contact-form__checkbox"></span>
+                    <span>I'm not a robot</span>
+                    <span class="contact-form__captcha-note">reCAPTCHA</span>
+                  </div>
+
+                  <div class="contact-form__actions">
+                    <p class="contact-form__required-note"><span aria-hidden="true">*</span> Required fields</p>
+                    <button type="submit" class="btn btn--green">
+                      Send message
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-page__section contact-page__section--details" aria-labelledby="visit-us-heading">
+      <div class="container contact-grid">
+        <div class="contact-map-card">
+          <iframe
+            title="Map to SKY AGRO warehouse"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-1.1742%2C52.2463%2C-1.1479%2C52.2608&amp;layer=mapnik&amp;marker=52.2535%2C-1.1611"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <article class="contact-info-card" aria-labelledby="visit-us-heading">
+          <h2 id="visit-us-heading">SKY AGRO LTD</h2>
+
+          <div class="contact-info-card__block">
+            <h3>Warehouse address:</h3>
+            <p>Unit C, West March Industrial Estate,<br>Daventry, Northamptonshire, NN11 4SA</p>
+          </div>
+
+          <div class="contact-info-card__block">
+            <h3>Opening hours:</h3>
+            <p>09:00-17:00, Monday to Friday, <br> excluding bank holidays.</p>
+          </div>
+
+          <dl class="contact-info-card__meta">
+            <div>
+              <dt>Company number:</dt>
+              <dd>15440197</dd>
+            </div>
+            <div>
+              <dt>VAT number:</dt>
+              <dd>461614503</dd>
+            </div>
+            <div>
+              <dt>Registered address:</dt>
+              <dd>30 Casson Square,<br>London SE1 7DY</dd>
+            </div>
+            <div>
+              <dt>EORI:</dt>
+              <dd>GB461614503000</dd>
+            </div>
+          </dl>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"></footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+/* Design tokens — all values sourced from CLAUDE.md */
+
+:root {
+  /* ─── Colours ─── */
+
+  /* Brand */
+  --color-green-dark:  #0F5132;
+  --color-green:       #1B7A3E;
+  --color-green-deep:  #093B21;
+
+  /* Accents */
+  --color-gold:        #C79A5B;
+  --color-orange:      #E8703A;
+
+  /* Neutrals */
+  --color-cream:       #FAF4E8;
+  --color-cream-light: #FCF8F0; /* lighter section tint for white card bands */
+  --color-cream-soft:  #F5EEDE;
+  --color-ink:         #111111;
+  --color-ink-soft:    #555555;
+  --color-rule:        #E6DFCE;
+  --color-white:       #FFFFFF;
+  --color-field-bg:    #F6F6F6; /* neutral field fill for light forms */
+
+  /* Dark footer */
+  --color-footer-bg:   #1F1F1F;
+  --color-footer-text: #FFFFFF;
+  --color-footer-muted:#9A9A9A;
+
+  /* Division accent colours */
+  --color-navy:        #1A3D6E;  /* SKY LABS */
+  --color-steel:       #3A3A3A;  /* SKY TECH */
+
+  /* Category tag colours (blog cards) */
+  --color-tag-tech:    #1F5E9E;
+  --color-tag-news:    #1B7A3E;
+  --color-tag-new:     #B8572C;
+
+  /* Forms */
+  --color-error:       #B42318;
+
+  /* ─── Typography ─── */
+
+  --font-body: 'Montserrat', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  /* Font sizes */
+  --fs-eyebrow:   0.8125rem;
+  --fs-small:     0.875rem;
+  --fs-body:      1rem;
+  --fs-body-lg:   1.125rem;
+  --fs-h5:        clamp(1.125rem, 0.25vw + 1.0625rem, 1.25rem);
+  --fs-h4:        clamp(1.25rem,  0.5vw  + 1.125rem,  1.5rem);
+  --fs-h3:        clamp(1.5rem,   1vw    + 1.25rem,   2rem);
+  --fs-h2:        clamp(1.875rem, 2vw    + 1.375rem,  2.5rem);
+  --fs-h1:        clamp(2.25rem,  3vw    + 1.5rem,    3.5rem);
+
+  /* Line heights */
+  --lh-tight:     1.1;
+  --lh-snug:      1.25;
+  --lh-normal:    1.4;
+  --lh-body:      1.6;
+
+  /* Font weights */
+  --fw-light:     300;
+  --fw-regular:   400;
+  --fw-medium:    500;
+  --fw-semibold:  600;
+  --fw-bold:      700;
+
+  /* Letter spacing */
+  --ls-tight:     -0.01em;
+  --ls-normal:    0;
+  --ls-wide:      0.08em;
+  --ls-wider:     0.12em;
+
+  /* ─── Spacing ─── */
+
+  --space-0:   0;
+  --space-1:   0.25rem;
+  --space-2:   0.5rem;
+  --space-3:   0.75rem;
+  --space-4:   1rem;
+  --space-5:   1.5rem;
+  --space-6:   2rem;
+  --space-7:   3rem;
+  --space-8:   4rem;
+  --space-9:   6rem;
+  --space-10:  8rem;
+
+  /* Section rhythm */
+  --section-pad-y:    clamp(3rem, 5vw + 1.5rem, 6rem);
+  --section-pad-y-lg: clamp(4rem, 7vw + 2rem,   8rem);
+
+  /* Container */
+  --container-max:    80rem;
+  --container-pad-x:  clamp(1rem, 3vw, 1.5rem);
+  --catalogue-filter-rail: 17rem; /* reusable product-category sidebar width, trimmed by ~10% to give product grids a little more room */
+  --sticky-header-offset-desktop: 13rem; /* clears the full desktop header for sticky in-page panels */
+  --contact-topic-width: 7rem; /* fixed width for contact-form topic pills so rows align evenly */
+
+  /* Border radii */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+}
