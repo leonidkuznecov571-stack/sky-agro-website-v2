@@ -4404,8 +4404,9 @@
   padding-bottom: 0;
 }
 
-.equipment-hub--no-stretch .equipment-hub-card__inner {
+.equipment-hub--no-stretch .equipment-hub-card > .equipment-hub-card__inner {
   flex: 0 0 auto;
+  padding-bottom: 0;
 }
 
 .equipment-hub-card__footer .equipment-hub-card__divider {
