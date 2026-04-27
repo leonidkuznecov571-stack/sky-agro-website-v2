@@ -128,7 +128,7 @@
                   <div class="prod-card__body">
                     <div class="prod-card__heading">
                       <h3 class="prod-card__name">Caustic Super</h3>
-                      <p class="prod-card__meta">Heavy-duty Caustic</p>
+                      <p class="prod-card__meta">Caustic Cleaner</p>
                     </div>
                   </div>
                 </a>
@@ -354,12 +354,12 @@
               <li class="prod-card prod-card--compact">
                 <a href="/products/chemical-products/hygiene-chemicals/caustic-32/" class="prod-card__content-link">
                   <div class="prod-card__img-wrap">
-                    <img src="../../assets/product-images/hygiene-chemicals/caustic-plus.webp" alt="Caustic 32 percent container" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                    <img src="../../assets/product-images/placeholder.png" alt="Caustic 32 percent container" class="prod-card__img" width="1100" height="1100" loading="lazy">
                   </div>
                   <div class="prod-card__body">
                     <div class="prod-card__heading">
                       <h3 class="prod-card__name">Caustic 32%</h3>
-                      <p class="prod-card__meta">Liquid Caustic</p>
+                      <p class="prod-card__meta">Caustic Cleaner</p>
                     </div>
                   </div>
                 </a>
@@ -404,7 +404,7 @@
                   <div class="prod-card__body">
                     <div class="prod-card__heading">
                       <h3 class="prod-card__name">Gypsum</h3>
-                      <p class="prod-card__meta">Liquor Treatment</p>
+                      <p class="prod-card__meta">Brewing Salts</p>
                     </div>
                   </div>
                 </a>
@@ -424,8 +424,8 @@
                   </div>
                   <div class="prod-card__body">
                     <div class="prod-card__heading">
-                      <h3 class="prod-card__name">Flake<br>(Calcium Chloride)</h3>
-                      <p class="prod-card__meta">Liquor Treatment</p>
+                      <h3 class="prod-card__name">Flake</h3>
+                      <p class="prod-card__meta">Brewing Salts</p>
                     </div>
                   </div>
                 </a>
@@ -446,7 +446,7 @@
                   <div class="prod-card__body">
                     <div class="prod-card__heading">
                       <h3 class="prod-card__name">Epsom Salt</h3>
-                      <p class="prod-card__meta">Liquor Treatment</p>
+                      <p class="prod-card__meta">Brewing Salts</p>
                     </div>
                   </div>
                 </a>
@@ -483,7 +483,7 @@
               <li class="prod-card prod-card--compact">
                 <a href="/products/chemical-products/processing-aids/mashtreat/" class="prod-card__content-link">
                   <div class="prod-card__img-wrap">
-                    <img src="../../assets/product-images/hygiene-chemicals/caustic-plus.webp" alt="Placeholder product image for Mashtreat" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                    <img src="../../assets/product-images/placeholder.png" alt="Placeholder product image for Mashtreat" class="prod-card__img" width="1100" height="1100" loading="lazy">
                   </div>
                   <div class="prod-card__body">
                     <div class="prod-card__heading">
@@ -893,33 +893,6 @@
   </main>
 
   <footer class="site-footer"></footer>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var runId = 'initial-' + Date.now();
-      var caustic32Link = document.querySelector('a[href="/products/chemical-products/hygiene-chemicals/caustic-32/"]');
-      var caustic32Card = caustic32Link ? caustic32Link.closest('.prod-card') : null;
-      var caustic32Image = caustic32Card ? caustic32Card.querySelector('.prod-card__img') : null;
-
-      // #region agent log
-      fetch('http://127.0.0.1:7667/ingest/6adb51fd-1222-4a04-b72b-af15051692da',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'f4ae1e'},body:JSON.stringify({sessionId:'f4ae1e',runId:runId,hypothesisId:'H1-H2',location:'products/chemical-products/index.html:DOMContentLoaded',message:'Caustic 32 card lookup result',data:{cardFound:Boolean(caustic32Card),imageFound:Boolean(caustic32Image)},timestamp:Date.now()})}).catch(()=>{});
-      // #endregion
-
-      if (!caustic32Image) {
-        return;
-      }
-
-      // #region agent log
-      fetch('http://127.0.0.1:7667/ingest/6adb51fd-1222-4a04-b72b-af15051692da',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'f4ae1e'},body:JSON.stringify({sessionId:'f4ae1e',runId:runId,hypothesisId:'H1-H3',location:'products/chemical-products/index.html:DOMContentLoaded',message:'Caustic 32 image source at DOMContentLoaded',data:{srcAttr:caustic32Image.getAttribute('src'),currentSrc:caustic32Image.currentSrc,containsCausticPlus:Boolean((caustic32Image.getAttribute('src') || '').includes('caustic-plus'))},timestamp:Date.now()})}).catch(()=>{});
-      // #endregion
-
-      window.addEventListener('load', function () {
-        // #region agent log
-        fetch('http://127.0.0.1:7667/ingest/6adb51fd-1222-4a04-b72b-af15051692da',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'f4ae1e'},body:JSON.stringify({sessionId:'f4ae1e',runId:runId,hypothesisId:'H3-H4',location:'products/chemical-products/index.html:load',message:'Caustic 32 image source at window load',data:{srcAttr:caustic32Image.getAttribute('src'),currentSrc:caustic32Image.currentSrc},timestamp:Date.now()})}).catch(()=>{});
-        // #endregion
-      });
-    });
-  </script>
 
 </body>
 </html>
