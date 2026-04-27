@@ -128,7 +128,7 @@
               </ul>
             </li>
             <li class="category-nav__dropdown-item category-nav__dropdown-item--has-sub">
-              <a href="${ROOT}/products/equipment/processing/cip/" class="category-nav__dropdown-link category-nav__dropdown-link--parent">Processing<svg class="sub-arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" aria-hidden="true"><path d="M1 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a href="${ROOT}/products/equipment/processing/" class="category-nav__dropdown-link category-nav__dropdown-link--parent">Processing<svg class="sub-arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" aria-hidden="true"><path d="M1 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
               <ul class="category-nav__sub-dropdown" role="list">
                 <li><a href="${ROOT}/products/equipment/processing/cip/" class="category-nav__dropdown-link">CIP</a></li>
                 <li><a href="${ROOT}/products/equipment/processing/pasteurisation/" class="category-nav__dropdown-link">Pasteurisation</a></li>
@@ -142,14 +142,14 @@
               <a href="${ROOT}/products/equipment/additional-equipment/" class="category-nav__dropdown-link category-nav__dropdown-link--parent">Additional Equipment<svg class="sub-arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" aria-hidden="true"><path d="M1 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
               <ul class="category-nav__sub-dropdown" role="list">
                 <li><a href="${ROOT}/products/equipment/additional-products/malt-mill/" class="category-nav__dropdown-link">Malt Mill</a></li>
-                <li><a href="${ROOT}/products/equipment/additional-products/cable-conveyor/" class="category-nav__dropdown-link">Cable Conveyor</a></li>
+                <li><a href="${ROOT}/products/equipment/additional-products/cable-conveyor/" class="category-nav__dropdown-link">Tubular Conveyor</a></li>
                 <li><a href="${ROOT}/products/equipment/additional-products/yeast-propagation-system/" class="category-nav__dropdown-link">Yeast Propagation System</a></li>
                 <li><a href="${ROOT}/products/equipment/additional-products/yeast-propagation-tank/" class="category-nav__dropdown-link">Yeast Propagation Tank</a></li>
                 <li><a href="${ROOT}/products/equipment/additional-products/dry-hopping-gun/" class="category-nav__dropdown-link">Dry-Hopping Gun</a></li>
               </ul>
             </li>
             <li class="category-nav__dropdown-item category-nav__dropdown-item--has-sub">
-              <a href="#" class="category-nav__dropdown-link category-nav__dropdown-link--parent">Other Beverages<svg class="sub-arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" aria-hidden="true"><path d="M1 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a href="${ROOT}/products/equipment/other-beverages/" class="category-nav__dropdown-link category-nav__dropdown-link--parent">Other Beverages<svg class="sub-arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" aria-hidden="true"><path d="M1 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
               <ul class="category-nav__sub-dropdown" role="list">
                 <li><a href="${ROOT}/products/equipment/other-beverages/distilling-system/" class="category-nav__dropdown-link">Distilling System</a></li>
                 <li><a href="${ROOT}/products/equipment/processing/blending-carbonation/beverage-production-line/" class="category-nav__dropdown-link">Beverage Production Line</a></li>
@@ -214,6 +214,7 @@
             <ul class="mobile-nav__sub" role="list">
               <li><a href="${ROOT}/products/equipment/brewhouses/" class="mobile-nav__link mobile-nav__link--sub">Brewhouses</a></li>
               <li><a href="${ROOT}/products/equipment/tanks/" class="mobile-nav__link mobile-nav__link--sub">Tanks</a></li>
+              <li><a href="${ROOT}/products/equipment/processing/" class="mobile-nav__link mobile-nav__link--sub">Processing</a></li>
               <li><a href="${ROOT}/products/equipment/processing/cip/" class="mobile-nav__link mobile-nav__link--sub">CIP</a></li>
               <li><a href="${ROOT}/products/equipment/processing/pasteurisation/" class="mobile-nav__link mobile-nav__link--sub">Pasteurisation</a></li>
               <li><a href="${ROOT}/products/equipment/processing/blending-carbonation/" class="mobile-nav__link mobile-nav__link--sub">Blending &amp; Carbonation</a></li>

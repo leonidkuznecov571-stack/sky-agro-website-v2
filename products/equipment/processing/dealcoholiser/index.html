@@ -39,9 +39,8 @@
         <div class="product-info">
           <p class="product-info__eyebrow eyebrow">Processing system</p>
           <h1 class="product-info__title">Dealcoholiser</h1>
-          <div class="product-info__colours">
-            <p class="product-info__colour">Technology: Reverse osmosis membrane filtration</p>
-            <p class="product-info__colour">Target: &lt; 0.5% ABV</p>
+                    <div class="product-info__colours">
+            <p class="product-info__colour">Output ABV: &lt;0.5%</p>
           </div>
 
           <div class="product-info__divider" aria-hidden="true"></div>
@@ -60,10 +59,10 @@
           <div class="product-info__purchase">
             <div class="product-info__price-block product-info__price-block--stacked">
               <div class="product-info__price-line">
-                <span class="product-info__price-prefix">Target</span>
-                <span class="product-info__price" aria-live="polite">&lt; 0.5% ABV</span>
+                <span class="product-info__price-prefix">From</span>
+                <span class="product-info__price" id="selected-price" aria-live="polite">[ADD PRICE]</span>
               </div>
-              <span class="product-info__price-unit">Process-dependent on pressure, membrane and diafiltration setup</span>
+              <span class="product-info__price-unit" id="selected-unit"></span>
             </div>
           </div>
           <div class="product-info__actions">
@@ -211,7 +210,6 @@
                 </thead>
                 <tbody>
                   <tr><td>Product type</td><td>Membrane dealcoholiser system</td></tr>
-                  <tr><td>Technology</td><td>Reverse osmosis membrane filtration</td></tr>
                   <tr><td>Applications</td><td>Beer and low-alcohol fermented products</td></tr>
                   <tr><td>Installation</td><td>Skid-mounted</td></tr>
                   <tr><td>Capacity</td><td>Customised by parallel membrane quantity</td></tr>
