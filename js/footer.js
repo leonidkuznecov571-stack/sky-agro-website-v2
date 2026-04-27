@@ -8,13 +8,22 @@
 
         <div class="footer-col footer-col--brand">
           <a href="${ROOT}/index.html" class="footer-logo" aria-label="SKY AGRO — go to homepage">
-            <img src="${ROOT}/assets/logos/sky-agro-logo-white.svg" alt="SKY AGRO" width="160" height="56">
+            <img src="${ROOT}/assets/logos/sky-agro-logo-white.svg" alt="SKY AGRO" width="224" height="78">
           </a>
+          <div class="footer-contact" aria-label="Contact details">
+            <a href="mailto:info@sky-agro.com" class="footer-contact__link">
+              <img src="${ROOT}/assets/icons/contact-icons/email-icon-white.svg" alt="" class="footer-contact__icon" width="16" height="16" aria-hidden="true">
+              info@sky-agro.com
+            </a>
+            <a href="tel:+447460379173" class="footer-contact__link">
+              <img src="${ROOT}/assets/icons/contact-icons/phone-icon-white.svg" alt="" class="footer-contact__icon" width="16" height="16" aria-hidden="true">
+              07460 379 173
+            </a>
+          </div>
           <address class="footer-address">
             Unit C, West March Industrial Estate, Daventry NN11 4SA,<br>
             United Kingdom
           </address>
-          <p class="footer-registered">Registered in England and Wales No.&nbsp;15440197</p>
         </div>
 
         <div class="footer-col">
@@ -42,7 +51,7 @@
           <h2 class="footer-col__heading">Customer Service</h2>
           <ul class="footer-col__links" role="list">
             <li><a href="${ROOT}/login.html" class="footer-col__link">My Account</a></li>
-            <li><a href="#" class="footer-col__link">My Cart</a></li>
+            <li><a href="${ROOT}/cart.html" class="footer-col__link">My Cart</a></li>
             <li><a href="${ROOT}/legal/delivery-policy.html" class="footer-col__link">Delivery Policy</a></li>
             <li><a href="${ROOT}/legal/equipment-warranty-policy.html" class="footer-col__link">Equipment Warranty</a></li>
             <li><a href="${ROOT}/legal/wholesale-pre-order.html" class="footer-col__link">Wholesale &amp; Pre-Order</a></li>

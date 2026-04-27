@@ -10,6 +10,7 @@
           <a href="${ROOT}/blog.html" class="utility-bar__link" data-nav-match="/blog.html">Blog</a>
           <a href="${ROOT}/catalogues.html" class="utility-bar__link" data-nav-match="/catalogues.html">Catalogues</a>
           <a href="${ROOT}/contact.html" class="utility-bar__link" data-nav-match="/contact.html">Contact us</a>
+          <a href="#" class="utility-bar__link">Shop</a>
         </nav>
         <div class="utility-bar__right">
           <a href="mailto:info@sky-agro.com" class="utility-bar__link">
@@ -33,7 +34,7 @@
     <div class="main-bar">
       <div class="container main-bar__inner">
         <a href="${ROOT}/index.html" class="main-bar__logo" aria-label="SKY AGRO — go to homepage">
-          <img src="${ROOT}/assets/logos/sky-agro-logo.svg" alt="SKY AGRO" width="160" height="56">
+          <img src="${ROOT}/assets/logos/sky-agro-logo.svg" alt="SKY AGRO" width="224" height="78">
         </a>
         <form class="search-bar" role="search" action="${ROOT}/search.html" method="get">
           <label for="site-search" class="sr-only">Search for products</label>
@@ -235,6 +236,7 @@
           <li><a href="${ROOT}/blog.html" class="mobile-nav__link">Blog</a></li>
           <li><a href="${ROOT}/catalogues.html" class="mobile-nav__link">Catalogues</a></li>
           <li><a href="${ROOT}/contact.html" class="mobile-nav__link">Contact us</a></li>
+          <li><a href="#" class="mobile-nav__link">Shop</a></li>
         </ul>
       </nav>
     </div>
