@@ -7,7 +7,7 @@
 }
 
 .contact-page__section--intro {
-  background-color: var(--color-cream-light);
+  background-color: var(--color-white);
 }
 
 .contact-hero {
@@ -93,7 +93,7 @@
 
 .contact-form-panel__header h2 {
   font-size: var(--fs-h4);
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-semibold);
   line-height: var(--lh-normal);
 }
 
@@ -126,9 +126,9 @@
 }
 
 .contact-team-card h3 {
-  font-size: var(--fs-body-lg);
+  font-size: var(--fs-body);
   font-weight: var(--fw-medium);
-  line-height: var(--lh-normal);
+  line-height: var(--lh-snug);
   margin-block: 0 var(--space-2);
   color: var(--color-ink);
   transition: color 0.2s ease;
@@ -479,6 +479,10 @@
   .contact-connect__grid {
     grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
     gap: var(--space-7);
+  }
+
+  .contact-connect__panel {
+    padding-block-start: clamp(var(--space-5), 2vw + 1rem, var(--space-7));
   }
 
   .contact-grid {

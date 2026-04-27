@@ -30,7 +30,6 @@
           <h2 class="footer-col__heading">Company</h2>
           <ul class="footer-col__links" role="list">
             <li><a href="${ROOT}/about.html" class="footer-col__link">About Us</a></li>
-            <li><a href="${ROOT}/services.html" class="footer-col__link">Services</a></li>
             <li><a href="${ROOT}/blog.html" class="footer-col__link">Blog</a></li>
             <li><a href="${ROOT}/catalogues.html" class="footer-col__link">Catalogues</a></li>
             <li><a href="${ROOT}/contact.html" class="footer-col__link">Contact Us</a></li>
