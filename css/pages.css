@@ -2628,6 +2628,10 @@
   gap: var(--space-6);
 }
 
+.product-advantages + .product-advantages {
+  margin-block-start: var(--space-8);
+}
+
 .product-advantages__intro {
   display: grid;
   gap: var(--space-3);
@@ -2901,6 +2905,11 @@
 
 .quote-request--plain .quote-request__intro {
   background: var(--color-white);
+  gap: var(--space-3);
+}
+
+.quote-request--plain .quote-request__contact-card {
+  margin-block-start: var(--space-2);
 }
 
 .quote-request--plain .quote-request__contact-label {
