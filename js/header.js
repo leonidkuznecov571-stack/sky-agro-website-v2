@@ -125,6 +125,7 @@
                 <li><a href="${ROOT}/products/equipment/tanks/dairy-tanks/" class="category-nav__dropdown-link">Dairy Tanks</a></li>
                 <li><a href="${ROOT}/products/equipment/tanks/water-tanks/" class="category-nav__dropdown-link">Water Tanks</a></li>
                 <li><a href="${ROOT}/products/equipment/tanks/beverage-tanks/" class="category-nav__dropdown-link">Beverage Tanks</a></li>
+                <li><a href="${ROOT}/products/equipment/tanks/yeast-propagation-tank/" class="category-nav__dropdown-link">Yeast Propagation Tank</a></li>
               </ul>
             </li>
             <li class="category-nav__dropdown-item category-nav__dropdown-item--has-sub">
@@ -141,11 +142,10 @@
             <li class="category-nav__dropdown-item category-nav__dropdown-item--has-sub">
               <a href="${ROOT}/products/equipment/additional-equipment/" class="category-nav__dropdown-link category-nav__dropdown-link--parent">Additional Equipment<svg class="sub-arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" aria-hidden="true"><path d="M1 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
               <ul class="category-nav__sub-dropdown" role="list">
-                <li><a href="${ROOT}/products/equipment/additional-products/malt-mill/" class="category-nav__dropdown-link">Malt Mill</a></li>
-                <li><a href="${ROOT}/products/equipment/additional-products/cable-conveyor/" class="category-nav__dropdown-link">Tubular Conveyor</a></li>
-                <li><a href="${ROOT}/products/equipment/additional-products/yeast-propagation-system/" class="category-nav__dropdown-link">Yeast Propagation System</a></li>
-                <li><a href="${ROOT}/products/equipment/additional-products/yeast-propagation-tank/" class="category-nav__dropdown-link">Yeast Propagation Tank</a></li>
-                <li><a href="${ROOT}/products/equipment/additional-products/dry-hopping-gun/" class="category-nav__dropdown-link">Dry-Hopping Gun</a></li>
+                <li><a href="${ROOT}/products/equipment/additional-equipment/malt-mill/" class="category-nav__dropdown-link">Malt Mill</a></li>
+                <li><a href="${ROOT}/products/equipment/additional-equipment/tubular-conveyor/" class="category-nav__dropdown-link">Tubular Conveyor</a></li>
+                <li><a href="${ROOT}/products/equipment/additional-equipment/yeast-propagation-system/" class="category-nav__dropdown-link">Yeast Propagation System</a></li>
+                <li><a href="${ROOT}/products/equipment/additional-equipment/dry-hopping-gun/" class="category-nav__dropdown-link">Dry-Hopping Gun</a></li>
               </ul>
             </li>
             <li class="category-nav__dropdown-item category-nav__dropdown-item--has-sub">
@@ -214,6 +214,7 @@
             <ul class="mobile-nav__sub" role="list">
               <li><a href="${ROOT}/products/equipment/brewhouses/" class="mobile-nav__link mobile-nav__link--sub">Brewhouses</a></li>
               <li><a href="${ROOT}/products/equipment/tanks/" class="mobile-nav__link mobile-nav__link--sub">Tanks</a></li>
+              <li><a href="${ROOT}/products/equipment/tanks/yeast-propagation-tank/" class="mobile-nav__link mobile-nav__link--sub">Yeast Propagation Tank</a></li>
               <li><a href="${ROOT}/products/equipment/processing/" class="mobile-nav__link mobile-nav__link--sub">Processing</a></li>
               <li><a href="${ROOT}/products/equipment/processing/cip/" class="mobile-nav__link mobile-nav__link--sub">CIP</a></li>
               <li><a href="${ROOT}/products/equipment/processing/pasteurisation/" class="mobile-nav__link mobile-nav__link--sub">Pasteurisation</a></li>
@@ -222,6 +223,10 @@
               <li><a href="${ROOT}/products/equipment/processing/water-treatment/" class="mobile-nav__link mobile-nav__link--sub">Water Treatment</a></li>
               <li><a href="${ROOT}/products/equipment/processing/keg-equipment/" class="mobile-nav__link mobile-nav__link--sub">Keg Equipment</a></li>
               <li><a href="${ROOT}/products/equipment/additional-equipment/" class="mobile-nav__link mobile-nav__link--sub">Additional Equipment</a></li>
+              <li><a href="${ROOT}/products/equipment/additional-equipment/malt-mill/" class="mobile-nav__link mobile-nav__link--sub">Malt Mill</a></li>
+              <li><a href="${ROOT}/products/equipment/additional-equipment/tubular-conveyor/" class="mobile-nav__link mobile-nav__link--sub">Tubular Conveyor</a></li>
+              <li><a href="${ROOT}/products/equipment/additional-equipment/yeast-propagation-system/" class="mobile-nav__link mobile-nav__link--sub">Yeast Propagation System</a></li>
+              <li><a href="${ROOT}/products/equipment/additional-equipment/dry-hopping-gun/" class="mobile-nav__link mobile-nav__link--sub">Dry-Hopping Gun</a></li>
               <li><a href="${ROOT}/products/equipment/other-beverages/" class="mobile-nav__link mobile-nav__link--sub">Other Beverages</a></li>
             </ul>
           </li>
