@@ -2,6 +2,8 @@
   const scriptEl = document.querySelector('script[src$="header.js"]');
   const ROOT = scriptEl ? scriptEl.src.replace(/\/js\/header\.js.*$/, '') : '';
 
+  window.SKY_AGRO_ROOT = ROOT || '';
+
   const HEADER_HTML = `
     <div class="utility-bar">
       <div class="container utility-bar__inner">
@@ -35,12 +37,31 @@
         <a href="${ROOT}/index.html" class="main-bar__logo" aria-label="SKY AGRO — go to homepage">
           <img src="${ROOT}/assets/logos/sky-agro-logo.svg" alt="SKY AGRO" width="224" height="78">
         </a>
-        <form class="search-bar" role="search" action="${ROOT}/search.html" method="get">
+        <form class="search-bar" role="search" action="${ROOT}/index.html" method="get" data-product-search-form>
           <label for="site-search" class="sr-only">Search for products</label>
-          <input type="search" id="site-search" name="q" class="search-bar__input" placeholder="Search for products" autocomplete="off">
-          <button type="submit" class="search-bar__btn" aria-label="Search">
-            <img src="${ROOT}/assets/icons/utility-icons/lookup-glass.svg" alt="" width="20" height="20" aria-hidden="true">
-          </button>
+          <div class="search-bar__field">
+            <input
+              type="search"
+              id="site-search"
+              name="q"
+              class="search-bar__input"
+              placeholder="Search for products"
+              autocomplete="off"
+              enterkeyhint="search"
+              aria-controls="site-search-results"
+              data-product-search-input
+            >
+            <button type="submit" class="search-bar__btn" aria-label="Search">
+              <img src="${ROOT}/assets/icons/utility-icons/lookup-glass.svg" alt="" width="20" height="20" aria-hidden="true">
+            </button>
+          </div>
+          <div
+            class="search-bar__panel"
+            id="site-search-results"
+            aria-label="Matching products"
+            hidden
+            data-product-search-panel
+          ></div>
         </form>
         <div class="main-bar__actions">
           <a href="${ROOT}/login.html" class="main-bar__action" aria-label="My account">
@@ -72,7 +93,6 @@
 
     <nav class="category-nav" aria-label="Product categories">
       <div class="container category-nav__inner">
-
         <a href="${ROOT}/index.html" class="category-nav__link" data-nav-match="/index.html">Home</a>
 
         <div class="category-nav__item">
@@ -107,7 +127,7 @@
           </a>
           <ul class="category-nav__dropdown" role="list">
             <li class="category-nav__dropdown-item category-nav__dropdown-item--has-sub">
-              <a href="#" class="category-nav__dropdown-link category-nav__dropdown-link--parent">Brewhouses<svg class="sub-arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" aria-hidden="true"><path d="M1 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a href="${ROOT}/products/equipment/brewhouses/" class="category-nav__dropdown-link category-nav__dropdown-link--parent">Brewhouses<svg class="sub-arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" aria-hidden="true"><path d="M1 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
               <ul class="category-nav__sub-dropdown" role="list">
                 <li><a href="${ROOT}/products/equipment/brewhouses/pilot-brewing-system/" class="category-nav__dropdown-link">Pilot Brewing System</a></li>
                 <li><a href="${ROOT}/products/equipment/brewhouses/brewpub-brewhouse/" class="category-nav__dropdown-link">Brewpub Brewhouse</a></li>
@@ -169,11 +189,9 @@
             <li><a href="${ROOT}/products/kegs-packaging/cask-packaging/" class="category-nav__dropdown-link">Cask Packaging</a></li>
           </ul>
         </div>
-
       </div>
     </nav>
 
-    <!-- Mobile nav drawer -->
     <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
       <div class="mobile-nav__overlay" data-close-nav></div>
       <nav class="mobile-nav__drawer" aria-label="Mobile navigation">
@@ -246,14 +264,88 @@
     </div>
   `;
 
+  const sharedScriptLoads = new Map();
+
+  function normalisePath(path) {
+    const cleaned = path.replace(/index\.html$/, '').replace(/\/+$/, '');
+    return cleaned || '/';
+  }
+
   function setActiveLinks(header) {
-    const path = window.location.pathname;
+    const currentPath = normalisePath(window.location.pathname);
+
     header.querySelectorAll('[data-nav-match]').forEach(el => {
-      const match = el.dataset.navMatch;
-      if (path === match || (match !== '/index.html' && path.startsWith(match.replace(/\.html$/, '')))) {
-        el.classList.add('category-nav__link--active');
-        el.setAttribute('aria-current', 'page');
+      const matchPath = normalisePath(el.dataset.navMatch || '');
+      const isHome = matchPath === '/';
+      const isActive = isHome
+        ? currentPath === '/'
+        : currentPath === matchPath || currentPath.startsWith(`${matchPath}/`);
+
+      if (!isActive) {
+        return;
       }
+
+      el.classList.add('category-nav__link--active');
+      el.setAttribute('aria-current', 'page');
+    });
+  }
+
+  function loadScript(src, test) {
+    if (test()) {
+      return Promise.resolve();
+    }
+
+    if (sharedScriptLoads.has(src)) {
+      return sharedScriptLoads.get(src);
+    }
+
+    const absoluteSrc = new URL(src, window.location.href).href;
+    let script = Array.from(document.scripts).find(entry => entry.src === absoluteSrc);
+
+    const promise = new Promise((resolve, reject) => {
+      const handleLoad = () => {
+        if (test()) {
+          resolve();
+        } else {
+          reject(new Error(`Loaded ${src} but expected global was unavailable.`));
+        }
+      };
+
+      const handleError = () => reject(new Error(`Unable to load ${src}.`));
+
+      if (!script) {
+        script = document.createElement('script');
+        script.src = src;
+        script.async = true;
+        document.head.appendChild(script);
+      } else if (test()) {
+        resolve();
+        return;
+      }
+
+      script.addEventListener('load', handleLoad, { once: true });
+      script.addEventListener('error', handleError, { once: true });
+    });
+
+    sharedScriptLoads.set(src, promise);
+    return promise;
+  }
+
+  function initSearch(header) {
+    const searchInput = header.querySelector('[data-product-search-input]');
+    const currentQuery = new URLSearchParams(window.location.search).get('q');
+
+    if (searchInput && currentQuery) {
+      searchInput.value = currentQuery;
+    }
+
+    Promise.all([
+      loadScript(`${ROOT}/js/search.js`, () => typeof window.SkyAgroSearch?.initHeaderSearch === 'function'),
+      loadScript(`${ROOT}/js/product-search-data.js`, () => Array.isArray(window.SKY_AGRO_PRODUCT_INDEX))
+    ]).then(() => {
+      window.SkyAgroSearch.initHeaderSearch(header, { root: ROOT || '' });
+    }).catch(() => {
+      // Leave the form as a normal GET search if the enhancement cannot load.
     });
   }
 
@@ -261,6 +353,7 @@
     const hamburger = header.querySelector('.main-bar__hamburger');
     const drawer = header.querySelector('.mobile-nav');
     const closeEls = header.querySelectorAll('[data-close-nav]');
+    const drawerLinks = drawer.querySelectorAll('a');
 
     function openNav() {
       drawer.classList.add('is-open');
@@ -270,19 +363,27 @@
       drawer.querySelector('.mobile-nav__close').focus();
     }
 
-    function closeNav() {
+    function closeNav({ returnFocus = true } = {}) {
       drawer.classList.remove('is-open');
       drawer.setAttribute('aria-hidden', 'true');
       hamburger.setAttribute('aria-expanded', 'false');
       document.body.classList.remove('nav-open');
-      hamburger.focus();
+
+      if (returnFocus) {
+        hamburger.focus();
+      }
     }
 
     hamburger.addEventListener('click', openNav);
-    closeEls.forEach(el => el.addEventListener('click', closeNav));
-    document.addEventListener('keydown', e => { if (e.key === 'Escape' && drawer.classList.contains('is-open')) closeNav(); });
+    closeEls.forEach(el => el.addEventListener('click', () => closeNav()));
+    drawerLinks.forEach(link => link.addEventListener('click', () => closeNav({ returnFocus: false })));
 
-    // Mobile accordion toggles
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && drawer.classList.contains('is-open')) {
+        closeNav();
+      }
+    });
+
     header.querySelectorAll('.mobile-nav__toggle').forEach(toggle => {
       toggle.addEventListener('click', () => {
         const isOpen = toggle.getAttribute('aria-expanded') === 'true';
@@ -291,23 +392,33 @@
       });
     });
 
-    // Trap focus inside drawer
-    drawer.addEventListener('keydown', e => {
-      if (e.key !== 'Tab' || !drawer.classList.contains('is-open')) return;
-      const focusable = Array.from(drawer.querySelectorAll('a, button, [tabindex]:not([tabindex="-1"])')).filter(el => !el.closest('[aria-hidden="true"]'));
+    drawer.addEventListener('keydown', event => {
+      if (event.key !== 'Tab' || !drawer.classList.contains('is-open')) {
+        return;
+      }
+
+      const focusable = Array.from(drawer.querySelectorAll('a, button, [tabindex]:not([tabindex="-1"])'));
       const first = focusable[0];
       const last = focusable[focusable.length - 1];
-      if (e.shiftKey ? document.activeElement === first : document.activeElement === last) {
-        e.preventDefault();
-        (e.shiftKey ? last : first).focus();
+
+      if (!first || !last) {
+        return;
+      }
+
+      if (event.shiftKey ? document.activeElement === first : document.activeElement === last) {
+        event.preventDefault();
+        (event.shiftKey ? last : first).focus();
       }
     });
   }
 
   const header = document.querySelector('header.site-header');
-  if (!header) return;
+  if (!header) {
+    return;
+  }
 
   header.innerHTML = HEADER_HTML;
   setActiveLinks(header);
+  initSearch(header);
   initMobileNav(header);
 })();

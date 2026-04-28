@@ -1,5 +1,156 @@
 /* Page-specific overrides — only used when a page needs something that doesn't belong in components.css */
 
+/* ─── Search page ───────────────────────────── */
+
+.search-page {
+  padding-block: var(--section-pad-y) var(--section-pad-y-lg);
+}
+
+.search-page__intro {
+  margin-block-end: var(--space-6);
+}
+
+.search-page__intro p {
+  font-size: var(--fs-body-lg);
+  color: var(--color-ink-soft);
+}
+
+.search-page__panel {
+  padding: clamp(var(--space-5), 3vw, var(--space-7));
+  background-color: var(--color-white);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.04);
+}
+
+.search-page__form {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.search-page__form label {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-medium);
+}
+
+.search-page__controls {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.search-page__controls input[type="search"] {
+  min-height: 2.75rem;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-white);
+  font-size: var(--fs-body);
+}
+
+.search-page__controls input[type="search"]:focus {
+  outline: 2px solid var(--color-green);
+  outline-offset: 0.125rem;
+  border-color: var(--color-green);
+}
+
+.search-page__summary {
+  margin-block: var(--space-5) var(--space-4);
+  font-size: var(--fs-body-lg);
+  font-weight: var(--fw-medium);
+}
+
+.search-page__state {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.search-page__state p {
+  color: var(--color-ink-soft);
+}
+
+.search-page__quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.search-page__quick-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: var(--space-3) var(--space-5);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-cream);
+  color: var(--color-green);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+  text-decoration: none;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+
+.search-page__quick-link:hover,
+.search-page__quick-link:focus-visible {
+  background-color: var(--color-cream-soft);
+  border-color: var(--color-green);
+}
+
+.search-results {
+  list-style: none;
+  display: grid;
+  gap: var(--space-4);
+  margin-block-start: var(--space-4);
+}
+
+.search-result {
+  padding: var(--space-5);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-md);
+  background-color: var(--color-cream);
+  box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.04);
+}
+
+.search-result__meta {
+  margin-block-end: var(--space-2);
+  font-size: var(--fs-eyebrow);
+  font-weight: var(--fw-semibold);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.search-result__title {
+  margin-block: 0 0.35em;
+  font-size: var(--fs-h5);
+}
+
+.search-result__title a {
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+.search-result__title a:hover,
+.search-result__title a:focus-visible {
+  color: var(--color-green);
+}
+
+.search-result__description {
+  color: var(--color-ink-soft);
+}
+
+.search-page__noscript {
+  margin-block-start: var(--space-5);
+  color: var(--color-ink-soft);
+}
+
+@media (min-width: 40em) {
+  .search-page__controls {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
+  }
+}
+
 /* ─── Shop page ───────────────────────────── */
 
 .shop-category-grid {
@@ -2102,11 +2253,16 @@
 /* Gallery */
 
 .product-gallery {
-  position: sticky;
-  top: calc(var(--space-6) + 1rem);
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
+}
+
+@media (min-width: 64em) {
+  .product-gallery {
+    position: sticky;
+    top: calc(var(--space-6) + 1rem);
+  }
 }
 
 .product-gallery__main {

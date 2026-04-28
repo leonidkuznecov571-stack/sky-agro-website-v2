@@ -1,9 +1,23 @@
 (function () {
   'use strict';
 
+  function animatePanel(panel) {
+    if (!panel || !panel.classList || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      return;
+    }
+
+    panel.classList.remove('featured-products__panel--entering');
+    void panel.offsetWidth;
+    panel.classList.add('featured-products__panel--entering');
+  }
+
   /* Activate a tab and its panel, deactivate the rest.
      Updates sibling prev/next arrow disabled state if provided. */
-  function activateTab(tabs, panels, target, prevBtn, nextBtn) {
+  function activateTab(tabs, panels, target, prevBtn, nextBtn, shouldAnimate) {
+    var previous = tabs.find(function (tab) {
+      return tab.getAttribute('aria-selected') === 'true';
+    });
+
     tabs.forEach(function (tab) {
       var isTarget = tab === target;
       tab.setAttribute('aria-selected', isTarget ? 'true' : 'false');
@@ -12,9 +26,20 @@
     });
 
     var targetPanelId = target.getAttribute('aria-controls');
+    var targetPanel = null;
+
     panels.forEach(function (panel) {
-      panel.hidden = panel.id !== targetPanelId;
+      var isTargetPanel = panel.id === targetPanelId;
+      panel.hidden = !isTargetPanel;
+
+      if (isTargetPanel) {
+        targetPanel = panel;
+      }
     });
+
+    if (shouldAnimate && previous !== target) {
+      animatePanel(targetPanel);
+    }
 
     if (prevBtn && nextBtn) {
       var idx = tabs.indexOf(target);
@@ -31,6 +56,7 @@
     var panels = tabs.map(function (tab) {
       return document.getElementById(tab.getAttribute('aria-controls'));
     }).filter(Boolean);
+    var shouldAnimate = tablist.classList.contains('featured-products__tabs');
 
     /* Look for sibling prev/next arrow buttons (.new-offers__arrows). */
     var arrowsWrap = tablist.parentElement
@@ -49,7 +75,7 @@
     /* Tab click */
     tabs.forEach(function (tab) {
       tab.addEventListener('click', function () {
-        activateTab(tabs, panels, tab, prevBtn, nextBtn);
+        activateTab(tabs, panels, tab, prevBtn, nextBtn, shouldAnimate);
       });
     });
 
@@ -69,7 +95,7 @@
 
         if (next) {
           e.preventDefault();
-          activateTab(tabs, panels, next, prevBtn, nextBtn);
+          activateTab(tabs, panels, next, prevBtn, nextBtn, shouldAnimate);
           next.focus();
         }
       });
@@ -80,7 +106,7 @@
       prevBtn.addEventListener('click', function () {
         var idx = tabs.indexOf(activeTab());
         if (idx > 0) {
-          activateTab(tabs, panels, tabs[idx - 1], prevBtn, nextBtn);
+          activateTab(tabs, panels, tabs[idx - 1], prevBtn, nextBtn, shouldAnimate);
         }
       });
     }
@@ -89,7 +115,7 @@
       nextBtn.addEventListener('click', function () {
         var idx = tabs.indexOf(activeTab());
         if (idx < tabs.length - 1) {
-          activateTab(tabs, panels, tabs[idx + 1], prevBtn, nextBtn);
+          activateTab(tabs, panels, tabs[idx + 1], prevBtn, nextBtn, shouldAnimate);
         }
       });
     }
