@@ -611,10 +611,6 @@
 }
 
 @media (max-width: 63.9375em) {
-  .site-header {
-    position: static;
-  }
-
   .utility-bar {
     display: none;
   }
