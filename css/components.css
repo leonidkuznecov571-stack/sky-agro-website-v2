@@ -305,7 +305,7 @@
 
 .featured-products {
   padding-block: var(--section-pad-y);
-  background-color: var(--color-cream-soft);
+  background-color: var(--color-cream-light);
 }
 
 .featured-products__bar {
@@ -731,7 +731,7 @@
 
 .about-intro {
   padding-block: var(--section-pad-y);
-  background-color: var(--color-cream-soft);
+  background-color: var(--color-cream-light);
 }
 
 .about-intro__inner {

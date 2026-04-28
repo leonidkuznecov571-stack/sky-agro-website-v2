@@ -1,5 +1,19 @@
 /* Page-specific overrides — only used when a page needs something that doesn't belong in components.css */
 
+/* ─── Shop page ───────────────────────────── */
+
+.shop-category-grid {
+  grid-template-columns: 1fr;
+  max-width: 64rem;
+  margin-inline: auto;
+}
+
+@media (min-width: 40em) {
+  .shop-category-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 /* ─── Contact page ───────────────────────────── */
 
 .contact-page__section {
