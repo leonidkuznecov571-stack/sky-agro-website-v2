@@ -939,7 +939,8 @@
 }
 
 .page-hero__inner {
-  max-width: 68rem;
+  max-width: var(--container-max);
+  padding-inline: calc(var(--container-pad-x) + clamp(var(--space-5), 2vw + 1rem, var(--space-8)));
 }
 
 .page-hero h1 {
@@ -979,6 +980,10 @@
 .page-hero--equipment-centred .page-hero__lede {
   margin-inline: auto;
   max-width: 58ch;
+}
+
+.blog-page .page-hero {
+  border-bottom: none;
 }
 
 .product-category-hero {
@@ -1385,7 +1390,7 @@
   position: absolute;
   top: -0.375rem;
   left: -0.125rem;
-  font-size: var(--fs-small);
+  font-size: var(--fs-h4);
   font-weight: var(--fw-bold);
   color: var(--color-gold);
   line-height: 1;
@@ -1402,14 +1407,21 @@
   color: var(--color-ink);
   margin: 0 0 var(--space-3);
   line-height: var(--lh-normal);
+  width: 100%;
+  max-width: 28ch;
+  margin-inline: auto;
+  text-align: center;
 }
 
 .sky-apart__desc {
   font-size: var(--fs-body);
   color: var(--color-ink-soft);
   margin: 0;
+  width: 100%;
   max-width: 28ch;
+  margin-inline: auto;
   line-height: var(--lh-body);
+  text-align: left;
 }
 
 /* Trusted by Brewers */
@@ -2060,6 +2072,29 @@
 
 .prod-card--compact .prod-card__actions {
   grid-template-columns: 1fr;
+}
+
+.product-hub-listing .prod-grid--compact-four .prod-card--hover-add .prod-card__quick-add {
+  grid-template-columns: minmax(0, 6rem) minmax(0, 1fr);
+}
+
+.product-hub-listing .prod-grid--compact-four .prod-card--hover-add .prod-card__quick-add-step {
+  font-size: var(--fs-body);
+}
+
+.product-hub-listing .prod-grid--compact-four .prod-card--hover-add .prod-card__quick-add-value {
+  font-size: var(--fs-small);
+}
+
+.product-hub-listing .prod-grid--compact-four .prod-card--hover-add .prod-card__quick-add-step,
+.product-hub-listing .prod-grid--compact-four .prod-card--hover-add .prod-card__quick-add-value,
+.product-hub-listing .prod-grid--compact-four .prod-card--hover-add .prod-card__quick-add-btn {
+  min-height: 2.5rem;
+}
+
+.product-hub-listing .prod-grid--compact-four .prod-card--hover-add .prod-card__quick-add-btn {
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--fs-eyebrow);
 }
 
 .product-hub-listing .prod-card__footer,
@@ -3413,11 +3448,16 @@
 ═══════════════════════════════════════════════ */
 
 .blog-index-section {
-  padding-block: var(--section-pad-y);
+  padding-block: 0 var(--section-pad-y);
 }
 
 .blog-filter {
   margin-block-end: var(--space-7);
+}
+
+.blog-filter--hero {
+  margin-block-start: var(--space-5);
+  margin-block-end: 0;
 }
 
 .blog-filter__list {
@@ -3431,10 +3471,15 @@
 }
 
 .blog-filter__link {
+  appearance: none;
+  background: none;
+  border: none;
+  cursor: pointer;
   font-size: var(--fs-small);
   font-weight: var(--fw-medium);
   color: var(--color-ink-soft);
-  text-decoration: none;
+  font-family: inherit;
+  line-height: 1.4;
   padding: var(--space-2) var(--space-4);
   border-radius: var(--radius-sm);
   transition: color 0.15s, background-color 0.15s;
@@ -3449,6 +3494,11 @@
 .blog-filter__link.is-active {
   color: var(--color-white);
   background-color: var(--color-green);
+}
+
+.blog-filter__link:focus-visible {
+  outline: 2px solid var(--color-green);
+  outline-offset: 0.125rem;
 }
 
 /* ═══════════════════════════════════════════════
@@ -4496,6 +4546,7 @@
   display: grid;
   gap: var(--space-6);
   align-items: start;
+  padding-inline: calc(var(--container-pad-x) + clamp(var(--space-5), 2vw + 1rem, var(--space-8)));
 }
 
 @media (min-width: 64em) {

@@ -16,8 +16,9 @@
   <link rel="stylesheet" href="css/pages.css">
   <script src="js/header.js" defer></script>
   <script src="js/footer.js" defer></script>
+  <script src="js/blog-filter.js" defer></script>
 </head>
-<body>
+<body class="blog-page">
 
   <a href="#main-content" class="skip-link">Skip to main content</a>
   <header class="site-header"></header>
@@ -27,26 +28,25 @@
     <section class="page-hero">
       <div class="container page-hero__inner">
         <p class="eyebrow">News &amp; Know-how</p>
-        <h1>Blog</h1>
+        <h1>Latest News &amp; Insights</h1>
         <p class="page-hero__lede">Technical guides, industry news, and product updates written for brewers, procurement teams, and beverage producers.</p>
+        <nav class="blog-filter blog-filter--hero" aria-label="Filter articles by category">
+          <ul class="blog-filter__list" role="list">
+            <li><button type="button" class="blog-filter__link is-active" data-blog-filter="all" aria-pressed="true">All</button></li>
+            <li><button type="button" class="blog-filter__link" data-blog-filter="technical-guide" aria-pressed="false">Technical guide</button></li>
+            <li><button type="button" class="blog-filter__link" data-blog-filter="industry-news" aria-pressed="false">Industry news</button></li>
+            <li><button type="button" class="blog-filter__link" data-blog-filter="new-products" aria-pressed="false">New products</button></li>
+          </ul>
+        </nav>
       </div>
     </section>
 
     <section class="blog-index-section" aria-label="Blog articles">
       <div class="container">
 
-        <nav class="blog-filter" aria-label="Filter articles by category">
-          <ul class="blog-filter__list" role="list">
-            <li><a href="#" class="blog-filter__link is-active">All</a></li>
-            <li><a href="#" class="blog-filter__link">Technical guide</a></li>
-            <li><a href="#" class="blog-filter__link">Industry news</a></li>
-            <li><a href="#" class="blog-filter__link">New products</a></li>
-          </ul>
-        </nav>
-
         <ul class="blog-grid" role="list">
 
-          <li>
+          <li data-blog-category="technical-guide">
             <article class="blog-card">
               <a href="blog/water-chemistry-basics.html" class="blog-card__img-link" tabindex="-1" aria-hidden="true">
                 <div class="blog-card__img-wrap">
@@ -63,7 +63,7 @@
             </article>
           </li>
 
-          <li>
+          <li data-blog-category="industry-news">
             <article class="blog-card">
               <a href="blog/malt-barley-prices.html" class="blog-card__img-link" tabindex="-1" aria-hidden="true">
                 <div class="blog-card__img-wrap">
@@ -80,7 +80,7 @@
             </article>
           </li>
 
-          <li>
+          <li data-blog-category="technical-guide">
             <article class="blog-card">
               <a href="blog/non-alcoholic-low-abv.html" class="blog-card__img-link" tabindex="-1" aria-hidden="true">
                 <div class="blog-card__img-wrap">
@@ -97,7 +97,7 @@
             </article>
           </li>
 
-          <li>
+          <li data-blog-category="new-products">
             <article class="blog-card">
               <a href="blog/gluten-testing.html" class="blog-card__img-link" tabindex="-1" aria-hidden="true">
                 <div class="blog-card__img-wrap">
@@ -105,7 +105,7 @@
                 </div>
               </a>
               <div class="blog-card__body">
-                <span class="blog-tag blog-tag--tech">Technical guide</span>
+                <span class="blog-tag blog-tag--new">New products</span>
                 <h2 class="blog-card__title">
                   <a href="blog/gluten-testing.html" class="blog-card__link">Gluten Testing in Brewing: Why It Matters</a>
                 </h2>
@@ -114,7 +114,7 @@
             </article>
           </li>
 
-          <li>
+          <li data-blog-category="technical-guide">
             <article class="blog-card">
               <a href="#" class="blog-card__img-link" tabindex="-1" aria-hidden="true">
                 <div class="blog-card__img-wrap">
@@ -131,7 +131,7 @@
             </article>
           </li>
 
-          <li>
+          <li data-blog-category="technical-guide">
             <article class="blog-card">
               <a href="#" class="blog-card__img-link" tabindex="-1" aria-hidden="true">
                 <div class="blog-card__img-wrap">
@@ -148,7 +148,7 @@
             </article>
           </li>
 
-          <li>
+          <li data-blog-category="technical-guide">
             <article class="blog-card">
               <a href="#" class="blog-card__img-link" tabindex="-1" aria-hidden="true">
                 <div class="blog-card__img-wrap">
@@ -165,7 +165,7 @@
             </article>
           </li>
 
-          <li>
+          <li data-blog-category="industry-news">
             <article class="blog-card">
               <a href="#" class="blog-card__img-link" tabindex="-1" aria-hidden="true">
                 <div class="blog-card__img-wrap">

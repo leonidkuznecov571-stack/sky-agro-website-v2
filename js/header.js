@@ -370,6 +370,31 @@
     });
   }
 
+  function initCatalogueCardHoverAdd() {
+    const currentPath = normalisePath(window.location.pathname);
+    const isSupportedCataloguePath = (
+      currentPath === '/products/brewing-ingredients' ||
+      currentPath.startsWith('/products/brewing-ingredients/') ||
+      currentPath === '/products/chemical-products' ||
+      currentPath.startsWith('/products/chemical-products/') ||
+      currentPath === '/products/kegs-packaging' ||
+      currentPath.startsWith('/products/kegs-packaging/')
+    );
+
+    if (!isSupportedCataloguePath || !document.querySelector('.prod-results .prod-card')) {
+      return;
+    }
+
+    loadScript(
+      `${ROOT}/js/product-card-hover-add.js`,
+      () => typeof window.SkyAgroProductCardHoverAdd?.init === 'function'
+    ).then(() => {
+      window.SkyAgroProductCardHoverAdd.init();
+    }).catch(() => {
+      // Keep the catalogue cards in their static state if the enhancement fails.
+    });
+  }
+
   const header = document.querySelector('header.site-header');
   if (!header) {
     return;
@@ -379,4 +404,5 @@
   setActiveLinks(header);
   initSearch(header);
   initMobileNav(header);
+  initCatalogueCardHoverAdd();
 })();
