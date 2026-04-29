@@ -4666,3 +4666,9 @@
 .page--hide-view-product-keep-cart .prod-card__footer {
   text-align: center;
 }
+
+.page--prod-card-copy-left .prod-card__body,
+.page--prod-card-copy-left .prod-card__heading,
+.page--prod-card-copy-left .prod-card__footer {
+  text-align: left;
+}

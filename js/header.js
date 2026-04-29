@@ -15,7 +15,7 @@
         </nav>
         <div class="utility-bar__right">
           <a href="mailto:info@sky-agro.com" class="utility-bar__link">
-            <img src="${ROOT}/assets/icons/contact-icons/email-icon-white.svg" alt="" class="utility-bar__contact-icon" width="16" height="16" aria-hidden="true">
+            <img src="${ROOT}/assets/icons/contact-icons/email-icon-white.svg" alt="" class="utility-bar__contact-icon utility-bar__contact-icon--email" width="16" height="16" aria-hidden="true">
             info@sky-agro.com
           </a>
           <span class="utility-bar__divider" aria-hidden="true">|</span>
@@ -82,11 +82,11 @@
           </a>
         </div>
         <button class="main-bar__hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <rect y="4" width="24" height="2" rx="1" fill="currentColor"/>
-            <rect y="11" width="24" height="2" rx="1" fill="currentColor"/>
-            <rect y="18" width="24" height="2" rx="1" fill="currentColor"/>
-          </svg>
+          <span class="main-bar__hamburger-box" aria-hidden="true">
+            <span class="main-bar__hamburger-line"></span>
+            <span class="main-bar__hamburger-line"></span>
+            <span class="main-bar__hamburger-line"></span>
+          </span>
         </button>
       </div>
     </div>
@@ -207,8 +207,12 @@
         <ul class="mobile-nav__list" role="list">
           <li><a href="${ROOT}/index.html" class="mobile-nav__link">Home</a></li>
           <li class="mobile-nav__item--has-sub">
-            <a href="${ROOT}/products/brewing-ingredients/" class="mobile-nav__link">Brewing Ingredients</a>
-            <button class="mobile-nav__toggle" aria-expanded="false">Browse ingredients <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="mobile-nav__item-head">
+              <a href="${ROOT}/products/brewing-ingredients/" class="mobile-nav__link mobile-nav__link--top">Brewing Ingredients</a>
+              <button class="mobile-nav__toggle" aria-expanded="false" aria-label="Toggle Brewing Ingredients submenu">
+                <svg class="mobile-nav__toggle-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
             <ul class="mobile-nav__sub" role="list">
               <li><a href="${ROOT}/products/brewing-ingredients/malts/" class="mobile-nav__link mobile-nav__link--sub">Base &amp; Speciality Malts</a></li>
               <li><a href="${ROOT}/products/brewing-ingredients/yeast-fermentation/" class="mobile-nav__link mobile-nav__link--sub">Yeast</a></li>
@@ -216,8 +220,12 @@
             </ul>
           </li>
           <li class="mobile-nav__item--has-sub">
-            <a href="${ROOT}/products/chemical-products/" class="mobile-nav__link">Chemical Products</a>
-            <button class="mobile-nav__toggle" aria-expanded="false">Browse chemicals <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="mobile-nav__item-head">
+              <a href="${ROOT}/products/chemical-products/" class="mobile-nav__link mobile-nav__link--top">Chemical Products</a>
+              <button class="mobile-nav__toggle" aria-expanded="false" aria-label="Toggle Chemical Products submenu">
+                <svg class="mobile-nav__toggle-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
             <ul class="mobile-nav__sub" role="list">
               <li><a href="${ROOT}/products/chemical-products/hygiene-chemicals/" class="mobile-nav__link mobile-nav__link--sub">Hygiene Chemicals</a></li>
               <li><a href="${ROOT}/products/chemical-products/processing-aids/" class="mobile-nav__link mobile-nav__link--sub">Processing Aids</a></li>
@@ -226,8 +234,12 @@
             </ul>
           </li>
           <li class="mobile-nav__item--has-sub">
-            <a href="${ROOT}/products/equipment/" class="mobile-nav__link">Equipment</a>
-            <button class="mobile-nav__toggle" aria-expanded="false">Browse equipment <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="mobile-nav__item-head">
+              <a href="${ROOT}/products/equipment/" class="mobile-nav__link mobile-nav__link--top">Equipment</a>
+              <button class="mobile-nav__toggle" aria-expanded="false" aria-label="Toggle Equipment submenu">
+                <svg class="mobile-nav__toggle-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
             <ul class="mobile-nav__sub" role="list">
               <li><a href="${ROOT}/products/equipment/brewhouses/" class="mobile-nav__link mobile-nav__link--sub">Brewhouses</a></li>
               <li><a href="${ROOT}/products/equipment/tanks/" class="mobile-nav__link mobile-nav__link--sub">Tanks</a></li>
@@ -248,8 +260,12 @@
             </ul>
           </li>
           <li class="mobile-nav__item--has-sub">
-            <a href="${ROOT}/products/kegs-packaging/" class="mobile-nav__link">Kegs &amp; Packaging</a>
-            <button class="mobile-nav__toggle" aria-expanded="false">Browse packaging <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="mobile-nav__item-head">
+              <a href="${ROOT}/products/kegs-packaging/" class="mobile-nav__link mobile-nav__link--top">Kegs &amp; Packaging</a>
+              <button class="mobile-nav__toggle" aria-expanded="false" aria-label="Toggle Kegs and Packaging submenu">
+                <svg class="mobile-nav__toggle-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
             <ul class="mobile-nav__sub" role="list">
               <li><a href="${ROOT}/products/kegs-packaging/one-way-kegs/" class="mobile-nav__link mobile-nav__link--sub">One-way Kegs</a></li>
               <li><a href="${ROOT}/products/kegs-packaging/cask-packaging/" class="mobile-nav__link mobile-nav__link--sub">Cask Packaging</a></li>
@@ -359,6 +375,8 @@
       drawer.classList.add('is-open');
       drawer.setAttribute('aria-hidden', 'false');
       hamburger.setAttribute('aria-expanded', 'true');
+      hamburger.setAttribute('aria-label', 'Close navigation menu');
+      hamburger.classList.add('is-active');
       document.body.classList.add('nav-open');
       drawer.querySelector('.mobile-nav__close').focus();
     }
@@ -367,6 +385,8 @@
       drawer.classList.remove('is-open');
       drawer.setAttribute('aria-hidden', 'true');
       hamburger.setAttribute('aria-expanded', 'false');
+      hamburger.setAttribute('aria-label', 'Open navigation menu');
+      hamburger.classList.remove('is-active');
       document.body.classList.remove('nav-open');
 
       if (returnFocus) {
@@ -374,7 +394,14 @@
       }
     }
 
-    hamburger.addEventListener('click', openNav);
+    hamburger.addEventListener('click', () => {
+      if (drawer.classList.contains('is-open')) {
+        closeNav();
+        return;
+      }
+
+      openNav();
+    });
     closeEls.forEach(el => el.addEventListener('click', () => closeNav()));
     drawerLinks.forEach(link => link.addEventListener('click', () => closeNav({ returnFocus: false })));
 

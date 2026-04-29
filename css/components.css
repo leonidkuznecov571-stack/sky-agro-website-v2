@@ -853,7 +853,7 @@
 
 .promotions {
   padding-block: var(--section-pad-y);
-  background-color: var(--color-cream-soft);
+  background-color: var(--color-cream);
 }
 
 .promotions__subtitle {
@@ -1060,7 +1060,7 @@
   padding-block: var(--section-pad-y-lg);
   background:
     linear-gradient(to right, rgba(10, 20, 14, 0.84) 0%, rgba(10, 20, 14, 0.58) 56%, rgba(10, 20, 14, 0.18) 100%),
-    url('../assets/home/General/malt-pouring.png') center / cover no-repeat;
+    url('../assets/home/about-us-banner.webp') center / cover no-repeat;
   color: var(--color-white);
 }
 
@@ -1070,11 +1070,6 @@
 
 .about-intro__copy .eyebrow {
   display: inline-flex;
-  color: rgba(255, 255, 255, 0.88);
-}
-
-.about-intro__copy .eyebrow::before {
-  color: rgba(255, 255, 255, 0.88);
 }
 
 .about-intro__copy {
@@ -1089,6 +1084,7 @@
 .about-intro__copy p {
   max-width: 55ch;
   color: rgba(255, 255, 255, 0.88);
+  font-weight: var(--fw-medium);
 }
 
 .about-intro__cta {
@@ -1103,7 +1099,7 @@
 
 .social-band {
   padding-block: var(--section-pad-y);
-  background-color: var(--color-white);
+  background-color: var(--color-cream);
 }
 
 .social-band__inner {
@@ -1186,7 +1182,7 @@
 
 .blog-preview {
   padding-block: var(--section-pad-y);
-  background-color: var(--color-white);
+  background-color: var(--color-cream-soft);
 }
 
 .blog-preview__subtitle {
