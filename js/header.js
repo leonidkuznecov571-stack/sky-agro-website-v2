@@ -206,71 +206,10 @@
         </div>
         <ul class="mobile-nav__list" role="list">
           <li><a href="${ROOT}/index.html" class="mobile-nav__link">Home</a></li>
-          <li class="mobile-nav__item--has-sub">
-            <div class="mobile-nav__item-head">
-              <a href="${ROOT}/products/brewing-ingredients/" class="mobile-nav__link mobile-nav__link--top">Brewing Ingredients</a>
-              <button class="mobile-nav__toggle" aria-expanded="false" aria-label="Toggle Brewing Ingredients submenu">
-                <svg class="mobile-nav__toggle-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </button>
-            </div>
-            <ul class="mobile-nav__sub" role="list">
-              <li><a href="${ROOT}/products/brewing-ingredients/malts/" class="mobile-nav__link mobile-nav__link--sub">Base &amp; Speciality Malts</a></li>
-              <li><a href="${ROOT}/products/brewing-ingredients/yeast-fermentation/" class="mobile-nav__link mobile-nav__link--sub">Yeast</a></li>
-              <li><a href="${ROOT}/products/brewing-ingredients/sugars-adjuncts/" class="mobile-nav__link mobile-nav__link--sub">Sugars &amp; Adjuncts</a></li>
-            </ul>
-          </li>
-          <li class="mobile-nav__item--has-sub">
-            <div class="mobile-nav__item-head">
-              <a href="${ROOT}/products/chemical-products/" class="mobile-nav__link mobile-nav__link--top">Chemical Products</a>
-              <button class="mobile-nav__toggle" aria-expanded="false" aria-label="Toggle Chemical Products submenu">
-                <svg class="mobile-nav__toggle-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </button>
-            </div>
-            <ul class="mobile-nav__sub" role="list">
-              <li><a href="${ROOT}/products/chemical-products/hygiene-chemicals/" class="mobile-nav__link mobile-nav__link--sub">Hygiene Chemicals</a></li>
-              <li><a href="${ROOT}/products/chemical-products/processing-aids/" class="mobile-nav__link mobile-nav__link--sub">Processing Aids</a></li>
-              <li><a href="${ROOT}/products/chemical-products/finings-clarification/" class="mobile-nav__link mobile-nav__link--sub">Finings &amp; Clarification</a></li>
-              <li><a href="${ROOT}/products/chemical-products/additional-products/" class="mobile-nav__link mobile-nav__link--sub">Additional Products</a></li>
-            </ul>
-          </li>
-          <li class="mobile-nav__item--has-sub">
-            <div class="mobile-nav__item-head">
-              <a href="${ROOT}/products/equipment/" class="mobile-nav__link mobile-nav__link--top">Equipment</a>
-              <button class="mobile-nav__toggle" aria-expanded="false" aria-label="Toggle Equipment submenu">
-                <svg class="mobile-nav__toggle-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </button>
-            </div>
-            <ul class="mobile-nav__sub" role="list">
-              <li><a href="${ROOT}/products/equipment/brewhouses/" class="mobile-nav__link mobile-nav__link--sub">Brewhouses</a></li>
-              <li><a href="${ROOT}/products/equipment/tanks/" class="mobile-nav__link mobile-nav__link--sub">Tanks</a></li>
-              <li><a href="${ROOT}/products/equipment/tanks/yeast-propagation-tank/" class="mobile-nav__link mobile-nav__link--sub">Yeast Propagation Tank</a></li>
-              <li><a href="${ROOT}/products/equipment/processing/" class="mobile-nav__link mobile-nav__link--sub">Processing</a></li>
-              <li><a href="${ROOT}/products/equipment/processing/cip/" class="mobile-nav__link mobile-nav__link--sub">CIP</a></li>
-              <li><a href="${ROOT}/products/equipment/processing/pasteurisation/" class="mobile-nav__link mobile-nav__link--sub">Pasteurisation</a></li>
-              <li><a href="${ROOT}/products/equipment/processing/blending-carbonation/" class="mobile-nav__link mobile-nav__link--sub">Blending &amp; Carbonation</a></li>
-              <li><a href="${ROOT}/products/equipment/processing/dealcoholiser/" class="mobile-nav__link mobile-nav__link--sub">Dealcoholiser</a></li>
-              <li><a href="${ROOT}/products/equipment/processing/water-treatment/" class="mobile-nav__link mobile-nav__link--sub">Water Treatment</a></li>
-              <li><a href="${ROOT}/products/equipment/processing/keg-equipment/" class="mobile-nav__link mobile-nav__link--sub">Keg Equipment</a></li>
-              <li><a href="${ROOT}/products/equipment/additional-equipment/" class="mobile-nav__link mobile-nav__link--sub">Additional Equipment</a></li>
-              <li><a href="${ROOT}/products/equipment/additional-equipment/malt-mill/" class="mobile-nav__link mobile-nav__link--sub">Malt Mill</a></li>
-              <li><a href="${ROOT}/products/equipment/additional-equipment/tubular-conveyor/" class="mobile-nav__link mobile-nav__link--sub">Tubular Conveyor</a></li>
-              <li><a href="${ROOT}/products/equipment/additional-equipment/yeast-propagation-system/" class="mobile-nav__link mobile-nav__link--sub">Yeast Propagation System</a></li>
-              <li><a href="${ROOT}/products/equipment/additional-equipment/dry-hopping-gun/" class="mobile-nav__link mobile-nav__link--sub">Dry-Hopping Gun</a></li>
-              <li><a href="${ROOT}/products/equipment/other-beverages/" class="mobile-nav__link mobile-nav__link--sub">Other Beverages</a></li>
-            </ul>
-          </li>
-          <li class="mobile-nav__item--has-sub">
-            <div class="mobile-nav__item-head">
-              <a href="${ROOT}/products/kegs-packaging/" class="mobile-nav__link mobile-nav__link--top">Kegs &amp; Packaging</a>
-              <button class="mobile-nav__toggle" aria-expanded="false" aria-label="Toggle Kegs and Packaging submenu">
-                <svg class="mobile-nav__toggle-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </button>
-            </div>
-            <ul class="mobile-nav__sub" role="list">
-              <li><a href="${ROOT}/products/kegs-packaging/one-way-kegs/" class="mobile-nav__link mobile-nav__link--sub">One-way Kegs</a></li>
-              <li><a href="${ROOT}/products/kegs-packaging/cask-packaging/" class="mobile-nav__link mobile-nav__link--sub">Cask Packaging</a></li>
-            </ul>
-          </li>
+          <li><a href="${ROOT}/products/brewing-ingredients/" class="mobile-nav__link">Brewing Ingredients</a></li>
+          <li><a href="${ROOT}/products/chemical-products/" class="mobile-nav__link">Chemical Products</a></li>
+          <li><a href="${ROOT}/products/equipment/" class="mobile-nav__link">Equipment</a></li>
+          <li><a href="${ROOT}/products/kegs-packaging/" class="mobile-nav__link">Kegs &amp; Packaging</a></li>
           <li><a href="${ROOT}/about.html" class="mobile-nav__link">About us</a></li>
           <li><a href="${ROOT}/blog.html" class="mobile-nav__link">Blog</a></li>
           <li><a href="${ROOT}/catalogues.html" class="mobile-nav__link">Catalogues</a></li>
@@ -409,14 +348,6 @@
       if (event.key === 'Escape' && drawer.classList.contains('is-open')) {
         closeNav();
       }
-    });
-
-    header.querySelectorAll('.mobile-nav__toggle').forEach(toggle => {
-      toggle.addEventListener('click', () => {
-        const isOpen = toggle.getAttribute('aria-expanded') === 'true';
-        toggle.setAttribute('aria-expanded', String(!isOpen));
-        toggle.nextElementSibling.classList.toggle('is-open', !isOpen);
-      });
     });
 
     drawer.addEventListener('keydown', event => {
