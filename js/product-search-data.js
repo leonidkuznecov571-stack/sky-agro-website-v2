@@ -648,20 +648,20 @@ window.SKY_AGRO_PRODUCT_INDEX = [
     "keywords": "Yeast Propagation System | Equipment | Additional Equipment | equipment | additional equipment | yeast propagation system"
   },
   {
-    "href": "/shop/equipment/brewhouses/brewpub-brewhouse/",
-    "title": "Brewpub Brewhouse",
-    "description": "Placeholder page for Brewpub Brewhouse configurations. Detailed specifications will be added later.",
+    "href": "/shop/equipment/brewhouses/brewpub/",
+    "title": "Brewpub",
+    "description": "Placeholder page for Brewpub configurations. Detailed specifications will be added later.",
     "section": "Equipment / Brewhouses",
     "type": "product",
-    "keywords": "Brewpub Brewhouse | Equipment | Brewhouses | equipment | brewhouses | brewpub brewhouse"
+    "keywords": "Brewpub | Equipment | Brewhouses | equipment | brewhouses | brewpub"
   },
   {
-    "href": "/shop/equipment/brewhouses/craft-brewery-brewhouse/",
-    "title": "Craft Brewery Brewhouse",
-    "description": "Placeholder page for Craft Brewery Brewhouse systems. Detailed product data to be added in a future update.",
+    "href": "/shop/equipment/brewhouses/craft-brewery/",
+    "title": "Craft Brewery",
+    "description": "Placeholder page for Craft Brewery systems. Detailed product data to be added in a future update.",
     "section": "Equipment / Brewhouses",
     "type": "product",
-    "keywords": "Craft Brewery Brewhouse | Equipment | Brewhouses | equipment | brewhouses | craft brewery brewhouse"
+    "keywords": "Craft Brewery | Equipment | Brewhouses | equipment | brewhouses | craft brewery"
   },
   {
     "href": "/shop/equipment/brewhouses/",
@@ -672,17 +672,17 @@ window.SKY_AGRO_PRODUCT_INDEX = [
     "keywords": "Brewhouses | Equipment | equipment | brewhouses"
   },
   {
-    "href": "/shop/equipment/brewhouses/industrial-brewery-system/",
-    "title": "Industrial Brewery System",
-    "description": "Placeholder page for Industrial Brewery System configurations. Full technical and process details will be added later.",
+    "href": "/shop/equipment/brewhouses/industrial-brewery/",
+    "title": "Industrial Brewery",
+    "description": "Placeholder page for Industrial Brewery configurations. Full technical and process details will be added later.",
     "section": "Equipment / Brewhouses",
     "type": "product",
-    "keywords": "Industrial Brewery System | Equipment | Brewhouses | equipment | brewhouses | industrial brewery system"
+    "keywords": "Industrial Brewery | Equipment | Brewhouses | equipment | brewhouses | industrial brewery"
   },
   {
     "href": "/shop/equipment/brewhouses/pilot-brewing-system/",
     "title": "Pilot Brewing System",
-    "description": "Placeholder page for the Pilot Brewing System. Technical details and product data will be added in a later pass.",
+    "description": "Placeholder page for Pilot Brewing System configurations. Technical details and product data will be added in a later pass.",
     "section": "Equipment / Brewhouses",
     "type": "product",
     "keywords": "Pilot Brewing System | Equipment | Brewhouses | equipment | brewhouses | pilot brewing system"

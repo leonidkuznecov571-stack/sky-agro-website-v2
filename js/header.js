@@ -130,9 +130,9 @@
               <a href="${ROOT}/shop/equipment/brewhouses/" class="category-nav__dropdown-link category-nav__dropdown-link--parent">Brewhouses<svg class="sub-arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" aria-hidden="true"><path d="M1 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
               <ul class="category-nav__sub-dropdown" role="list">
                 <li><a href="${ROOT}/shop/equipment/brewhouses/pilot-brewing-system/" class="category-nav__dropdown-link">Pilot Brewing System</a></li>
-                <li><a href="${ROOT}/shop/equipment/brewhouses/brewpub-brewhouse/" class="category-nav__dropdown-link">Brewpub Brewhouse</a></li>
-                <li><a href="${ROOT}/shop/equipment/brewhouses/craft-brewery-brewhouse/" class="category-nav__dropdown-link">Craft Brewery Brewhouse</a></li>
-                <li><a href="${ROOT}/shop/equipment/brewhouses/industrial-brewery-system/" class="category-nav__dropdown-link">Industrial Brewery System</a></li>
+                <li><a href="${ROOT}/shop/equipment/brewhouses/brewpub/" class="category-nav__dropdown-link">Brewpub</a></li>
+                <li><a href="${ROOT}/shop/equipment/brewhouses/craft-brewery/" class="category-nav__dropdown-link">Craft Brewery</a></li>
+                <li><a href="${ROOT}/shop/equipment/brewhouses/industrial-brewery/" class="category-nav__dropdown-link">Industrial Brewery</a></li>
               </ul>
             </li>
             <li class="category-nav__dropdown-item category-nav__dropdown-item--has-sub">
