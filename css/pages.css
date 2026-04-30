@@ -1274,8 +1274,8 @@
   align-items: center;
   min-height: clamp(24rem, 38vw, 37.5rem);
   background:
-    linear-gradient(to right, rgba(10, 20, 14, 0.80) 0%, rgba(10, 20, 14, 0.52) 55%, rgba(10, 20, 14, 0.18) 100%),
-    url('../assets/about/about-us-hero.webp') center / cover no-repeat;
+    linear-gradient(to right, rgba(10, 20, 14, 0.84) 0%, rgba(10, 20, 14, 0.58) 56%, rgba(10, 20, 14, 0.18) 100%),
+    url('../assets/home/about-us-banner.webp') center / cover no-repeat;
   color: var(--color-white);
   padding-block-start: calc(var(--section-pad-y) - var(--space-6));
   padding-block-end: calc(var(--section-pad-y) - var(--space-4));
@@ -1421,14 +1421,14 @@
   max-width: 28ch;
   margin-inline: auto;
   line-height: var(--lh-body);
-  text-align: left;
+  text-align: center;
 }
 
 /* Trusted by Brewers */
 
 .trusted {
   padding-block: var(--section-pad-y);
-  background-color: var(--color-cream-soft);
+  background-color: var(--color-cream);
 }
 
 .trusted__inner {
@@ -1464,8 +1464,7 @@
 }
 
 .trusted__copy p {
-  max-width: 52ch;
-  color: var(--color-ink-soft);
+  max-width: 55ch;
 }
 
 .trusted__copy .eyebrow {
@@ -1490,11 +1489,13 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-1);
+  align-items: center;
+  text-align: center;
 }
 
 .trusted__stat-number {
   font-size: var(--fs-h2);
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-semibold);
   color: var(--color-gold);
   line-height: 1;
   letter-spacing: var(--ls-tight);
@@ -1504,7 +1505,7 @@
 .trusted__stat-label {
   font-size: var(--fs-small);
   font-weight: var(--fw-medium);
-  color: var(--color-ink-soft);
+  color: var(--color-gold);
   text-transform: uppercase;
   letter-spacing: var(--ls-wide);
 }
@@ -1513,7 +1514,7 @@
 
 .origin-band {
   padding-block: var(--section-pad-y-lg);
-  background-color: var(--color-green-deep);
+  background-color: var(--color-green-dark);
   color: var(--color-white);
 }
 
@@ -1532,19 +1533,26 @@
 }
 
 .origin-band__intro h2 {
-  font-size: clamp(1.5rem, 1.5vw + 0.875rem, 1.875rem);
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--ls-tight);
   color: var(--color-white);
   margin-block: 0 var(--space-5);
-}
-
-.origin-band__intro h2 em {
-  color: var(--color-gold);
-  font-style: normal;
 }
 
 .origin-band__intro p {
   color: rgba(255, 255, 255, 0.8);
   max-width: 48ch;
+}
+
+.origin-band__intro .eyebrow,
+.origin-band__intro .eyebrow::before {
+  color: var(--color-gold);
+}
+
+.origin-band__intro > p:not(.eyebrow) {
+  font-weight: var(--fw-medium);
 }
 
 /* Timeline */
@@ -1597,12 +1605,13 @@
   font-size: var(--fs-h5);
   font-weight: var(--fw-semibold);
   color: var(--color-white);
-  margin-block: 0 var(--space-2);
+  margin-block: 0 var(--space-1);
   line-height: var(--lh-normal);
 }
 
 .timeline__item p {
   font-size: var(--fs-body);
+  font-weight: var(--fw-medium);
   color: rgba(255, 255, 255, 0.75);
   margin: 0;
   max-width: 40ch;
@@ -1856,6 +1865,7 @@
 .prod-filter-callout {
   display: grid;
   gap: var(--space-3);
+  padding-inline-start: var(--space-2);
   padding-block-start: var(--space-5);
   border-top: 1px solid var(--color-rule);
 }
@@ -2103,17 +2113,11 @@
 }
 
 .product-hub-listing .prod-filter-callout__link svg {
-  display: none;
+  display: block;
 }
 
 .product-hub-listing .prod-filter-callout__link::after {
-  content: "\2192";
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 1rem;
-  height: 1rem;
-  line-height: 1;
+  content: none;
 }
 
 /* Product card meta (EBC) */
