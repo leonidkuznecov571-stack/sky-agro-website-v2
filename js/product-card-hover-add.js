@@ -1,8 +1,8 @@
 (() => {
   const TARGET_PREFIXES = [
-    '/products/brewing-ingredients',
-    '/products/chemical-products',
-    '/products/kegs-packaging'
+    '/shop/brewing-ingredients',
+    '/shop/chemical-products',
+    '/shop/kegs-packaging'
   ];
 
   function normalisePath(pathname) {

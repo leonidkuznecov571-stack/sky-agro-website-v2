@@ -1013,7 +1013,7 @@
 
 .division-card__desc {
   font-size: var(--fs-body);
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-regular);
   color: var(--color-ink);
   margin: 0;
   line-height: var(--lh-body);

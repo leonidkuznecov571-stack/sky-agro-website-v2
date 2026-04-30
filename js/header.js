@@ -96,97 +96,97 @@
         <a href="${ROOT}/index.html" class="category-nav__link" data-nav-match="/index.html">Home</a>
 
         <div class="category-nav__item">
-          <a href="${ROOT}/products/brewing-ingredients/" class="category-nav__btn" aria-haspopup="true" data-nav-match="/products/brewing-ingredients">
+          <a href="${ROOT}/shop/brewing-ingredients/" class="category-nav__btn" aria-haspopup="true" data-nav-match="/shop/brewing-ingredients">
             Brewing Ingredients
             <svg class="category-nav__chevron" viewBox="0 0 169.3 125" aria-hidden="true" focusable="false"><path d="m 167.9,25.430508 -8.5,-8.5 c -2.3,-2.3 -6.2,-2.3 -8.5,0 l -61.9,62.3 c -2.3,2.3 -6.2,2.3 -8.5,0 l -61.8,-62.7 c -2.3,-2.3 -6.2,-2.3 -8.5,0 l -8.5,8.5 c -2.3,2.3 -2.3,6.2 0,8.5 l 78.8,79.600002 c 2.3,2.3 6.2,2.3 8.5,0 l 78.8,-79.600002 c 2,-2.4 2,-5.8 0.1,-8.1 z" fill="currentColor"/></svg>
           </a>
           <ul class="category-nav__dropdown" role="list">
-            <li><a href="${ROOT}/products/brewing-ingredients/malts/" class="category-nav__dropdown-link">Base &amp; Speciality Malts</a></li>
-            <li><a href="${ROOT}/products/brewing-ingredients/yeast-fermentation/" class="category-nav__dropdown-link">Yeast</a></li>
-            <li><a href="${ROOT}/products/brewing-ingredients/sugars-adjuncts/" class="category-nav__dropdown-link">Sugars &amp; Adjuncts</a></li>
+            <li><a href="${ROOT}/shop/brewing-ingredients/malts/" class="category-nav__dropdown-link">Base &amp; Speciality Malts</a></li>
+            <li><a href="${ROOT}/shop/brewing-ingredients/yeast-fermentation/" class="category-nav__dropdown-link">Yeast</a></li>
+            <li><a href="${ROOT}/shop/brewing-ingredients/sugars-adjuncts/" class="category-nav__dropdown-link">Sugars &amp; Adjuncts</a></li>
           </ul>
         </div>
 
         <div class="category-nav__item">
-          <a href="${ROOT}/products/chemical-products/" class="category-nav__btn" aria-haspopup="true" data-nav-match="/products/chemical-products">
+          <a href="${ROOT}/shop/chemical-products/" class="category-nav__btn" aria-haspopup="true" data-nav-match="/shop/chemical-products">
             Chemical Products
             <svg class="category-nav__chevron" viewBox="0 0 169.3 125" aria-hidden="true" focusable="false"><path d="m 167.9,25.430508 -8.5,-8.5 c -2.3,-2.3 -6.2,-2.3 -8.5,0 l -61.9,62.3 c -2.3,2.3 -6.2,2.3 -8.5,0 l -61.8,-62.7 c -2.3,-2.3 -6.2,-2.3 -8.5,0 l -8.5,8.5 c -2.3,2.3 -2.3,6.2 0,8.5 l 78.8,79.600002 c 2.3,2.3 6.2,2.3 8.5,0 l 78.8,-79.600002 c 2,-2.4 2,-5.8 0.1,-8.1 z" fill="currentColor"/></svg>
           </a>
           <ul class="category-nav__dropdown" role="list">
-            <li><a href="${ROOT}/products/chemical-products/hygiene-chemicals/" class="category-nav__dropdown-link">Hygiene Chemicals</a></li>
-            <li><a href="${ROOT}/products/chemical-products/processing-aids/" class="category-nav__dropdown-link">Processing Aids</a></li>
-            <li><a href="${ROOT}/products/chemical-products/finings-clarification/" class="category-nav__dropdown-link">Finings &amp; Clarification</a></li>
-            <li><a href="${ROOT}/products/chemical-products/additional-products/" class="category-nav__dropdown-link">Additional Products</a></li>
+            <li><a href="${ROOT}/shop/chemical-products/hygiene-chemicals/" class="category-nav__dropdown-link">Hygiene Chemicals</a></li>
+            <li><a href="${ROOT}/shop/chemical-products/processing-aids/" class="category-nav__dropdown-link">Processing Aids</a></li>
+            <li><a href="${ROOT}/shop/chemical-products/finings-clarification/" class="category-nav__dropdown-link">Finings &amp; Clarification</a></li>
+            <li><a href="${ROOT}/shop/chemical-products/additional-products/" class="category-nav__dropdown-link">Additional Products</a></li>
           </ul>
         </div>
 
         <div class="category-nav__item">
-          <a href="${ROOT}/products/equipment/" class="category-nav__btn" aria-haspopup="true" data-nav-match="/products/equipment">
+          <a href="${ROOT}/shop/equipment/" class="category-nav__btn" aria-haspopup="true" data-nav-match="/shop/equipment">
             Equipment
             <svg class="category-nav__chevron" viewBox="0 0 169.3 125" aria-hidden="true" focusable="false"><path d="m 167.9,25.430508 -8.5,-8.5 c -2.3,-2.3 -6.2,-2.3 -8.5,0 l -61.9,62.3 c -2.3,2.3 -6.2,2.3 -8.5,0 l -61.8,-62.7 c -2.3,-2.3 -6.2,-2.3 -8.5,0 l -8.5,8.5 c -2.3,2.3 -2.3,6.2 0,8.5 l 78.8,79.600002 c 2.3,2.3 6.2,2.3 8.5,0 l 78.8,-79.600002 c 2,-2.4 2,-5.8 0.1,-8.1 z" fill="currentColor"/></svg>
           </a>
           <ul class="category-nav__dropdown" role="list">
             <li class="category-nav__dropdown-item category-nav__dropdown-item--has-sub">
-              <a href="${ROOT}/products/equipment/brewhouses/" class="category-nav__dropdown-link category-nav__dropdown-link--parent">Brewhouses<svg class="sub-arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" aria-hidden="true"><path d="M1 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a href="${ROOT}/shop/equipment/brewhouses/" class="category-nav__dropdown-link category-nav__dropdown-link--parent">Brewhouses<svg class="sub-arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" aria-hidden="true"><path d="M1 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
               <ul class="category-nav__sub-dropdown" role="list">
-                <li><a href="${ROOT}/products/equipment/brewhouses/pilot-brewing-system/" class="category-nav__dropdown-link">Pilot Brewing System</a></li>
-                <li><a href="${ROOT}/products/equipment/brewhouses/brewpub-brewhouse/" class="category-nav__dropdown-link">Brewpub Brewhouse</a></li>
-                <li><a href="${ROOT}/products/equipment/brewhouses/craft-brewery-brewhouse/" class="category-nav__dropdown-link">Craft Brewery Brewhouse</a></li>
-                <li><a href="${ROOT}/products/equipment/brewhouses/industrial-brewery-system/" class="category-nav__dropdown-link">Industrial Brewery System</a></li>
+                <li><a href="${ROOT}/shop/equipment/brewhouses/pilot-brewing-system/" class="category-nav__dropdown-link">Pilot Brewing System</a></li>
+                <li><a href="${ROOT}/shop/equipment/brewhouses/brewpub-brewhouse/" class="category-nav__dropdown-link">Brewpub Brewhouse</a></li>
+                <li><a href="${ROOT}/shop/equipment/brewhouses/craft-brewery-brewhouse/" class="category-nav__dropdown-link">Craft Brewery Brewhouse</a></li>
+                <li><a href="${ROOT}/shop/equipment/brewhouses/industrial-brewery-system/" class="category-nav__dropdown-link">Industrial Brewery System</a></li>
               </ul>
             </li>
             <li class="category-nav__dropdown-item category-nav__dropdown-item--has-sub">
-              <a href="${ROOT}/products/equipment/tanks/" class="category-nav__dropdown-link category-nav__dropdown-link--parent">Tanks<svg class="sub-arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" aria-hidden="true"><path d="M1 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a href="${ROOT}/shop/equipment/tanks/" class="category-nav__dropdown-link category-nav__dropdown-link--parent">Tanks<svg class="sub-arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" aria-hidden="true"><path d="M1 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
               <ul class="category-nav__sub-dropdown" role="list">
-                <li><a href="${ROOT}/products/equipment/tanks/fermentation-vessels/" class="category-nav__dropdown-link">Fermentation Vessels</a></li>
-                <li><a href="${ROOT}/products/equipment/tanks/brite-beer-tanks-bbts/" class="category-nav__dropdown-link">Brite Beer Tanks (BBTs)</a></li>
-                <li><a href="${ROOT}/products/equipment/tanks/serving-tanks/" class="category-nav__dropdown-link">Serving Tanks</a></li>
-                <li><a href="${ROOT}/products/equipment/tanks/dairy-tanks/" class="category-nav__dropdown-link">Dairy Tanks</a></li>
-                <li><a href="${ROOT}/products/equipment/tanks/water-tanks/" class="category-nav__dropdown-link">Water Tanks</a></li>
-                <li><a href="${ROOT}/products/equipment/tanks/beverage-tanks/" class="category-nav__dropdown-link">Beverage Tanks</a></li>
-                <li><a href="${ROOT}/products/equipment/tanks/yeast-propagation-tank/" class="category-nav__dropdown-link">Yeast Propagation Tank</a></li>
+                <li><a href="${ROOT}/shop/equipment/tanks/fermentation-vessels/" class="category-nav__dropdown-link">Fermentation Vessels</a></li>
+                <li><a href="${ROOT}/shop/equipment/tanks/brite-beer-tanks-bbts/" class="category-nav__dropdown-link">Brite Beer Tanks (BBTs)</a></li>
+                <li><a href="${ROOT}/shop/equipment/tanks/serving-tanks/" class="category-nav__dropdown-link">Serving Tanks</a></li>
+                <li><a href="${ROOT}/shop/equipment/tanks/dairy-tanks/" class="category-nav__dropdown-link">Dairy Tanks</a></li>
+                <li><a href="${ROOT}/shop/equipment/tanks/water-tanks/" class="category-nav__dropdown-link">Water Tanks</a></li>
+                <li><a href="${ROOT}/shop/equipment/tanks/beverage-tanks/" class="category-nav__dropdown-link">Beverage Tanks</a></li>
+                <li><a href="${ROOT}/shop/equipment/tanks/yeast-propagation-tank/" class="category-nav__dropdown-link">Yeast Propagation Tank</a></li>
               </ul>
             </li>
             <li class="category-nav__dropdown-item category-nav__dropdown-item--has-sub">
-              <a href="${ROOT}/products/equipment/processing/" class="category-nav__dropdown-link category-nav__dropdown-link--parent">Processing<svg class="sub-arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" aria-hidden="true"><path d="M1 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a href="${ROOT}/shop/equipment/processing/" class="category-nav__dropdown-link category-nav__dropdown-link--parent">Processing<svg class="sub-arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" aria-hidden="true"><path d="M1 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
               <ul class="category-nav__sub-dropdown" role="list">
-                <li><a href="${ROOT}/products/equipment/processing/cip/" class="category-nav__dropdown-link">CIP</a></li>
-                <li><a href="${ROOT}/products/equipment/processing/pasteurisation/" class="category-nav__dropdown-link">Pasteurisation</a></li>
-                <li><a href="${ROOT}/products/equipment/processing/blending-carbonation/" class="category-nav__dropdown-link">Blending &amp; Carbonation</a></li>
-                <li><a href="${ROOT}/products/equipment/processing/dealcoholiser/" class="category-nav__dropdown-link">Dealcoholiser</a></li>
-                <li><a href="${ROOT}/products/equipment/processing/water-treatment/" class="category-nav__dropdown-link">Water Treatment</a></li>
-                <li><a href="${ROOT}/products/equipment/processing/keg-equipment/" class="category-nav__dropdown-link">Keg Equipment</a></li>
+                <li><a href="${ROOT}/shop/equipment/processing/cip/" class="category-nav__dropdown-link">CIP</a></li>
+                <li><a href="${ROOT}/shop/equipment/processing/pasteurisation/" class="category-nav__dropdown-link">Pasteurisation</a></li>
+                <li><a href="${ROOT}/shop/equipment/processing/blending-carbonation/" class="category-nav__dropdown-link">Blending &amp; Carbonation</a></li>
+                <li><a href="${ROOT}/shop/equipment/processing/dealcoholiser/" class="category-nav__dropdown-link">Dealcoholiser</a></li>
+                <li><a href="${ROOT}/shop/equipment/processing/water-treatment/" class="category-nav__dropdown-link">Water Treatment</a></li>
+                <li><a href="${ROOT}/shop/equipment/processing/keg-equipment/" class="category-nav__dropdown-link">Keg Equipment</a></li>
               </ul>
             </li>
             <li class="category-nav__dropdown-item category-nav__dropdown-item--has-sub">
-              <a href="${ROOT}/products/equipment/additional-equipment/" class="category-nav__dropdown-link category-nav__dropdown-link--parent">Additional Equipment<svg class="sub-arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" aria-hidden="true"><path d="M1 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a href="${ROOT}/shop/equipment/additional-equipment/" class="category-nav__dropdown-link category-nav__dropdown-link--parent">Additional Equipment<svg class="sub-arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" aria-hidden="true"><path d="M1 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
               <ul class="category-nav__sub-dropdown" role="list">
-                <li><a href="${ROOT}/products/equipment/additional-equipment/malt-mill/" class="category-nav__dropdown-link">Malt Mill</a></li>
-                <li><a href="${ROOT}/products/equipment/additional-equipment/tubular-conveyor/" class="category-nav__dropdown-link">Tubular Conveyor</a></li>
-                <li><a href="${ROOT}/products/equipment/additional-equipment/yeast-propagation-system/" class="category-nav__dropdown-link">Yeast Propagation System</a></li>
-                <li><a href="${ROOT}/products/equipment/additional-equipment/dry-hopping-gun/" class="category-nav__dropdown-link">Dry-Hopping Gun</a></li>
+                <li><a href="${ROOT}/shop/equipment/additional-equipment/malt-mill/" class="category-nav__dropdown-link">Malt Mill</a></li>
+                <li><a href="${ROOT}/shop/equipment/additional-equipment/tubular-conveyor/" class="category-nav__dropdown-link">Tubular Conveyor</a></li>
+                <li><a href="${ROOT}/shop/equipment/additional-equipment/yeast-propagation-system/" class="category-nav__dropdown-link">Yeast Propagation System</a></li>
+                <li><a href="${ROOT}/shop/equipment/additional-equipment/dry-hopping-gun/" class="category-nav__dropdown-link">Dry-Hopping Gun</a></li>
               </ul>
             </li>
             <li class="category-nav__dropdown-item category-nav__dropdown-item--has-sub">
-              <a href="${ROOT}/products/equipment/other-beverages/" class="category-nav__dropdown-link category-nav__dropdown-link--parent">Other Beverages<svg class="sub-arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" aria-hidden="true"><path d="M1 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a href="${ROOT}/shop/equipment/other-beverages/" class="category-nav__dropdown-link category-nav__dropdown-link--parent">Other Beverages<svg class="sub-arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" aria-hidden="true"><path d="M1 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
               <ul class="category-nav__sub-dropdown" role="list">
-                <li><a href="${ROOT}/products/equipment/other-beverages/distilling-system/" class="category-nav__dropdown-link">Distilling System</a></li>
-                <li><a href="${ROOT}/products/equipment/processing/blending-carbonation/beverage-production-line/" class="category-nav__dropdown-link">Beverage Production Line</a></li>
-                <li><a href="${ROOT}/products/equipment/other-beverages/kombucha-brewhouse/" class="category-nav__dropdown-link">Kombucha Brewhouse</a></li>
-                <li><a href="${ROOT}/products/equipment/other-beverages/cold-coffee-brewhouse/" class="category-nav__dropdown-link">Cold-Coffee Brewhouse</a></li>
+                <li><a href="${ROOT}/shop/equipment/other-beverages/distilling-system/" class="category-nav__dropdown-link">Distilling System</a></li>
+                <li><a href="${ROOT}/shop/equipment/other-beverages/beverage-production-line/" class="category-nav__dropdown-link">Beverage Production Line</a></li>
+                <li><a href="${ROOT}/shop/equipment/other-beverages/kombucha-brewhouse/" class="category-nav__dropdown-link">Kombucha Brewhouse</a></li>
+                <li><a href="${ROOT}/shop/equipment/other-beverages/cold-coffee-brewhouse/" class="category-nav__dropdown-link">Cold-Coffee Brewhouse</a></li>
               </ul>
             </li>
           </ul>
         </div>
 
         <div class="category-nav__item">
-          <a href="${ROOT}/products/kegs-packaging/" class="category-nav__btn" aria-haspopup="true" data-nav-match="/products/kegs-packaging">
+          <a href="${ROOT}/shop/kegs-packaging/" class="category-nav__btn" aria-haspopup="true" data-nav-match="/shop/kegs-packaging">
             Kegs &amp; Packaging
             <svg class="category-nav__chevron" viewBox="0 0 169.3 125" aria-hidden="true" focusable="false"><path d="m 167.9,25.430508 -8.5,-8.5 c -2.3,-2.3 -6.2,-2.3 -8.5,0 l -61.9,62.3 c -2.3,2.3 -6.2,2.3 -8.5,0 l -61.8,-62.7 c -2.3,-2.3 -6.2,-2.3 -8.5,0 l -8.5,8.5 c -2.3,2.3 -2.3,6.2 0,8.5 l 78.8,79.600002 c 2.3,2.3 6.2,2.3 8.5,0 l 78.8,-79.600002 c 2,-2.4 2,-5.8 0.1,-8.1 z" fill="currentColor"/></svg>
           </a>
           <ul class="category-nav__dropdown" role="list">
-            <li><a href="${ROOT}/products/kegs-packaging/one-way-kegs/" class="category-nav__dropdown-link">One-way Kegs</a></li>
-            <li><a href="${ROOT}/products/kegs-packaging/cask-packaging/" class="category-nav__dropdown-link">Cask Packaging</a></li>
+            <li><a href="${ROOT}/shop/kegs-packaging/one-way-kegs/" class="category-nav__dropdown-link">One-way Kegs</a></li>
+            <li><a href="${ROOT}/shop/kegs-packaging/cask-packaging/" class="category-nav__dropdown-link">Cask Packaging</a></li>
           </ul>
         </div>
       </div>
@@ -206,10 +206,10 @@
         </div>
         <ul class="mobile-nav__list" role="list">
           <li><a href="${ROOT}/index.html" class="mobile-nav__link">Home</a></li>
-          <li><a href="${ROOT}/products/brewing-ingredients/" class="mobile-nav__link">Brewing Ingredients</a></li>
-          <li><a href="${ROOT}/products/chemical-products/" class="mobile-nav__link">Chemical Products</a></li>
-          <li><a href="${ROOT}/products/equipment/" class="mobile-nav__link">Equipment</a></li>
-          <li><a href="${ROOT}/products/kegs-packaging/" class="mobile-nav__link">Kegs &amp; Packaging</a></li>
+          <li><a href="${ROOT}/shop/brewing-ingredients/" class="mobile-nav__link">Brewing Ingredients</a></li>
+          <li><a href="${ROOT}/shop/chemical-products/" class="mobile-nav__link">Chemical Products</a></li>
+          <li><a href="${ROOT}/shop/equipment/" class="mobile-nav__link">Equipment</a></li>
+          <li><a href="${ROOT}/shop/kegs-packaging/" class="mobile-nav__link">Kegs &amp; Packaging</a></li>
           <li><a href="${ROOT}/about.html" class="mobile-nav__link">About us</a></li>
           <li><a href="${ROOT}/blog.html" class="mobile-nav__link">Blog</a></li>
           <li><a href="${ROOT}/catalogues.html" class="mobile-nav__link">Catalogues</a></li>
@@ -222,7 +222,7 @@
   const sharedScriptLoads = new Map();
 
   function normalisePath(path) {
-    const cleaned = path.replace(/index\.html$/, '').replace(/\/+$/, '');
+    const cleaned = path.replace(/\/index\.html$|\.html$/, '').replace(/\/+$/, '');
     return cleaned || '/';
   }
 
@@ -373,12 +373,12 @@
   function initCatalogueCardHoverAdd() {
     const currentPath = normalisePath(window.location.pathname);
     const isSupportedCataloguePath = (
-      currentPath === '/products/brewing-ingredients' ||
-      currentPath.startsWith('/products/brewing-ingredients/') ||
-      currentPath === '/products/chemical-products' ||
-      currentPath.startsWith('/products/chemical-products/') ||
-      currentPath === '/products/kegs-packaging' ||
-      currentPath.startsWith('/products/kegs-packaging/')
+      currentPath === '/shop/brewing-ingredients' ||
+      currentPath.startsWith('/shop/brewing-ingredients/') ||
+      currentPath === '/shop/chemical-products' ||
+      currentPath.startsWith('/shop/chemical-products/') ||
+      currentPath === '/shop/kegs-packaging' ||
+      currentPath.startsWith('/shop/kegs-packaging/')
     );
 
     if (!isSupportedCataloguePath || !document.querySelector('.prod-results .prod-card')) {

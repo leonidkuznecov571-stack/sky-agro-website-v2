@@ -7,3 +7,9 @@ About story section: changed the heading to “Our Journey Started with Malt”,
 About timeline items: reduced the gap between event headings and body copy, and increased timeline body text to `--fw-medium` to match the story intro paragraphs.
 About trusted section: split the main copy into two paragraphs so the service and logistics message reads as a separate point.
 Catalogue filter panels: matched all callout blocks to the malts panel by applying the left inset globally and restoring the proper SVG arrow icon instead of the faux text arrow in product hub listings.
+About timeline animation: replaced the left-slide reveal with a drawn gold progress line, quicker fade-up item transitions, and dot activation so the story reads as a chronological sequence rather than generic scrolling cards.
+About hero heading: changed “Built to Supply Every Part of Brewing” from `--fw-semibold` to `--fw-bold` so it matches the weight of the site’s other primary headings.
+About trusted stats: reduced the `30+` and `15+` figures from `--fs-h2` to `--fs-h3` and left-aligned each stat block so the numbers and labels sit on a cleaner shared edge.
+About facility CTAs: changed the final two section buttons to “View Chemicals” and “View Equipment” for cleaner, more consistent division naming.
+About division cards: updated the SKY MALT, SKY LABS, and SKY TECH body copy to the revised product-range descriptions supplied for the About page.
+About division cards: reduced the body-copy weight from `--fw-medium` to `--fw-regular` so the descriptions sit more quietly beneath the division logos and CTAs.

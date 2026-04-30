@@ -39,10 +39,10 @@
         <div class="footer-col">
           <h2 class="footer-col__heading">Shop</h2>
           <ul class="footer-col__links" role="list">
-            <li><a href="${ROOT}/products/brewing-ingredients/" class="footer-col__link">Brewing Ingredients</a></li>
-            <li><a href="${ROOT}/products/chemical-products/" class="footer-col__link">Chemicals</a></li>
-            <li><a href="${ROOT}/equipment/index.html" class="footer-col__link">Equipment</a></li>
-            <li><a href="${ROOT}/products/kegs-packaging/" class="footer-col__link">Kegs &amp; Packaging</a></li>
+            <li><a href="${ROOT}/shop/brewing-ingredients/" class="footer-col__link">Brewing Ingredients</a></li>
+            <li><a href="${ROOT}/shop/chemical-products/" class="footer-col__link">Chemicals</a></li>
+            <li><a href="${ROOT}/shop/equipment/" class="footer-col__link">Equipment</a></li>
+            <li><a href="${ROOT}/shop/kegs-packaging/" class="footer-col__link">Kegs &amp; Packaging</a></li>
           </ul>
         </div>
 

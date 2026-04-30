@@ -11,24 +11,40 @@
   timeline.classList.add('timeline--animated');
 
   var items = timeline.querySelectorAll('.timeline__item');
-
-  var observer = new IntersectionObserver(
+  var timelineObserver = new IntersectionObserver(
     function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
-          entry.target.classList.add('timeline__item--visible');
-          observer.unobserve(entry.target);
+          timeline.classList.add('timeline--visible');
+          timelineObserver.unobserve(entry.target);
         }
       });
     },
     {
-      threshold: 0.15,
-      rootMargin: '0px 0px -60px 0px'
+      threshold: 0.2,
+      rootMargin: '0px 0px -10% 0px'
     }
   );
 
+  var itemObserver = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('timeline__item--visible');
+          itemObserver.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.25,
+      rootMargin: '0px 0px -12% 0px'
+    }
+  );
+
+  timelineObserver.observe(timeline);
+
   items.forEach(function (item, index) {
-    item.style.transitionDelay = (index * 0.18) + 's';
-    observer.observe(item);
+    item.style.setProperty('--timeline-item-delay', ((index * 0.12) + 0.12) + 's');
+    itemObserver.observe(item);
   });
 })();
