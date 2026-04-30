@@ -13,3 +13,14 @@ About trusted stats: reduced the `30+` and `15+` figures from `--fs-h2` to `--fs
 About facility CTAs: changed the final two section buttons to “View Chemicals” and “View Equipment” for cleaner, more consistent division naming.
 About division cards: updated the SKY MALT, SKY LABS, and SKY TECH body copy to the revised product-range descriptions supplied for the About page.
 About division cards: reduced the body-copy weight from `--fw-medium` to `--fw-regular` so the descriptions sit more quietly beneath the division logos and CTAs.
+Malt prices article: rebuilt the page into a centred editorial hero and single-column article layout to follow the article mockups, removed the contents rail and feature panel, and kept the editorial image treatment minimal.
+Malt prices article: reintroduced a lighter left-hand contents rail, added placeholder editorial imagery near the opening, and added a related-articles band so the template has a stronger visual start and finish.
+Malt prices article ending: moved the topics line into the article body and aligned the related-articles CTA to the header with the standard inline arrow so the ending reads as one cleaner editorial flow.
+Malt prices article sidebar: removed the Quick take panel so the left rail stays lighter and keeps focus on the article contents list.
+Blog index spacing: inset the article-grid container to match the hero copy padding so the page reads on one cleaner vertical line.
+Blog index cards: changed each article tile into a single full-card link so the whole card is clickable rather than just the image and title.
+Blog index content: reduced the grid to four lead cards and replaced the extra placeholders with a new CIP chemicals article slot dated 12 February 2026.
+Home/blog sync: added the same fourth CIP chemicals article card to the home page preview so the home and blog page article sets now match.
+Malt prices article copy: replaced the shorter original body text with the supplied full pricing explainer and expanded the contents rail to match the new section structure.
+Malt prices article intro: removed the visible “Introduction” heading from the article body while keeping the opening copy and contents anchor in place.
+Blog articles: created the missing Non-Alcoholic & Low ABV, Gluten Testing, and CIP Chemicals article pages from the supplied copy and replaced the malt article’s placeholder related cards with links to the live companion pages.
