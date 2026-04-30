@@ -17,6 +17,7 @@
 
   <script src="../../../../../js/header.js" defer></script>
   <script src="../../../../../js/footer.js" defer></script>
+  <script src="../../../../../js/media-slider.js" defer></script>
 </head>
 <body>
 
@@ -90,6 +91,74 @@
                 <svg class="btn__icon" viewBox="0 0 100 125" aria-hidden="true" focusable="false"><path fill="currentColor" d="M97.64 55.753 64.72 22.833a8.06 8.06 0 1 0-11.4 11.39l19.46 19.43H8.06a8.06 8.06 0 0 0 0 16.12H72.6L53.32 89.084a8.06 8.06 0 0 0 11.4 11.39L97.64 67.553A8 8 0 0 0 100 61.853a1.27 1.27 0 0 0 0-.2 1.41 1.41 0 0 0 0-.2 8.07 8.07 0 0 0-2.36-5.7Z"/></svg>
               </a>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="media-feature" aria-labelledby="cabinet-pasteuriser-process-heading">
+      <div class="container media-feature__inner media-feature__inner--reverse media-feature__inner--top">
+        <div class="media-feature__media media-slider" data-media-slider tabindex="0" aria-label="Cabinet pasteuriser process image gallery">
+          <div class="media-slider__viewport">
+            <div class="media-slider__track">
+              <figure class="media-slider__slide">
+                <img
+                  src="../../../../../assets/product-images/equipment/processing/pasteurisation/cabinet-pasteuriser.webp"
+                  alt="Cabinet pasteuriser"
+                  width="1200"
+                  height="900"
+                  loading="lazy"
+                >
+              </figure>
+              <figure class="media-slider__slide">
+                <img
+                  src="../../../../../assets/equipment/equipment-category-images/pasteurisation.webp"
+                  alt="Pasteurisation equipment process area"
+                  width="1200"
+                  height="900"
+                  loading="lazy"
+                >
+              </figure>
+              <figure class="media-slider__slide">
+                <!-- TODO: replace placeholder with additional cabinet pasteuriser photography -->
+                <img
+                  src="../../../../../assets/product-images/placeholder.png"
+                  alt="Placeholder image for additional cabinet pasteuriser installation view"
+                  width="1200"
+                  height="900"
+                  loading="lazy"
+                >
+              </figure>
+            </div>
+          </div>
+
+          <div class="media-slider__controls" hidden>
+            <button type="button" class="hero-slider__prev" data-media-slider-prev aria-label="Previous image">
+              <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                <path d="M10 3 5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="hero-slider__dots" data-media-slider-dots role="list" aria-label="Image navigation"></div>
+            <button type="button" class="hero-slider__next" data-media-slider-next aria-label="Next image">
+              <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                <path d="m6 3 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="media-feature__copy">
+          <p class="eyebrow">TECHNICAL DETAILS</p>
+          <h2 id="cabinet-pasteuriser-process-heading">Process Description</h2>
+          <div class="media-feature__body">
+            <p class="media-feature__process-title">1. Batch Loading</p>
+            <p>Filled bottles or cans are loaded into the cabinet chamber in controlled batch volumes. The enclosed format allows packaged product to be treated after filling, making it suitable for smaller runs and applications where final-container pasteurisation is required.</p>
+
+            <p class="media-feature__process-title">2. Heat-Up and Holding Cycle</p>
+            <p>Steam is introduced into the chamber to raise the packaged product to the required pasteurisation temperature. Time and temperature are controlled through the programmed cycle so the batch receives the specified thermal treatment with consistent exposure across the load.</p>
+
+            <p class="media-feature__process-title">3. Cooling and Batch Discharge</p>
+            <p>Once the holding phase is complete, the cabinet moves into a controlled cooling stage before the batch is unloaded. This helps stabilise the packaged product, supports repeatable process conditions, and prepares the containers for downstream handling or storage.</p>
           </div>
         </div>
       </div>

@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../../../../css/pages.css">
   <script src="../../../../../js/header.js" defer></script>
   <script src="../../../../../js/footer.js" defer></script>
+  <script src="../../../../../js/media-slider.js" defer></script>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -54,6 +55,72 @@
 
           <div class="product-info__purchase"><div class="product-info__price-block product-info__price-block--stacked"><div class="product-info__price-line"><span class="product-info__price" id="selected-price" aria-live="polite">Price on Request</span></div><span class="product-info__price-unit" id="selected-unit"></span></div></div>
           <div class="product-info__actions"><div class="product-info__action-row"><a href="../../../../../contact.html" class="btn btn--green product-info__add-to-cart">Request a quote<svg class="btn__icon" viewBox="0 0 100 125" aria-hidden="true" focusable="false"><path fill="currentColor" d="M97.64 55.753 64.72 22.833a8.06 8.06 0 1 0-11.4 11.39l19.46 19.43H8.06a8.06 8.06 0 0 0 0 16.12H72.6L53.32 89.084a8.06 8.06 0 0 0 11.4 11.39L97.64 67.553A8 8 0 0 0 100 61.853a1.27 1.27 0 0 0 0-.2 1.41 1.41 0 0 0 0-.2 8.07 8.07 0 0 0-2.36-5.7Z"/></svg></a></div></div>
+        </div>
+      </div>
+    </section>
+    <section class="media-feature" aria-labelledby="automated-blending-process-heading">
+      <div class="container media-feature__inner media-feature__inner--reverse media-feature__inner--top">
+        <div class="media-feature__media media-slider" data-media-slider tabindex="0" aria-label="Automated blending and carbonation process image gallery">
+          <div class="media-slider__viewport">
+            <div class="media-slider__track">
+              <figure class="media-slider__slide">
+                <img
+                  src="../../../../../assets/product-images/equipment/processing/blending-and-carbonation/automated-blending-and-carbonation-slider-1.webp"
+                  alt="Automated blending and carbonation system"
+                  width="1200"
+                  height="900"
+                  loading="lazy"
+                >
+              </figure>
+              <figure class="media-slider__slide">
+                <img
+                  src="../../../../../assets/product-images/equipment/processing/blending-and-carbonation/automated-blending-and-carbonation-slider-2.webp"
+                  alt="Automated blending and carbonation process equipment side view"
+                  width="1200"
+                  height="900"
+                  loading="lazy"
+                >
+              </figure>
+              <figure class="media-slider__slide">
+                <img
+                  src="../../../../../assets/product-images/equipment/processing/blending-and-carbonation/automated-blending-and-carbonation-slider-3.webp"
+                  alt="Automated blending and carbonation installation detail view"
+                  width="1200"
+                  height="900"
+                  loading="lazy"
+                >
+              </figure>
+            </div>
+          </div>
+
+          <div class="media-slider__controls" hidden>
+            <button type="button" class="hero-slider__prev" data-media-slider-prev aria-label="Previous image">
+              <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                <path d="M10 3 5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="hero-slider__dots" data-media-slider-dots role="list" aria-label="Image navigation"></div>
+            <button type="button" class="hero-slider__next" data-media-slider-next aria-label="Next image">
+              <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                <path d="m6 3 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="media-feature__copy">
+          <p class="eyebrow">TECHNICAL DETAILS</p>
+          <h2 id="automated-blending-process-heading">Process Description</h2>
+          <div class="media-feature__body">
+            <p class="media-feature__process-title">1. Base Liquid and Additive Dosing</p>
+            <p>The system operates with two primary streams: a base liquid, such as deaerated water or beer, and a secondary stream for additives, including syrups, liquid flavours, or alcohol. Each line is equipped with a feed pump, flow meter, and PID control valve, allowing the mixing ratio to be automatically regulated based on pre-set recipes via the PLC.</p>
+
+            <p class="media-feature__process-title">2. Inline Blending</p>
+            <p>Both streams are combined in an in-line static blender, ensuring consistent mixing under controlled flow conditions. The configuration can be extended to include additional liquid streams or powder dosing where required.</p>
+
+            <p class="media-feature__process-title">3. Carbonation and CO₂ Control</p>
+            <p>The blended product passes through the carbonation line, where CO₂ flow is regulated using airflow or rotor meters and PID-controlled valves. Operation can be automatic or manual, with carbonation levels set in g/L within the PLC program. Under normal operating conditions, saturation levels of up to approximately 5.5 g/L can be achieved, depending on product temperature and system parameters.</p>
+          </div>
         </div>
       </div>
     </section>
