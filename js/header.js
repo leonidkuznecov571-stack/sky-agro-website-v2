@@ -200,11 +200,19 @@
             <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
           </svg>
         </button>
-        <div class="mobile-nav__utility">
-          <a href="mailto:info@sky-agro.com" class="mobile-nav__util-link">info@sky-agro.com</a>
-          <a href="tel:+447460379173" class="mobile-nav__util-link">07460 379 173</a>
-        </div>
         <ul class="mobile-nav__list" role="list">
+          <li>
+            <a href="mailto:info@sky-agro.com" class="mobile-nav__link mobile-nav__link--contact">
+              <img src="${ROOT}/assets/icons/contact-icons/email-icon.svg" alt="" class="mobile-nav__contact-icon" width="20" height="20" aria-hidden="true">
+              <span>info@sky-agro.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+447460379173" class="mobile-nav__link mobile-nav__link--contact">
+              <img src="${ROOT}/assets/icons/contact-icons/phone-icon.svg" alt="" class="mobile-nav__contact-icon" width="20" height="20" aria-hidden="true">
+              <span>07460 379 173</span>
+            </a>
+          </li>
           <li><a href="${ROOT}/index.html" class="mobile-nav__link">Home</a></li>
           <li><a href="${ROOT}/shop/brewing-ingredients/" class="mobile-nav__link">Brewing Ingredients</a></li>
           <li><a href="${ROOT}/shop/chemical-products/" class="mobile-nav__link">Chemical Products</a></li>

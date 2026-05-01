@@ -434,6 +434,28 @@
   gap: var(--space-3);
 }
 
+@media (max-width: 39.9375em) {
+  .featured-products--showcase .featured-products__top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+
+  .featured-products--showcase .featured-products__title {
+    order: 0;
+  }
+
+  .featured-products--showcase .featured-products__header-link {
+    order: 1;
+    align-self: flex-start;
+    margin-inline-start: 0;
+  }
+
+  .featured-products--showcase .featured-products__tabs {
+    margin-block-start: var(--space-3);
+  }
+}
+
 .featured-products__tabs {
   display: flex;
   align-items: center;
