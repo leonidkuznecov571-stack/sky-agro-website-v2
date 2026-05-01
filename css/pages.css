@@ -1938,6 +1938,12 @@
   font-weight: var(--fw-medium);
 }
 
+@media (max-width: 39.9375em) {
+  .breadcrumb__list {
+    font-size: var(--fs-eyebrow);
+  }
+}
+
 /* Products section */
 
 .cat-products {
@@ -2159,7 +2165,7 @@
 
 .prod-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: var(--space-5);
   list-style: none;
   margin: 0;
@@ -3598,8 +3604,8 @@
   }
 
   .product-tabs__tab {
-    padding: var(--space-3) var(--space-4);
-    font-size: var(--fs-small);
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--fs-eyebrow);
     scroll-snap-align: start;
   }
 }

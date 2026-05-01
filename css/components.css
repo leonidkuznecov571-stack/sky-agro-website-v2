@@ -435,8 +435,13 @@
 }
 
 @media (max-width: 39.9375em) {
-  .cat-card__desc,
-  .prod-card__desc {
+  .cat-grid,
+  .prod-grid,
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cat-card__desc {
     display: none;
   }
 
@@ -1375,7 +1380,7 @@
 .blog-grid {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: var(--space-5);
 }
 
