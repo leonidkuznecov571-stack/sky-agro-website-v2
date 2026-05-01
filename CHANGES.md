@@ -29,3 +29,8 @@ Product card mobile typography: increased product names from `--fs-h5` to `--fs-
 Mobile page gutters: increased the shared phone-only container padding and matched the mobile header’s left inset to it so page margins feel more generous and consistent across the site.
 Mobile line breaks: replaced desktop-only `<br>` breaks in shop and section headings with a shared responsive utility and removed the mobile width cap on filter CTA copy so those lines no longer inherit awkward forced wraps on phones.
 Product card mobile supporting text: increased card subheadings and descriptions from `--fs-small` to `--fs-body-lg` on phones, and stepped prices up to `--fs-body-lg`, so the rest of the card scales proportionally with the larger product names.
+Product actions: removed `View Product` buttons from product cards and equipment product hub cards so card links and primary actions carry the interaction without redundant secondary buttons.
+Equipment quote forms: kept the shared required-marker system for required fields, but made the equipment-page message field optional and labelled it explicitly as `(optional)`.
+Equipment hub cards: restored the missing bottom padding on product hub cards that no longer have a footer button, while leaving category hub cards with `View Category` footers unchanged.
+About hero mobile copy: hid the About page hero lede on phones so the heading and CTAs carry the section without the extra intro line.
+Cabinet pasteuriser capacity: updated the pasteurisation product page and listing card to show a single capacity of 840 bottles per cycle instead of the previous range.

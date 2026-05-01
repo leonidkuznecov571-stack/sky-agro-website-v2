@@ -1321,6 +1321,12 @@
   display: none;
 }
 
+@media (max-width: 39.9375em) {
+  .about-hero__lede {
+    display: none;
+  }
+}
+
 @media (max-width: 63.9375em) {
   .cat-products .container,
   .product-hub-listing .container,
@@ -3131,6 +3137,11 @@
   color: var(--color-ink-soft);
 }
 
+.quote-request__field:has(:is(input, textarea)[required]) label::after {
+  content: " *";
+  color: var(--color-error);
+}
+
 .quote-request__field input {
   min-height: 2.75rem;
   padding: var(--space-3) var(--space-4);
@@ -3165,6 +3176,12 @@
 }
 
 .quote-request__optional {
+  font-weight: var(--fw-regular);
+  color: #9a9a9a;
+  display: none;
+}
+
+.quote-request__label-note {
   font-weight: var(--fw-regular);
   color: #9a9a9a;
 }
@@ -5089,6 +5106,11 @@
 .equipment-hub--no-stretch .equipment-hub-card > .equipment-hub-card__inner {
   flex: 0 0 auto;
   padding-bottom: 0;
+}
+
+.equipment-hub--compact .equipment-hub-card:not(:has(.equipment-hub-card__footer)) > .equipment-hub-card__inner,
+.equipment-hub--no-stretch .equipment-hub-card:not(:has(.equipment-hub-card__footer)) > .equipment-hub-card__inner {
+  padding-bottom: var(--space-5);
 }
 
 .equipment-hub-card__footer .equipment-hub-card__divider {
