@@ -1322,6 +1322,12 @@
 }
 
 @media (max-width: 39.9375em) {
+  .cat-products .container,
+  .product-hub-listing .container,
+  .related-products .container {
+    padding-inline: calc(var(--container-pad-x) + var(--space-2));
+  }
+
   .about-intro .page-hero__lede {
     display: none;
   }
@@ -3461,6 +3467,13 @@
 
 /* Spec table */
 
+.spec-table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
 .spec-table {
   width: auto;
   max-width: 100%;
@@ -3607,6 +3620,11 @@
     padding: var(--space-2) var(--space-3);
     font-size: var(--fs-eyebrow);
     scroll-snap-align: start;
+  }
+
+  .spec-table-wrap .spec-table {
+    min-width: 36rem;
+    max-width: none;
   }
 }
 

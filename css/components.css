@@ -53,6 +53,10 @@
 
 /* On narrow phones, enforce 16:9 with center-crop so banners fill the viewport better */
 @media (max-width: 39.9375em) {
+  .hero-slide__cta {
+    display: none;
+  }
+
   .hero-slide {
     aspect-ratio: 16 / 9;
     overflow: hidden;
@@ -443,6 +447,12 @@
 
   .cat-card__desc {
     display: none;
+  }
+
+  .prod-card__name,
+  .featured-products .prod-card--compact .prod-card__name {
+    font-size: var(--fs-h4);
+    line-height: var(--lh-snug);
   }
 
   .featured-products--showcase .featured-products__top {
