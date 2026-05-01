@@ -1,6 +1,10 @@
 (function () {
   'use strict';
 
+  if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    return;
+  }
+
   var cards = Array.from(document.querySelectorAll('.featured-products .prod-card'));
 
   cards.forEach(function (card) {

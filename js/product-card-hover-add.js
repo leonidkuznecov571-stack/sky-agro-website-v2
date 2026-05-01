@@ -98,6 +98,10 @@
       return;
     }
 
+    if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      return;
+    }
+
     document.querySelectorAll('.prod-results .prod-card').forEach(enhanceCard);
   }
 

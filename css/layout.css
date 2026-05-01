@@ -1087,10 +1087,13 @@
   border-bottom: 1px solid var(--color-rule);
 }
 
-.mobile-nav__link--contact {
+.mobile-nav__link--icon {
   display: flex;
   align-items: center;
   gap: var(--space-3);
+}
+
+.mobile-nav__link--contact {
   color: var(--color-green);
   font-weight: var(--fw-semibold);
 }

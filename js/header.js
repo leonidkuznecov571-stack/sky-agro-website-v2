@@ -202,15 +202,15 @@
         </button>
         <ul class="mobile-nav__list" role="list">
           <li>
-            <a href="mailto:info@sky-agro.com" class="mobile-nav__link mobile-nav__link--contact">
-              <img src="${ROOT}/assets/icons/contact-icons/email-icon.svg" alt="" class="mobile-nav__contact-icon" width="20" height="20" aria-hidden="true">
-              <span>info@sky-agro.com</span>
+            <a href="tel:+447460379173" class="mobile-nav__link mobile-nav__link--icon mobile-nav__link--contact">
+              <img src="${ROOT}/assets/icons/contact-icons/phone-icon.svg" alt="" class="mobile-nav__contact-icon" width="20" height="20" aria-hidden="true">
+              <span>07460 379 173</span>
             </a>
           </li>
           <li>
-            <a href="tel:+447460379173" class="mobile-nav__link mobile-nav__link--contact">
-              <img src="${ROOT}/assets/icons/contact-icons/phone-icon.svg" alt="" class="mobile-nav__contact-icon" width="20" height="20" aria-hidden="true">
-              <span>07460 379 173</span>
+            <a href="mailto:info@sky-agro.com" class="mobile-nav__link mobile-nav__link--icon mobile-nav__link--contact">
+              <img src="${ROOT}/assets/icons/contact-icons/email-icon.svg" alt="" class="mobile-nav__contact-icon" width="20" height="20" aria-hidden="true">
+              <span>info@sky-agro.com</span>
             </a>
           </li>
           <li><a href="${ROOT}/index.html" class="mobile-nav__link">Home</a></li>
@@ -222,6 +222,12 @@
           <li><a href="${ROOT}/blog.html" class="mobile-nav__link">Blog</a></li>
           <li><a href="${ROOT}/catalogues.html" class="mobile-nav__link">Catalogues</a></li>
           <li><a href="${ROOT}/contact.html" class="mobile-nav__link">Contact us</a></li>
+          <li>
+            <a href="${ROOT}/spain.html" class="mobile-nav__link mobile-nav__link--icon">
+              <img src="${ROOT}/assets/icons/flag-icons/spain-icon.svg" alt="Spanish flag" class="mobile-nav__contact-icon" width="20" height="14">
+              <span>Comprar en España</span>
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
