@@ -1102,6 +1102,7 @@
   gap: var(--space-2);
   padding: var(--space-5);
   flex: 1;
+  text-align: left;
 }
 
 .catalogue-card__eyebrow {
@@ -1361,8 +1362,8 @@
 .sky-apart__item {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
   padding-inline: var(--space-5);
   position: relative;
 }
@@ -1409,8 +1410,8 @@
   line-height: var(--lh-normal);
   width: 100%;
   max-width: 28ch;
-  margin-inline: auto;
-  text-align: center;
+  margin-inline: 0;
+  text-align: left;
 }
 
 .sky-apart__desc {
@@ -1419,9 +1420,9 @@
   margin: 0;
   width: 100%;
   max-width: 28ch;
-  margin-inline: auto;
+  margin-inline: 0;
   line-height: var(--lh-body);
-  text-align: center;
+  text-align: left;
 }
 
 /* Trusted by Brewers */
@@ -4818,6 +4819,7 @@
   flex: 1;
   flex-direction: column;
   padding: var(--space-5);
+  text-align: left;
 }
 
 .equipment-hub-card__eyebrow {
@@ -5219,7 +5221,7 @@
 .page--hide-view-product-keep-cart .prod-card__body,
 .page--hide-view-product-keep-cart .prod-card__heading,
 .page--hide-view-product-keep-cart .prod-card__footer {
-  text-align: center;
+  text-align: left;
 }
 
 .page--prod-card-copy-left .prod-card__body,

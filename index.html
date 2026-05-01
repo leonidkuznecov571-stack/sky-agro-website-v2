@@ -140,36 +140,47 @@
     <!-- ═══════════════════════════════════════════
          FEATURED PRODUCTS TABS
     ═══════════════════════════════════════════ -->
-    <section class="featured-products" aria-labelledby="featured-products-heading">
+    <section class="featured-products featured-products--showcase" aria-labelledby="featured-products-heading">
       <div class="container">
 
         <div class="featured-products__bar">
-          <div class="featured-products__title">
-            <h2 id="featured-products-heading" class="featured-products__heading">Featured Chemicals</h2>
-            <div class="featured-products__tabs" role="tablist" aria-label="Product type">
-              <button
-                class="featured-products__tab featured-products__tab--active"
-                role="tab"
-                id="tab-btn-top"
-                aria-selected="true"
-                aria-controls="panel-top"
-              >Best Sellers</button>
-              <button
-                class="featured-products__tab"
-                role="tab"
-                id="tab-btn-new"
-                aria-selected="false"
-                aria-controls="panel-new"
-                tabindex="-1"
-              >New Arrivals</button>
+          <div class="featured-products__top">
+            <a href="/shop/chemical-products/" class="featured-products__header-link">
+              View all chemicals
+              <svg width="12" height="9" viewBox="0 0 12 9" fill="none" aria-hidden="true">
+                <path d="M1 4.5h10M7 1l4 3.5L7 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="featured-products__title">
+              <span class="eyebrow">SKY LABS</span>
+              <h2 id="featured-products-heading" class="featured-products__heading">Our Chemicals</h2>
             </div>
           </div>
-          <a href="/shop/chemical-products/" class="featured-products__header-link">
-            View All Chemicals
-            <svg width="12" height="9" viewBox="0 0 12 9" fill="none" aria-hidden="true">
-              <path d="M1 4.5h10M7 1l4 3.5L7 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
+          <div class="featured-products__tabs" role="tablist" aria-label="Product type">
+            <button
+              class="featured-products__tab featured-products__tab--active"
+              role="tab"
+              id="tab-btn-featured"
+              aria-selected="true"
+              aria-controls="panel-featured"
+            >FEATURED</button>
+            <button
+              class="featured-products__tab"
+              role="tab"
+              id="tab-btn-top"
+              aria-selected="false"
+              aria-controls="panel-top"
+              tabindex="-1"
+            >BEST SELLERS</button>
+            <button
+              class="featured-products__tab"
+              role="tab"
+              id="tab-btn-new"
+              aria-selected="false"
+              aria-controls="panel-new"
+              tabindex="-1"
+            >NEW ARRIVALS</button>
+          </div>
         </div>
 
         <!-- Panel: New Arrivals -->
@@ -186,6 +197,7 @@
                     <h3 class="prod-card__name">Enzybrew 10</h3>
                     <p class="prod-card__meta">Enzymatic cleaner</p>
                   </div>
+                  <p class="prod-card__desc">Enzymatic CIP cleaner, non-caustic alternative for vessels and brewing equipment.</p>
                 </div>
               </a>
               <div class="prod-card__footer">
@@ -247,24 +259,25 @@
           </ul>
         </div>
 
-        <!-- Panel: Deals -->
-        <div id="panel-deals" class="featured-products__panel" role="tabpanel" aria-labelledby="tab-btn-deals" hidden>
+        <!-- Panel: Featured -->
+        <div id="panel-featured" class="featured-products__panel" role="tabpanel" aria-labelledby="tab-btn-featured">
           <ul class="prod-grid" role="list">
 
             <li class="prod-card prod-card--compact">
-              <a href="/shop/brewing-ingredients/malts/pilsner-malt/" class="prod-card__content-link">
+              <a href="/shop/chemical-products/hygiene-chemicals/caustic-extra/" class="prod-card__content-link">
                 <div class="prod-card__img-wrap">
-                  <img src="assets/product-images/malt/pilsner.webp" alt="Pilsner Malt" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                  <img src="assets/product-images/hygiene-chemicals/caustic-extra.webp" alt="Caustic Extra container" class="prod-card__img" width="1100" height="1100" loading="lazy">
                 </div>
                 <div class="prod-card__body">
                   <div class="prod-card__heading">
-                    <h3 class="prod-card__name">Pilsner Malt</h3>
-                    <p class="prod-card__meta">3.5–4.2 EBC</p>
+                    <h3 class="prod-card__name">Caustic Extra</h3>
+                    <p class="prod-card__meta">Caustic cleaner</p>
                   </div>
+                  <p class="prod-card__desc">High-strength caustic detergent for hard water.</p>
                 </div>
               </a>
               <div class="prod-card__footer">
-                <p class="prod-card__price">£22.00 – £45.00</p>
+                <p class="prod-card__price">£30.00 – £110.00</p>
               </div>
             </li>
 
@@ -278,81 +291,7 @@
                     <h3 class="prod-card__name">Caustic Plus</h3>
                     <p class="prod-card__meta">Caustic CIP cleaner</p>
                   </div>
-                </div>
-              </a>
-              <div class="prod-card__footer">
-                <p class="prod-card__price">£28.00 – £95.00</p>
-              </div>
-            </li>
-
-            <li class="prod-card prod-card--compact">
-              <a href="/shop/kegs-packaging/one-way-kegs/20l-kegs-inner-bags/" class="prod-card__content-link">
-                <div class="prod-card__img-wrap">
-                  <img src="assets/product-images/one-way-kegs/20L-keg-with-inner-bag.webp" alt="TalosKeg 20L with inner bag" class="prod-card__img" width="1100" height="1100" loading="lazy">
-                </div>
-                <div class="prod-card__body">
-                  <div class="prod-card__heading">
-                    <h3 class="prod-card__name">TalosKeg 20L</h3>
-                    <p class="prod-card__meta">One-way keg</p>
-                  </div>
-                </div>
-              </a>
-              <div class="prod-card__footer">
-                <p class="prod-card__price">from £4.50 each</p>
-              </div>
-            </li>
-
-            <li class="prod-card prod-card--compact">
-              <a href="/shop/brewing-ingredients/malts/light-crystal-malt/" class="prod-card__content-link">
-                <div class="prod-card__img-wrap">
-                  <img src="assets/product-images/malt/light-crystal.webp" alt="Light Crystal Malt" class="prod-card__img" width="1100" height="1100" loading="lazy">
-                </div>
-                <div class="prod-card__body">
-                  <div class="prod-card__heading">
-                    <h3 class="prod-card__name">Light Crystal Malt</h3>
-                    <p class="prod-card__meta">90–110 EBC</p>
-                  </div>
-                </div>
-              </a>
-              <div class="prod-card__footer">
-                <p class="prod-card__price">£27.00 – £52.00</p>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-
-        <!-- Panel: Best Sellers -->
-        <div id="panel-top" class="featured-products__panel" role="tabpanel" aria-labelledby="tab-btn-top">
-          <ul class="prod-grid" role="list">
-
-            <li class="prod-card prod-card--compact">
-              <a href="/shop/chemical-products/hygiene-chemicals/caustic-extra/" class="prod-card__content-link">
-                <div class="prod-card__img-wrap">
-                  <img src="assets/product-images/hygiene-chemicals/caustic-extra.webp" alt="Caustic Extra container" class="prod-card__img" width="1100" height="1100" loading="lazy">
-                </div>
-                <div class="prod-card__body">
-                  <div class="prod-card__heading">
-                    <h3 class="prod-card__name">Caustic Extra</h3>
-                    <p class="prod-card__meta">Caustic cleaner</p>
-                  </div>
-                </div>
-              </a>
-              <div class="prod-card__footer">
-                <p class="prod-card__price">£30.00 – £110.00</p>
-              </div>
-            </li>
-
-            <li class="prod-card prod-card--compact">
-              <a href="/shop/chemical-products/hygiene-chemicals/caustic-plus/" class="prod-card__content-link">
-                <div class="prod-card__img-wrap">
-                  <img src="assets/product-images/hygiene-chemicals/caustic-plus.webp" alt="Caustic Plus container" class="prod-card__img" width="1100" height="1100" loading="lazy">
-                </div>
-                <div class="prod-card__body">
-                  <div class="prod-card__heading">
-                    <h3 class="prod-card__name">Caustic Plus</h3>
-                    <p class="prod-card__meta">Caustic cleaner</p>
-                  </div>
+                  <p class="prod-card__desc">Caustic CIP detergent for moderate to hard water.</p>
                 </div>
               </a>
               <div class="prod-card__footer">
@@ -370,6 +309,7 @@
                     <h3 class="prod-card__name">PAA 5</h3>
                     <p class="prod-card__meta">Peracetic sanitiser</p>
                   </div>
+                  <p class="prod-card__desc">Standard-strength peracetic acid disinfectant for CIP sanitation.</p>
                 </div>
               </a>
               <div class="prod-card__footer">
@@ -387,10 +327,107 @@
                     <h3 class="prod-card__name">Chlorofoam</h3>
                     <p class="prod-card__meta">Foaming chlorinated cleaner</p>
                   </div>
+                  <p class="prod-card__desc">Foaming chlorinated cleaner for manual cleaning of walls, floors and brewery surfaces.</p>
                 </div>
               </a>
               <div class="prod-card__footer">
                 <p class="prod-card__price">£24.00 – £86.00</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Panel: Best Sellers -->
+        <div id="panel-top" class="featured-products__panel" role="tabpanel" aria-labelledby="tab-btn-top" hidden>
+          <ul class="prod-grid" role="list">
+
+            <li class="prod-card prod-card--compact">
+              <a href="/shop/chemical-products/hygiene-chemicals/caustic-extra/" class="prod-card__content-link">
+                <div class="prod-card__img-wrap">
+                  <img src="assets/product-images/hygiene-chemicals/caustic-extra.webp" alt="Caustic Extra container" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                </div>
+                <div class="prod-card__body">
+                  <div class="prod-card__heading">
+                    <h3 class="prod-card__name">Caustic Extra</h3>
+                    <p class="prod-card__meta">Caustic cleaner</p>
+                  </div>
+                  <p class="prod-card__desc">High-strength caustic detergent for very hard water, maintaining consistent cleaning performance.</p>
+                </div>
+              </a>
+              <div class="prod-card__footer">
+                <p class="prod-card__price">£30.00 – £110.00</p>
+              </div>
+            </li>
+
+            <li class="prod-card prod-card--compact">
+              <a href="/shop/chemical-products/hygiene-chemicals/caustic-plus/" class="prod-card__content-link">
+                <div class="prod-card__img-wrap">
+                  <img src="assets/product-images/hygiene-chemicals/caustic-plus.webp" alt="Caustic Plus container" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                </div>
+                <div class="prod-card__body">
+                  <div class="prod-card__heading">
+                    <h3 class="prod-card__name">Caustic Plus</h3>
+                    <p class="prod-card__meta">Caustic cleaner</p>
+                  </div>
+                  <p class="prod-card__desc">Caustic CIP detergent for moderate to hard water, reliable brewhouse and vessel cleaning.</p>
+                </div>
+              </a>
+              <div class="prod-card__footer">
+                <p class="prod-card__price">£28.00 – £95.00</p>
+              </div>
+            </li>
+
+            <li class="prod-card prod-card--compact">
+              <a href="/shop/chemical-products/hygiene-chemicals/paa-5/" class="prod-card__content-link">
+                <div class="prod-card__img-wrap">
+                  <img src="assets/product-images/hygiene-chemicals/paa-5.webp" alt="PAA 5 container" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                </div>
+                <div class="prod-card__body">
+                  <div class="prod-card__heading">
+                    <h3 class="prod-card__name">PAA 5</h3>
+                    <p class="prod-card__meta">Peracetic sanitiser</p>
+                  </div>
+                  <p class="prod-card__desc">Standard-strength peracetic acid disinfectant for fast, broad-spectrum CIP sanitation.</p>
+                </div>
+              </a>
+              <div class="prod-card__footer">
+                <p class="prod-card__price">£18.00 – £72.00</p>
+              </div>
+            </li>
+
+            <li class="prod-card prod-card--compact">
+              <a href="/shop/chemical-products/hygiene-chemicals/chlorofoam/" class="prod-card__content-link">
+                <div class="prod-card__img-wrap">
+                  <img src="assets/product-images/hygiene-chemicals/chlorofoam.webp" alt="Chlorofoam container" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                </div>
+                <div class="prod-card__body">
+                  <div class="prod-card__heading">
+                    <h3 class="prod-card__name">Chlorofoam</h3>
+                    <p class="prod-card__meta">Foaming chlorinated cleaner</p>
+                  </div>
+                  <p class="prod-card__desc">Foaming chlorinated cleaner for manual cleaning of walls, floors and brewery surfaces.</p>
+                </div>
+              </a>
+              <div class="prod-card__footer">
+                <p class="prod-card__price">£24.00 – £86.00</p>
+              </div>
+            </li>
+
+            <li class="prod-card prod-card--compact">
+              <a href="/shop/chemical-products/finings-clarification/skysol/" class="prod-card__content-link">
+                <div class="prod-card__img-wrap">
+                  <img src="assets/product-images/finings/skysol.webp" alt="SkySol product packaging" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                </div>
+                <div class="prod-card__body">
+                  <div class="prod-card__heading">
+                    <h3 class="prod-card__name">SkySol</h3>
+                    <p class="prod-card__meta">Silica finings</p>
+                  </div>
+                </div>
+              </a>
+              <div class="prod-card__footer">
+                <p class="prod-card__price">£22.00 – £76.00</p>
               </div>
             </li>
 
@@ -437,36 +474,47 @@
     <!-- ═══════════════════════════════════════════
          FEATURED PRODUCTS TABS — DUPLICATE
     ═══════════════════════════════════════════ -->
-    <section class="featured-products" aria-labelledby="featured-products-heading-secondary">
+    <section class="featured-products featured-products--showcase" aria-labelledby="featured-products-heading-secondary">
       <div class="container">
 
         <div class="featured-products__bar">
-          <div class="featured-products__title">
-            <h2 id="featured-products-heading-secondary" class="featured-products__heading">Featured Ingredients</h2>
-            <div class="featured-products__tabs" role="tablist" aria-label="Product type">
-              <button
-                class="featured-products__tab featured-products__tab--active"
-                role="tab"
-                id="tab-btn-top-secondary"
-                aria-selected="true"
-                aria-controls="panel-top-secondary"
-              >Best Sellers</button>
-              <button
-                class="featured-products__tab"
-                role="tab"
-                id="tab-btn-new-secondary"
-                aria-selected="false"
-                aria-controls="panel-new-secondary"
-                tabindex="-1"
-              >New Arrivals</button>
+          <div class="featured-products__top">
+            <a href="/shop/brewing-ingredients/" class="featured-products__header-link">
+              View all ingredients
+              <svg width="12" height="9" viewBox="0 0 12 9" fill="none" aria-hidden="true">
+                <path d="M1 4.5h10M7 1l4 3.5L7 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="featured-products__title">
+              <span class="eyebrow">SKY MALT</span>
+              <h2 id="featured-products-heading-secondary" class="featured-products__heading">Our Ingredients</h2>
             </div>
           </div>
-          <a href="/shop/brewing-ingredients/" class="featured-products__header-link">
-            View All Ingredients
-            <svg width="12" height="9" viewBox="0 0 12 9" fill="none" aria-hidden="true">
-              <path d="M1 4.5h10M7 1l4 3.5L7 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
+          <div class="featured-products__tabs" role="tablist" aria-label="Product type">
+            <button
+              class="featured-products__tab featured-products__tab--active"
+              role="tab"
+              id="tab-btn-featured-secondary"
+              aria-selected="true"
+              aria-controls="panel-featured-secondary"
+            >FEATURED</button>
+            <button
+              class="featured-products__tab"
+              role="tab"
+              id="tab-btn-top-secondary"
+              aria-selected="false"
+              aria-controls="panel-top-secondary"
+              tabindex="-1"
+            >BEST SELLERS</button>
+            <button
+              class="featured-products__tab"
+              role="tab"
+              id="tab-btn-new-secondary"
+              aria-selected="false"
+              aria-controls="panel-new-secondary"
+              tabindex="-1"
+            >NEW ARRIVALS</button>
+          </div>
         </div>
 
         <!-- Panel: New Arrivals -->
@@ -483,6 +531,7 @@
                     <h3 class="prod-card__name">Fermoplus GSH</h3>
                     <p class="prod-card__meta">Fermentation nutrient</p>
                   </div>
+                  <p class="prod-card__desc">Glutathione-rich nutrient that helps protect yeast from oxidative stress.</p>
                 </div>
               </a>
               <div class="prod-card__footer">
@@ -500,6 +549,7 @@
                     <h3 class="prod-card__name">PerfectBrew Zn</h3>
                     <p class="prod-card__meta">Fermentation nutrient</p>
                   </div>
+                  <p class="prod-card__desc">Zinc-based nutrient for healthier yeast and steadier high-gravity fermentations.</p>
                 </div>
               </a>
               <div class="prod-card__footer">
@@ -517,6 +567,7 @@
                     <h3 class="prod-card__name">Medium Crystal Malt</h3>
                     <p class="prod-card__meta">100–150 EBC</p>
                   </div>
+                  <p class="prod-card__desc">Adds rounded caramel flavour, deeper colour, and fuller body to darker ales.</p>
                 </div>
               </a>
               <div class="prod-card__footer">
@@ -534,6 +585,7 @@
                     <h3 class="prod-card__name">Black Malt</h3>
                     <p class="prod-card__meta">1000–1200 EBC</p>
                   </div>
+                  <p class="prod-card__desc">Delivers intense colour with roasted depth for stouts and very dark beers.</p>
                 </div>
               </a>
               <div class="prod-card__footer">
@@ -544,8 +596,8 @@
           </ul>
         </div>
 
-        <!-- Panel: Deals -->
-        <div id="panel-deals-secondary" class="featured-products__panel" role="tabpanel" aria-labelledby="tab-btn-deals-secondary" hidden>
+        <!-- Panel: Featured -->
+        <div id="panel-featured-secondary" class="featured-products__panel" role="tabpanel" aria-labelledby="tab-btn-featured-secondary">
           <ul class="prod-grid" role="list">
 
             <li class="prod-card prod-card--compact">
@@ -558,85 +610,11 @@
                     <h3 class="prod-card__name">Pilsner Malt</h3>
                     <p class="prod-card__meta">3.5–4.2 EBC</p>
                   </div>
+                  <p class="prod-card__desc">Clean, pale base malt with high extract and crisp lager-ready character.</p>
                 </div>
               </a>
               <div class="prod-card__footer">
                 <p class="prod-card__price">£22.00 – £45.00</p>
-              </div>
-            </li>
-
-            <li class="prod-card prod-card--compact">
-              <a href="/shop/chemical-products/hygiene-chemicals/caustic-plus/" class="prod-card__content-link">
-                <div class="prod-card__img-wrap">
-                  <img src="assets/product-images/hygiene-chemicals/caustic-plus.webp" alt="Caustic Plus" class="prod-card__img" width="1100" height="1100" loading="lazy">
-                </div>
-                <div class="prod-card__body">
-                  <div class="prod-card__heading">
-                    <h3 class="prod-card__name">Caustic Plus</h3>
-                    <p class="prod-card__meta">Caustic CIP cleaner</p>
-                  </div>
-                </div>
-              </a>
-              <div class="prod-card__footer">
-                <p class="prod-card__price">£28.00 – £95.00</p>
-              </div>
-            </li>
-
-            <li class="prod-card prod-card--compact">
-              <a href="/shop/kegs-packaging/one-way-kegs/20l-kegs-inner-bags/" class="prod-card__content-link">
-                <div class="prod-card__img-wrap">
-                  <img src="assets/product-images/one-way-kegs/20L-keg-with-inner-bag.webp" alt="TalosKeg 20L with inner bag" class="prod-card__img" width="1100" height="1100" loading="lazy">
-                </div>
-                <div class="prod-card__body">
-                  <div class="prod-card__heading">
-                    <h3 class="prod-card__name">TalosKeg 20L</h3>
-                    <p class="prod-card__meta">One-way keg</p>
-                  </div>
-                </div>
-              </a>
-              <div class="prod-card__footer">
-                <p class="prod-card__price">from £4.50 each</p>
-              </div>
-            </li>
-
-            <li class="prod-card prod-card--compact">
-              <a href="/shop/brewing-ingredients/malts/light-crystal-malt/" class="prod-card__content-link">
-                <div class="prod-card__img-wrap">
-                  <img src="assets/product-images/malt/light-crystal.webp" alt="Light Crystal Malt" class="prod-card__img" width="1100" height="1100" loading="lazy">
-                </div>
-                <div class="prod-card__body">
-                  <div class="prod-card__heading">
-                    <h3 class="prod-card__name">Light Crystal Malt</h3>
-                    <p class="prod-card__meta">90–110 EBC</p>
-                  </div>
-                </div>
-              </a>
-              <div class="prod-card__footer">
-                <p class="prod-card__price">£27.00 – £52.00</p>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-
-        <!-- Panel: Best Sellers -->
-        <div id="panel-top-secondary" class="featured-products__panel" role="tabpanel" aria-labelledby="tab-btn-top-secondary">
-          <ul class="prod-grid" role="list">
-
-            <li class="prod-card prod-card--compact">
-              <a href="/shop/brewing-ingredients/malts/pilsner-malt/" class="prod-card__content-link">
-                <div class="prod-card__img-wrap">
-                  <img src="assets/product-images/malt/pilsner.webp" alt="Pilsner Malt — light golden grain" class="prod-card__img" width="1100" height="1100" loading="lazy">
-                </div>
-                <div class="prod-card__body">
-                  <div class="prod-card__heading">
-                    <h3 class="prod-card__name">Pilsner Malt</h3>
-                    <p class="prod-card__meta">3.5-4.2 EBC</p>
-                  </div>
-                </div>
-              </a>
-              <div class="prod-card__footer">
-                <p class="prod-card__price">£25.00 – £50.00</p>
               </div>
             </li>
 
@@ -650,6 +628,7 @@
                     <h3 class="prod-card__name">Fermoale AY3</h3>
                     <p class="prod-card__meta">English ale yeast</p>
                   </div>
+                  <p class="prod-card__desc">High-flocculating ale yeast with biscuit malt notes and light citrus lift.</p>
                 </div>
               </a>
               <div class="prod-card__footer">
@@ -667,6 +646,7 @@
                     <h3 class="prod-card__name">Pale Ale Malt</h3>
                     <p class="prod-card__meta">4.8–5.4 EBC</p>
                   </div>
+                  <p class="prod-card__desc">A richer base malt bringing biscuit character and light caramel notes.</p>
                 </div>
               </a>
               <div class="prod-card__footer">
@@ -684,10 +664,90 @@
                     <h3 class="prod-card__name">Fermoale New-E</h3>
                     <p class="prod-card__meta">East Coast ale yeast</p>
                   </div>
+                  <p class="prod-card__desc">Haze-friendly yeast with tropical esters and a soft, rounded mouthfeel.</p>
                 </div>
               </a>
               <div class="prod-card__footer">
                 <p class="prod-card__price">From £42.00</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Panel: Best Sellers -->
+        <div id="panel-top-secondary" class="featured-products__panel" role="tabpanel" aria-labelledby="tab-btn-top-secondary" hidden>
+          <ul class="prod-grid" role="list">
+
+            <li class="prod-card prod-card--compact">
+              <a href="/shop/brewing-ingredients/yeast-fermentation/fermo-kveik-sv/" class="prod-card__content-link">
+                <div class="prod-card__img-wrap">
+                  <img src="assets/product-images/yeast/fermo-kveik-sv.webp" alt="Fermo Kveik SV yeast packet" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                </div>
+                <div class="prod-card__body">
+                  <div class="prod-card__heading">
+                    <h3 class="prod-card__name">Fermo Kveik SV</h3>
+                    <p class="prod-card__meta">Kveik ale yeast</p>
+                  </div>
+                  <p class="prod-card__desc">Fast, warm-fermenting kveik with orange-citrus character and strong throughput.</p>
+                </div>
+              </a>
+              <div class="prod-card__footer">
+                <p class="prod-card__price">From £38.00</p>
+              </div>
+            </li>
+
+            <li class="prod-card prod-card--compact">
+              <a href="/shop/brewing-ingredients/malts/melanoidin-malt/" class="prod-card__content-link">
+                <div class="prod-card__img-wrap">
+                  <img src="assets/product-images/malt/melanoidin.webp" alt="Melanoidin Malt" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                </div>
+                <div class="prod-card__body">
+                  <div class="prod-card__heading">
+                    <h3 class="prod-card__name">Melanoidin Malt</h3>
+                    <p class="prod-card__meta">60–80 EBC</p>
+                  </div>
+                  <p class="prod-card__desc">Builds deep malt richness, colour, and aroma in malt-forward beers.</p>
+                </div>
+              </a>
+              <div class="prod-card__footer">
+                <p class="prod-card__price">£29.00 – £54.00</p>
+              </div>
+            </li>
+
+            <li class="prod-card prod-card--compact">
+              <a href="/shop/brewing-ingredients/malts/vienna-malt/" class="prod-card__content-link">
+                <div class="prod-card__img-wrap">
+                  <img src="assets/product-images/malt/vienna.webp" alt="Vienna Malt" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                </div>
+                <div class="prod-card__body">
+                  <div class="prod-card__heading">
+                    <h3 class="prod-card__name">Vienna Malt</h3>
+                    <p class="prod-card__meta">6–9 EBC</p>
+                  </div>
+                  <p class="prod-card__desc">Golden base malt with bread, biscuit, and light caramel notes.</p>
+                </div>
+              </a>
+              <div class="prod-card__footer">
+                <p class="prod-card__price">£27.00 – £52.00</p>
+              </div>
+            </li>
+
+            <li class="prod-card prod-card--compact">
+              <a href="/shop/brewing-ingredients/yeast-fermentation/fermolager-w/" class="prod-card__content-link">
+                <div class="prod-card__img-wrap">
+                  <img src="assets/product-images/yeast/fermolager-w.webp" alt="Fermolager W yeast packet" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                </div>
+                <div class="prod-card__body">
+                  <div class="prod-card__heading">
+                    <h3 class="prod-card__name">Fermolager W</h3>
+                    <p class="prod-card__meta">Lager yeast</p>
+                  </div>
+                  <p class="prod-card__desc">Clean lager strain with high attenuation and a crisp, balanced finish.</p>
+                </div>
+              </a>
+              <div class="prod-card__footer">
+                <p class="prod-card__price">From £36.00</p>
               </div>
             </li>
 
@@ -723,23 +783,47 @@
     <!-- ═══════════════════════════════════════════
          FEATURED PRODUCTS TABS — THIRD
     ═══════════════════════════════════════════ -->
-    <section class="featured-products" aria-labelledby="featured-products-heading-tertiary">
+    <section class="featured-products featured-products--showcase" aria-labelledby="featured-products-heading-tertiary">
       <div class="container">
 
         <div class="featured-products__bar">
-          <div class="featured-products__title">
-            <h2 id="featured-products-heading-tertiary" class="featured-products__heading">Featured Equipment</h2>
-            <div class="featured-products__tabs" role="tablist" aria-label="Product type">
-              <button class="featured-products__tab featured-products__tab--active" role="tab" id="tab-btn-top-tertiary" aria-selected="true" aria-controls="panel-top-tertiary">Best Sellers</button>
-              <button class="featured-products__tab" role="tab" id="tab-btn-new-tertiary" aria-selected="false" aria-controls="panel-new-tertiary" tabindex="-1">New Arrivals</button>
+          <div class="featured-products__top">
+            <a href="/shop/equipment/" class="featured-products__header-link">
+              View all equipment
+              <svg width="12" height="9" viewBox="0 0 12 9" fill="none" aria-hidden="true">
+                <path d="M1 4.5h10M7 1l4 3.5L7 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="featured-products__title">
+              <span class="eyebrow">SKY TECH</span>
+              <h2 id="featured-products-heading-tertiary" class="featured-products__heading">Our Equipment</h2>
             </div>
           </div>
-          <a href="/shop/equipment/" class="featured-products__header-link">
-            View All Equipment
-            <svg width="12" height="9" viewBox="0 0 12 9" fill="none" aria-hidden="true">
-              <path d="M1 4.5h10M7 1l4 3.5L7 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
+          <div class="featured-products__tabs" role="tablist" aria-label="Product type">
+            <button
+              class="featured-products__tab featured-products__tab--active"
+              role="tab"
+              id="tab-btn-featured-tertiary"
+              aria-selected="true"
+              aria-controls="panel-featured-tertiary"
+            >FEATURED</button>
+            <button
+              class="featured-products__tab"
+              role="tab"
+              id="tab-btn-top-tertiary"
+              aria-selected="false"
+              aria-controls="panel-top-tertiary"
+              tabindex="-1"
+            >BEST SELLERS</button>
+            <button
+              class="featured-products__tab"
+              role="tab"
+              id="tab-btn-new-tertiary"
+              aria-selected="false"
+              aria-controls="panel-new-tertiary"
+              tabindex="-1"
+            >NEW ARRIVALS</button>
+          </div>
         </div>
 
         <div id="panel-new-tertiary" class="featured-products__panel" role="tabpanel" aria-labelledby="tab-btn-new-tertiary" hidden>
@@ -755,25 +839,29 @@
                     <h3 class="prod-card__name">Beverage Production Line</h3>
                     <p class="prod-card__meta">Integrated process</p>
                   </div>
+                  <p class="prod-card__desc">Continuous line for inline blending, carbonation, and beverage process handling.</p>
                 </div>
               </a>
               <div class="prod-card__footer">
+                <p class="prod-card__price">Price on request</p>
               </div>
             </li>
 
             <li class="prod-card prod-card--compact">
               <a href="/shop/equipment/processing/dealcoholiser/" class="prod-card__content-link">
                 <div class="prod-card__img-wrap">
-                  <img src="assets/product-images/equipment/processing/dealcoholiser.webp" alt="Dealcoholiser" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                  <img src="assets/product-images/equipment/processing/dealcoholiser/dealcoholiser.webp" alt="Dealcoholiser" class="prod-card__img" width="1100" height="1100" loading="lazy">
                 </div>
                 <div class="prod-card__body">
                   <div class="prod-card__heading">
                     <h3 class="prod-card__name">Dealcoholiser</h3>
                     <p class="prod-card__meta">Membrane processing</p>
                   </div>
+                  <p class="prod-card__desc">Reverse osmosis system for low- and no-alcohol beer with flavour retention.</p>
                 </div>
               </a>
               <div class="prod-card__footer">
+                <p class="prod-card__price">Price on request</p>
               </div>
             </li>
 
@@ -787,9 +875,11 @@
                     <h3 class="prod-card__name">Distillation System</h3>
                     <p class="prod-card__meta">Other beverages</p>
                   </div>
+                  <p class="prod-card__desc">Integrated still and column system for controlled spirit separation and refinement.</p>
                 </div>
               </a>
               <div class="prod-card__footer">
+                <p class="prod-card__price">Price on request</p>
               </div>
             </li>
 
@@ -803,90 +893,18 @@
                     <h3 class="prod-card__name">Auto CIP Station</h3>
                     <p class="prod-card__meta">Fixed CIP system</p>
                   </div>
+                  <p class="prod-card__desc">Programmable fixed CIP skid for repeatable tank and pipework sanitation.</p>
                 </div>
               </a>
               <div class="prod-card__footer">
+                <p class="prod-card__price">Price on request</p>
               </div>
             </li>
 
           </ul>
         </div>
 
-        <div id="panel-deals-tertiary" class="featured-products__panel" role="tabpanel" aria-labelledby="tab-btn-deals-tertiary" hidden>
-          <ul class="prod-grid" role="list">
-
-            <li class="prod-card prod-card--compact">
-              <a href="/shop/brewing-ingredients/malts/pilsner-malt/" class="prod-card__content-link">
-                <div class="prod-card__img-wrap">
-                  <img src="assets/product-images/malt/pilsner.webp" alt="Pilsner Malt" class="prod-card__img" width="1100" height="1100" loading="lazy">
-                </div>
-                <div class="prod-card__body">
-                  <div class="prod-card__heading">
-                    <h3 class="prod-card__name">Pilsner Malt</h3>
-                    <p class="prod-card__meta">3.5–4.2 EBC</p>
-                  </div>
-                </div>
-              </a>
-              <div class="prod-card__footer">
-                <p class="prod-card__price">£22.00 – £45.00</p>
-              </div>
-            </li>
-
-            <li class="prod-card prod-card--compact">
-              <a href="/shop/chemical-products/hygiene-chemicals/caustic-plus/" class="prod-card__content-link">
-                <div class="prod-card__img-wrap">
-                  <img src="assets/product-images/hygiene-chemicals/caustic-plus.webp" alt="Caustic Plus" class="prod-card__img" width="1100" height="1100" loading="lazy">
-                </div>
-                <div class="prod-card__body">
-                  <div class="prod-card__heading">
-                    <h3 class="prod-card__name">Caustic Plus</h3>
-                    <p class="prod-card__meta">Caustic CIP cleaner</p>
-                  </div>
-                </div>
-              </a>
-              <div class="prod-card__footer">
-                <p class="prod-card__price">£28.00 – £95.00</p>
-              </div>
-            </li>
-
-            <li class="prod-card prod-card--compact">
-              <a href="/shop/kegs-packaging/one-way-kegs/20l-kegs-inner-bags/" class="prod-card__content-link">
-                <div class="prod-card__img-wrap">
-                  <img src="assets/product-images/one-way-kegs/20L-keg-with-inner-bag.webp" alt="TalosKeg 20L with inner bag" class="prod-card__img" width="1100" height="1100" loading="lazy">
-                </div>
-                <div class="prod-card__body">
-                  <div class="prod-card__heading">
-                    <h3 class="prod-card__name">TalosKeg 20L</h3>
-                    <p class="prod-card__meta">One-way keg</p>
-                  </div>
-                </div>
-              </a>
-              <div class="prod-card__footer">
-                <p class="prod-card__price">from £4.50 each</p>
-              </div>
-            </li>
-
-            <li class="prod-card prod-card--compact">
-              <a href="/shop/brewing-ingredients/malts/light-crystal-malt/" class="prod-card__content-link">
-                <div class="prod-card__img-wrap">
-                  <img src="assets/product-images/malt/light-crystal.webp" alt="Light Crystal Malt" class="prod-card__img" width="1100" height="1100" loading="lazy">
-                </div>
-                <div class="prod-card__body">
-                  <div class="prod-card__heading">
-                    <h3 class="prod-card__name">Light Crystal Malt</h3>
-                    <p class="prod-card__meta">90–110 EBC</p>
-                  </div>
-                </div>
-              </a>
-              <div class="prod-card__footer">
-                <p class="prod-card__price">£27.00 – £52.00</p>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-
-        <div id="panel-top-tertiary" class="featured-products__panel" role="tabpanel" aria-labelledby="tab-btn-top-tertiary">
+        <div id="panel-featured-tertiary" class="featured-products__panel" role="tabpanel" aria-labelledby="tab-btn-featured-tertiary">
           <ul class="prod-grid" role="list">
 
             <li class="prod-card prod-card--compact">
@@ -899,25 +917,11 @@
                     <h3 class="prod-card__name">CIP Cart</h3>
                     <p class="prod-card__meta">Mobile CIP system</p>
                   </div>
+                  <p class="prod-card__desc">Portable clean-in-place unit for vessels, pipework, and remote process equipment.</p>
                 </div>
               </a>
               <div class="prod-card__footer">
-              </div>
-            </li>
-
-            <li class="prod-card prod-card--compact">
-              <a href="/shop/equipment/processing/pasteurisation/cabinet-pasteuriser/" class="prod-card__content-link">
-                <div class="prod-card__img-wrap">
-                  <img src="assets/product-images/equipment/processing/pasteurisation/cabinet-pasteuriser.webp" alt="Cabinet pasteuriser" class="prod-card__img" width="1100" height="1100" loading="lazy">
-                </div>
-                <div class="prod-card__body">
-                  <div class="prod-card__heading">
-                    <h3 class="prod-card__name">Cabinet Pasteuriser</h3>
-                    <p class="prod-card__meta">Batch pasteurisation</p>
-                  </div>
-                </div>
-              </a>
-              <div class="prod-card__footer">
+                <p class="prod-card__price">Price on request</p>
               </div>
             </li>
 
@@ -931,9 +935,11 @@
                     <h3 class="prod-card__name">Flash Pasteuriser</h3>
                     <p class="prod-card__meta">Inline pasteurisation</p>
                   </div>
+                  <p class="prod-card__desc">Continuous HTST pasteuriser for packaged and draft beverage production lines.</p>
                 </div>
               </a>
               <div class="prod-card__footer">
+                <p class="prod-card__price">Price on request</p>
               </div>
             </li>
 
@@ -947,9 +953,107 @@
                     <h3 class="prod-card__name">Fermentation Vessels</h3>
                     <p class="prod-card__meta">Cellar vessels</p>
                   </div>
+                  <p class="prod-card__desc">Cylindroconical tanks for controlled fermentation, yeast management, and crash cooling.</p>
                 </div>
               </a>
               <div class="prod-card__footer">
+                <p class="prod-card__price">Price on request</p>
+              </div>
+            </li>
+
+            <li class="prod-card prod-card--compact">
+              <a href="/shop/equipment/brewhouses/pilot-brewing-system/" class="prod-card__content-link">
+                <div class="prod-card__img-wrap">
+                  <img src="assets/product-images/equipment/pilot-brewing-system.webp" alt="Pilot brewing system" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                </div>
+                <div class="prod-card__body">
+                  <div class="prod-card__heading">
+                    <h3 class="prod-card__name">Pilot Brewing System</h3>
+                    <p class="prod-card__meta">Small-batch brewhouse</p>
+                  </div>
+                  <p class="prod-card__desc">Development-scale brewhouse for trials, recipe work, and pilot production.</p>
+                </div>
+              </a>
+              <div class="prod-card__footer">
+                <p class="prod-card__price">Price on request</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <div id="panel-top-tertiary" class="featured-products__panel" role="tabpanel" aria-labelledby="tab-btn-top-tertiary" hidden>
+          <ul class="prod-grid" role="list">
+
+            <li class="prod-card prod-card--compact">
+              <a href="/shop/equipment/processing/cip/cip-cart/" class="prod-card__content-link">
+                <div class="prod-card__img-wrap">
+                  <img src="assets/product-images/equipment/processing/cip/CIP-cart-1.webp" alt="Mobile CIP cart" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                </div>
+                <div class="prod-card__body">
+                  <div class="prod-card__heading">
+                    <h3 class="prod-card__name">CIP Cart</h3>
+                    <p class="prod-card__meta">Mobile CIP system</p>
+                  </div>
+                  <p class="prod-card__desc">Portable clean-in-place unit for vessels, pipework, and remote process equipment.</p>
+                </div>
+              </a>
+              <div class="prod-card__footer">
+                <p class="prod-card__price">Price on request</p>
+              </div>
+            </li>
+
+            <li class="prod-card prod-card--compact">
+              <a href="/shop/equipment/processing/pasteurisation/cabinet-pasteuriser/" class="prod-card__content-link">
+                <div class="prod-card__img-wrap">
+                  <img src="assets/product-images/equipment/processing/pasteurisation/cabinet-pasteuriser.webp" alt="Cabinet pasteuriser" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                </div>
+                <div class="prod-card__body">
+                  <div class="prod-card__heading">
+                    <h3 class="prod-card__name">Cabinet Pasteuriser</h3>
+                    <p class="prod-card__meta">Batch pasteurisation</p>
+                  </div>
+                  <p class="prod-card__desc">Batch cabinet for controlled thermal treatment of bottled and canned drinks.</p>
+                </div>
+              </a>
+              <div class="prod-card__footer">
+                <p class="prod-card__price">Price on request</p>
+              </div>
+            </li>
+
+            <li class="prod-card prod-card--compact">
+              <a href="/shop/equipment/processing/pasteurisation/flash-pasteuriser/" class="prod-card__content-link">
+                <div class="prod-card__img-wrap">
+                  <img src="assets/product-images/equipment/processing/pasteurisation/flash-pasteuriser.webp" alt="Flash pasteuriser" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                </div>
+                <div class="prod-card__body">
+                  <div class="prod-card__heading">
+                    <h3 class="prod-card__name">Flash Pasteuriser</h3>
+                    <p class="prod-card__meta">Inline pasteurisation</p>
+                  </div>
+                  <p class="prod-card__desc">Continuous HTST pasteuriser for packaged and draft beverage production lines.</p>
+                </div>
+              </a>
+              <div class="prod-card__footer">
+                <p class="prod-card__price">Price on request</p>
+              </div>
+            </li>
+
+            <li class="prod-card prod-card--compact">
+              <a href="/shop/equipment/tanks/fermentation-vessels/" class="prod-card__content-link">
+                <div class="prod-card__img-wrap">
+                  <img src="assets/product-images/equipment/tanks/fermentation-vessel.webp" alt="Fermentation vessel" class="prod-card__img" width="1100" height="1100" loading="lazy">
+                </div>
+                <div class="prod-card__body">
+                  <div class="prod-card__heading">
+                    <h3 class="prod-card__name">Fermentation Vessels</h3>
+                    <p class="prod-card__meta">Cellar vessels</p>
+                  </div>
+                  <p class="prod-card__desc">Cylindroconical tanks for controlled fermentation, yeast management, and crash cooling.</p>
+                </div>
+              </a>
+              <div class="prod-card__footer">
+                <p class="prod-card__price">Price on request</p>
               </div>
             </li>
 
