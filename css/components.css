@@ -438,7 +438,7 @@
   gap: var(--space-3);
 }
 
-@media (max-width: 39.9375em) {
+@media (max-width: 63.9375em) {
   .cat-grid,
   .prod-grid,
   .blog-grid {
@@ -450,9 +450,12 @@
   }
 
   .prod-card__name,
+  .prod-card--compact .prod-card__name,
+  .related-products .prod-card__name,
   .featured-products .prod-card--compact .prod-card__name {
-    font-size: var(--fs-h3);
+    font-size: var(--fs-h1);
     line-height: var(--lh-normal);
+    white-space: normal;
   }
 
   .featured-products--showcase .featured-products__top {

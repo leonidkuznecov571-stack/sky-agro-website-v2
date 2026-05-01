@@ -1321,7 +1321,7 @@
   display: none;
 }
 
-@media (max-width: 39.9375em) {
+@media (max-width: 63.9375em) {
   .cat-products .container,
   .product-hub-listing .container,
   .related-products .container {
@@ -3436,6 +3436,16 @@
   font-size: var(--fs-body);
   line-height: var(--lh-normal);
   white-space: nowrap;
+}
+
+@media (max-width: 63.9375em) {
+  .prod-card__name,
+  .prod-card--compact .prod-card__name,
+  .related-products .prod-card__name {
+    font-size: var(--fs-h3);
+    line-height: var(--lh-normal);
+    white-space: normal;
+  }
 }
 
 .related-products .prod-card__actions {
