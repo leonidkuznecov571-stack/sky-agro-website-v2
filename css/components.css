@@ -451,8 +451,8 @@
 
   .prod-card__name,
   .featured-products .prod-card--compact .prod-card__name {
-    font-size: var(--fs-h4);
-    line-height: var(--lh-snug);
+    font-size: var(--fs-h3);
+    line-height: var(--lh-normal);
   }
 
   .featured-products--showcase .featured-products__top {

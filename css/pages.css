@@ -1325,7 +1325,7 @@
   .cat-products .container,
   .product-hub-listing .container,
   .related-products .container {
-    padding-inline: calc(var(--container-pad-x) + var(--space-2));
+    padding-inline: calc(var(--container-pad-x) + var(--space-4));
   }
 
   .about-intro .page-hero__lede {
