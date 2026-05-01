@@ -202,6 +202,63 @@
         </button>
         <ul class="mobile-nav__list" role="list">
           <li>
+            <div class="mobile-nav__item-head">
+              <a href="${ROOT}/shop/brewing-ingredients/" class="mobile-nav__link mobile-nav__link--top">Brewing Ingredients</a>
+              <button
+                type="button"
+                class="mobile-nav__toggle"
+                aria-expanded="false"
+                aria-controls="mobile-nav-brewing-sub"
+                data-mobile-nav-toggle
+              >
+                <svg class="mobile-nav__toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <ul class="mobile-nav__sub" id="mobile-nav-brewing-sub" role="list">
+              <li><a href="${ROOT}/shop/brewing-ingredients/malts/" class="mobile-nav__link mobile-nav__link--sub">Malts</a></li>
+              <li><a href="${ROOT}/shop/brewing-ingredients/yeast-fermentation/" class="mobile-nav__link mobile-nav__link--sub">Yeast</a></li>
+              <li><a href="${ROOT}/shop/brewing-ingredients/sugars-adjuncts/" class="mobile-nav__link mobile-nav__link--sub">Sugars and Adjuncts</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="mobile-nav__item-head">
+              <a href="${ROOT}/shop/chemical-products/" class="mobile-nav__link mobile-nav__link--top">Chemicals</a>
+              <button
+                type="button"
+                class="mobile-nav__toggle"
+                aria-expanded="false"
+                aria-controls="mobile-nav-chemicals-sub"
+                data-mobile-nav-toggle
+              >
+                <svg class="mobile-nav__toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <ul class="mobile-nav__sub" id="mobile-nav-chemicals-sub" role="list">
+              <li><a href="${ROOT}/shop/chemical-products/hygiene-chemicals/" class="mobile-nav__link mobile-nav__link--sub">Hygiene Chemicals</a></li>
+              <li><a href="${ROOT}/shop/chemical-products/processing-aids/" class="mobile-nav__link mobile-nav__link--sub">Processing Aids</a></li>
+              <li><a href="${ROOT}/shop/chemical-products/finings-clarification/" class="mobile-nav__link mobile-nav__link--sub">Finings</a></li>
+              <li><a href="${ROOT}/shop/chemical-products/additional-products/" class="mobile-nav__link mobile-nav__link--sub">Additional Products</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="${ROOT}/shop/equipment/" class="mobile-nav__link">Equipment</a>
+            <ul class="mobile-nav__sub is-open" role="list">
+              <li><a href="${ROOT}/shop/equipment/brewhouses/" class="mobile-nav__link mobile-nav__link--sub">Brewhouses</a></li>
+              <li><a href="${ROOT}/shop/equipment/tanks/" class="mobile-nav__link mobile-nav__link--sub">Tanks</a></li>
+              <li><a href="${ROOT}/shop/equipment/processing/" class="mobile-nav__link mobile-nav__link--sub">Processing Equipment</a></li>
+              <li><a href="${ROOT}/shop/equipment/additional-equipment/" class="mobile-nav__link mobile-nav__link--sub">Additional Equipment</a></li>
+              <li><a href="${ROOT}/shop/equipment/other-beverages/" class="mobile-nav__link mobile-nav__link--sub">Other Beverages</a></li>
+            </ul>
+          </li>
+          <li><a href="${ROOT}/about.html" class="mobile-nav__link">About Us</a></li>
+          <li><a href="${ROOT}/blog.html" class="mobile-nav__link">Blog</a></li>
+          <li><a href="${ROOT}/catalogues.html" class="mobile-nav__link">Catalogues</a></li>
+          <li><a href="${ROOT}/contact.html" class="mobile-nav__link">Contact Us</a></li>
+          <li>
             <a href="tel:+447460379173" class="mobile-nav__link mobile-nav__link--icon mobile-nav__link--contact">
               <img src="${ROOT}/assets/icons/contact-icons/phone-icon.svg" alt="" class="mobile-nav__contact-icon" width="20" height="20" aria-hidden="true">
               <span>07460 379 173</span>
@@ -211,21 +268,6 @@
             <a href="mailto:info@sky-agro.com" class="mobile-nav__link mobile-nav__link--icon mobile-nav__link--contact">
               <img src="${ROOT}/assets/icons/contact-icons/email-icon.svg" alt="" class="mobile-nav__contact-icon" width="20" height="20" aria-hidden="true">
               <span>info@sky-agro.com</span>
-            </a>
-          </li>
-          <li><a href="${ROOT}/index.html" class="mobile-nav__link">Home</a></li>
-          <li><a href="${ROOT}/shop/brewing-ingredients/" class="mobile-nav__link">Brewing Ingredients</a></li>
-          <li><a href="${ROOT}/shop/chemical-products/" class="mobile-nav__link">Chemical Products</a></li>
-          <li><a href="${ROOT}/shop/equipment/" class="mobile-nav__link">Equipment</a></li>
-          <li><a href="${ROOT}/shop/kegs-packaging/" class="mobile-nav__link">Kegs &amp; Packaging</a></li>
-          <li><a href="${ROOT}/about.html" class="mobile-nav__link">About us</a></li>
-          <li><a href="${ROOT}/blog.html" class="mobile-nav__link">Blog</a></li>
-          <li><a href="${ROOT}/catalogues.html" class="mobile-nav__link">Catalogues</a></li>
-          <li><a href="${ROOT}/contact.html" class="mobile-nav__link">Contact us</a></li>
-          <li>
-            <a href="${ROOT}/spain.html" class="mobile-nav__link mobile-nav__link--icon">
-              <img src="${ROOT}/assets/icons/flag-icons/spain-icon.svg" alt="Spanish flag" class="mobile-nav__contact-icon" width="20" height="14">
-              <span>Comprar en España</span>
             </a>
           </li>
         </ul>
@@ -323,6 +365,27 @@
     const drawer = header.querySelector('.mobile-nav');
     const closeEls = header.querySelectorAll('[data-close-nav]');
     const drawerLinks = drawer.querySelectorAll('a');
+    const accordionToggles = drawer.querySelectorAll('[data-mobile-nav-toggle]');
+
+    function setAccordionState(toggle, shouldOpen) {
+      const panelId = toggle.getAttribute('aria-controls');
+      const panel = panelId ? drawer.querySelector(`#${panelId}`) : null;
+
+      toggle.setAttribute('aria-expanded', shouldOpen ? 'true' : 'false');
+
+      if (panel) {
+        panel.classList.toggle('is-open', shouldOpen);
+      }
+    }
+
+    accordionToggles.forEach(toggle => {
+      setAccordionState(toggle, toggle.getAttribute('aria-expanded') === 'true');
+
+      toggle.addEventListener('click', () => {
+        const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+        setAccordionState(toggle, !isExpanded);
+      });
+    });
 
     function openNav() {
       drawer.classList.add('is-open');

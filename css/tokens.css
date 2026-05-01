@@ -103,3 +103,9 @@
   --radius-md: 0.5rem;
   --radius-lg: 0.75rem;
 }
+
+@media (max-width: 39.9375em) {
+  :root {
+    --container-pad-x: clamp(1.25rem, 5vw, 1.5rem);
+  }
+}

@@ -4,6 +4,7 @@
     '/shop/chemical-products',
     '/shop/kegs-packaging'
   ];
+  const HOVER_QUERY = '(hover: hover) and (pointer: fine)';
 
   function normalisePath(pathname) {
     const cleaned = pathname.replace(/index\.html$/, '').replace(/\/+$/, '');
@@ -16,6 +17,10 @@
     return TARGET_PREFIXES.some((prefix) => (
       currentPath === prefix || currentPath.startsWith(`${prefix}/`)
     ));
+  }
+
+  function supportsHoverAdd() {
+    return window.matchMedia(HOVER_QUERY).matches;
   }
 
   function enhanceCard(card) {
@@ -93,17 +98,36 @@
     });
   }
 
+  function enhanceWithin(scope = document) {
+    if (!supportsHoverAdd()) {
+      return;
+    }
+
+    let root = scope;
+
+    if (typeof scope === 'string') {
+      root = document.querySelector(scope);
+    }
+
+    if (!root || typeof root.querySelectorAll !== 'function') {
+      return;
+    }
+
+    root.querySelectorAll('.prod-card').forEach(enhanceCard);
+  }
+
   function init() {
     if (!isSupportedPage()) {
       return;
     }
 
-    if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
-      return;
-    }
-
-    document.querySelectorAll('.prod-results .prod-card').forEach(enhanceCard);
+    enhanceWithin(document.querySelector('.prod-results'));
   }
 
-  window.SkyAgroProductCardHoverAdd = { init };
+  window.SkyAgroProductCardHoverAdd = {
+    init,
+    enhanceCard,
+    enhanceWithin,
+    supportsHoverAdd
+  };
 })();

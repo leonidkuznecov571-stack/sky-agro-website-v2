@@ -25,3 +25,5 @@ Home/blog sync: added the same fourth CIP chemicals article card to the home pag
 Malt prices article copy: replaced the shorter original body text with the supplied full pricing explainer and expanded the contents rail to match the new section structure.
 Malt prices article intro: removed the visible “Introduction” heading from the article body while keeping the opening copy and contents anchor in place.
 Blog articles: created the missing Non-Alcoholic & Low ABV, Gluten Testing, and CIP Chemicals article pages from the supplied copy and replaced the malt article’s placeholder related cards with links to the live companion pages.
+Product card mobile typography: increased product names from `--fs-h5` to `--fs-h3` on phones and tightened the line-height so single-column cards read more clearly without affecting tablet or desktop.
+Mobile page gutters: increased the shared phone-only container padding and matched the mobile header’s left inset to it so page margins feel more generous and consistent across the site.
