@@ -21,12 +21,13 @@
             </a>
           </div>
           <address class="footer-address">
-            Unit C, West March Industrial Estate, Daventry NN11 4SA,<br>
+            Unit C, West March Industrial Estate,<span class="footer-address__break" aria-hidden="true"><br></span>
+            Daventry NN11 4SA,<span class="footer-address__break" aria-hidden="true"><br></span>
             United Kingdom
           </address>
         </div>
 
-        <div class="footer-col">
+        <div class="footer-col footer-col--company">
           <h2 class="footer-col__heading">Company</h2>
           <ul class="footer-col__links" role="list">
             <li><a href="${ROOT}/about.html" class="footer-col__link">About Us</a></li>
@@ -36,7 +37,7 @@
           </ul>
         </div>
 
-        <div class="footer-col">
+        <div class="footer-col footer-col--shop">
           <h2 class="footer-col__heading">Shop</h2>
           <ul class="footer-col__links" role="list">
             <li><a href="${ROOT}/shop/brewing-ingredients/" class="footer-col__link">Brewing Ingredients</a></li>
