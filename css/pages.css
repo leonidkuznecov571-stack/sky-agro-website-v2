@@ -1321,6 +1321,12 @@
   display: none;
 }
 
+@media (max-width: 39.9375em) {
+  .about-intro .page-hero__lede {
+    display: none;
+  }
+}
+
 /* What Sets SKY Apart */
 
 .sky-apart {

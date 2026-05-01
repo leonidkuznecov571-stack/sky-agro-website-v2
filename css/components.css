@@ -435,6 +435,11 @@
 }
 
 @media (max-width: 39.9375em) {
+  .cat-card__desc,
+  .prod-card__desc {
+    display: none;
+  }
+
   .featured-products--showcase .featured-products__top {
     flex-direction: column;
     align-items: flex-start;
@@ -457,8 +462,8 @@
   }
 
   .featured-products--showcase .featured-products__tab {
-    font-size: var(--fs-small);
-    padding: var(--space-3) var(--space-4);
+    font-size: var(--fs-eyebrow);
+    padding: var(--space-2) var(--space-3);
   }
 }
 
