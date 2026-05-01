@@ -768,14 +768,6 @@
   transition: color 0.2s ease;
 }
 
-@media (max-width: 39.9375em) {
-  .prod-card__name {
-    font-size: var(--fs-h3);
-    line-height: var(--lh-snug);
-    text-wrap: balance;
-  }
-}
-
 .prod-card:hover .prod-card__name,
 .prod-card__content-link:hover .prod-card__name,
 .prod-card__content-link:focus-visible .prod-card__name {
@@ -805,6 +797,24 @@
   font-weight: var(--fw-medium);
   color: var(--color-ink-soft);
   font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 39.9375em) {
+  .prod-card__name {
+    font-size: var(--fs-h3);
+    line-height: var(--lh-snug);
+    text-wrap: balance;
+  }
+
+  .prod-card__desc,
+  .prod-card__meta {
+    font-size: var(--fs-body-lg);
+  }
+
+  .prod-card__price {
+    font-size: var(--fs-body-lg);
+    line-height: var(--lh-normal);
+  }
 }
 
 .prod-card__actions {

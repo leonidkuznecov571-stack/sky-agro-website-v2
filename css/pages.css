@@ -2050,6 +2050,12 @@
   color: var(--color-green-dark);
 }
 
+@media (max-width: 39.9375em) {
+  .prod-filter-callout__title {
+    max-width: none;
+  }
+}
+
 .prod-filter-callout__link {
   width: 100%;
   gap: var(--space-1);

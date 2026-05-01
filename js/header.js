@@ -245,8 +245,21 @@
             </ul>
           </li>
           <li>
-            <a href="${ROOT}/shop/equipment/" class="mobile-nav__link">Equipment</a>
-            <ul class="mobile-nav__sub is-open" role="list">
+            <div class="mobile-nav__item-head">
+              <a href="${ROOT}/shop/equipment/" class="mobile-nav__link mobile-nav__link--top">Equipment</a>
+              <button
+                type="button"
+                class="mobile-nav__toggle"
+                aria-expanded="false"
+                aria-controls="mobile-nav-equipment-sub"
+                data-mobile-nav-toggle
+              >
+                <svg class="mobile-nav__toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <ul class="mobile-nav__sub" id="mobile-nav-equipment-sub" role="list">
               <li><a href="${ROOT}/shop/equipment/brewhouses/" class="mobile-nav__link mobile-nav__link--sub">Brewhouses</a></li>
               <li><a href="${ROOT}/shop/equipment/tanks/" class="mobile-nav__link mobile-nav__link--sub">Tanks</a></li>
               <li><a href="${ROOT}/shop/equipment/processing/" class="mobile-nav__link mobile-nav__link--sub">Processing Equipment</a></li>
@@ -268,6 +281,12 @@
             <a href="mailto:info@sky-agro.com" class="mobile-nav__link mobile-nav__link--icon mobile-nav__link--contact">
               <img src="${ROOT}/assets/icons/contact-icons/email-icon.svg" alt="" class="mobile-nav__contact-icon" width="20" height="20" aria-hidden="true">
               <span>info@sky-agro.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="${ROOT}/spain.html" class="mobile-nav__link mobile-nav__link--icon">
+              <img src="${ROOT}/assets/icons/flag-icons/spain-icon.svg" alt="Spanish flag" class="mobile-nav__contact-icon" width="20" height="14">
+              <span>Comprar en España</span>
             </a>
           </li>
         </ul>

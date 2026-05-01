@@ -27,3 +27,5 @@ Malt prices article intro: removed the visible “Introduction” heading from t
 Blog articles: created the missing Non-Alcoholic & Low ABV, Gluten Testing, and CIP Chemicals article pages from the supplied copy and replaced the malt article’s placeholder related cards with links to the live companion pages.
 Product card mobile typography: increased product names from `--fs-h5` to `--fs-h3` on phones and tightened the line-height so single-column cards read more clearly without affecting tablet or desktop.
 Mobile page gutters: increased the shared phone-only container padding and matched the mobile header’s left inset to it so page margins feel more generous and consistent across the site.
+Mobile line breaks: replaced desktop-only `<br>` breaks in shop and section headings with a shared responsive utility and removed the mobile width cap on filter CTA copy so those lines no longer inherit awkward forced wraps on phones.
+Product card mobile supporting text: increased card subheadings and descriptions from `--fs-small` to `--fs-body-lg` on phones, and stepped prices up to `--fs-body-lg`, so the rest of the card scales proportionally with the larger product names.
