@@ -177,7 +177,7 @@ window.SKY_AGRO_PRODUCT_INDEX = [
     "keywords": "Maltodextrin Powder | Brewing Ingredients | Sugars & adjuncts | brewing ingredients | sugars adjuncts | maltodextrin powder"
   },
   {
-    "href": "/shop/brewing-ingredients/yeast-fermentation/fermo-kveik-sv/",
+    "href": "/shop/brewing-ingredients/yeast/fermo-kveik-sv/",
     "title": "Fermo Kveik-SV",
     "description": "Fermo Kveik SV is suited to farmhouse ales, IPAs, and modern ale styles, delivering rapid fermentation at high temperatures with a fruity citrus profile and strong process efficiency.",
     "section": "Brewing Ingredients / Yeast & fermentation",
@@ -185,7 +185,7 @@ window.SKY_AGRO_PRODUCT_INDEX = [
     "keywords": "Fermo Kveik-SV | Brewing Ingredients | Yeast & fermentation | brewing ingredients | yeast fermentation | fermo kveik sv"
   },
   {
-    "href": "/shop/brewing-ingredients/yeast-fermentation/fermoale-ay3/",
+    "href": "/shop/brewing-ingredients/yeast/fermoale-ay3/",
     "title": "Fermoale AY3",
     "description": "Fermoale AY3 is a versatile ale yeast for English, American, and Belgian styles, combining high flocculation with a balanced malt profile and light citrus character.",
     "section": "Brewing Ingredients / Yeast & fermentation",
@@ -193,7 +193,7 @@ window.SKY_AGRO_PRODUCT_INDEX = [
     "keywords": "Fermoale AY3 | Brewing Ingredients | Yeast & fermentation | brewing ingredients | yeast fermentation | fermoale ay3"
   },
   {
-    "href": "/shop/brewing-ingredients/yeast-fermentation/fermoale-ay4/",
+    "href": "/shop/brewing-ingredients/yeast/fermoale-ay4/",
     "title": "Fermoale AY4",
     "description": "Fermoale AY4 is designed for American and English ales, delivering a clean, neutral fermentation profile with high attenuation and strong flocculation for hop-forward beers.",
     "section": "Brewing Ingredients / Yeast & fermentation",
@@ -201,7 +201,7 @@ window.SKY_AGRO_PRODUCT_INDEX = [
     "keywords": "Fermoale AY4 | Brewing Ingredients | Yeast & fermentation | brewing ingredients | yeast fermentation | fermoale ay4"
   },
   {
-    "href": "/shop/brewing-ingredients/yeast-fermentation/fermoale-bel-abbey/",
+    "href": "/shop/brewing-ingredients/yeast/fermoale-bel-abbey/",
     "title": "Fermoale Bel Abbey",
     "description": "Fermoale Bel Abbey is designed for Belgian-style ales, delivering high attenuation with complex ester and phenolic character, including dried fruit, spice, and subtle caramel notes.",
     "section": "Brewing Ingredients / Yeast & fermentation",
@@ -209,7 +209,7 @@ window.SKY_AGRO_PRODUCT_INDEX = [
     "keywords": "Fermoale Bel Abbey | Brewing Ingredients | Yeast & fermentation | brewing ingredients | yeast fermentation | fermoale bel abbey"
   },
   {
-    "href": "/shop/brewing-ingredients/yeast-fermentation/fermoale-new-e/",
+    "href": "/shop/brewing-ingredients/yeast/fermoale-new-e/",
     "title": "Fermoale New-E",
     "description": "Fermoale New-E is developed for New England IPAs and hazy styles, promoting tropical ester expression, soft mouthfeel, and stable haze formation.",
     "section": "Brewing Ingredients / Yeast & fermentation",
@@ -217,7 +217,7 @@ window.SKY_AGRO_PRODUCT_INDEX = [
     "keywords": "Fermoale New-E | Brewing Ingredients | Yeast & fermentation | brewing ingredients | yeast fermentation | fermoale new e"
   },
   {
-    "href": "/shop/brewing-ingredients/yeast-fermentation/fermoale/",
+    "href": "/shop/brewing-ingredients/yeast/fermoale/",
     "title": "Fermoale",
     "description": "Fermoale is suited to English and Scottish ales, delivering a malt-forward profile with soft fruit character and balanced attenuation for traditional and dark beer styles.",
     "section": "Brewing Ingredients / Yeast & fermentation",
@@ -225,7 +225,7 @@ window.SKY_AGRO_PRODUCT_INDEX = [
     "keywords": "Fermoale | Brewing Ingredients | Yeast & fermentation | brewing ingredients | yeast fermentation | fermoale"
   },
   {
-    "href": "/shop/brewing-ingredients/yeast-fermentation/fermolager-w/",
+    "href": "/shop/brewing-ingredients/yeast/fermolager-w/",
     "title": "Fermolager W",
     "description": "Fermolager W is a classic lager yeast for Pilsners and traditional styles, delivering clean fermentation, high attenuation, and a crisp, balanced finish.",
     "section": "Brewing Ingredients / Yeast & fermentation",
@@ -233,7 +233,7 @@ window.SKY_AGRO_PRODUCT_INDEX = [
     "keywords": "Fermolager W | Brewing Ingredients | Yeast & fermentation | brewing ingredients | yeast fermentation | fermolager w"
   },
   {
-    "href": "/shop/brewing-ingredients/yeast-fermentation/fermoplus-gsh/",
+    "href": "/shop/brewing-ingredients/yeast/fermoplus-gsh/",
     "title": "Fermoplus GSH",
     "description": "Fermoplus GSH is a yeast nutrient supplement used during rehydration and propagation to protect yeast from oxidative stress and support consistent fermentation performance.",
     "section": "Brewing Ingredients / Yeast & fermentation",
@@ -241,7 +241,7 @@ window.SKY_AGRO_PRODUCT_INDEX = [
     "keywords": "Fermoplus GSH | Brewing Ingredients | Yeast & fermentation | brewing ingredients | yeast fermentation | fermoplus gsh"
   },
   {
-    "href": "/shop/brewing-ingredients/yeast-fermentation/fermoplus-perfectbrew-zn/",
+    "href": "/shop/brewing-ingredients/yeast/fermoplus-perfectbrew-zn/",
     "title": "Fermoplus PerfectBrew-Zn",
     "description": "Fermoplus PerfectBrew-Zn is a fermentation nutrient designed to support yeast health and ensure consistent performance in high-gravity and demanding brewing conditions.",
     "section": "Brewing Ingredients / Yeast & fermentation",
@@ -249,7 +249,7 @@ window.SKY_AGRO_PRODUCT_INDEX = [
     "keywords": "Fermoplus PerfectBrew-Zn | Brewing Ingredients | Yeast & fermentation | brewing ingredients | yeast fermentation | fermoplus perfectbrew zn"
   },
   {
-    "href": "/shop/brewing-ingredients/yeast-fermentation/",
+    "href": "/shop/brewing-ingredients/yeast/",
     "title": "Yeast & Fermentation",
     "description": "Dry and liquid brewing yeasts for ale, lager, wheat and speciality fermentation styles. UK trade supply from SKY AGRO.",
     "section": "Brewing Ingredients",
@@ -575,6 +575,14 @@ window.SKY_AGRO_PRODUCT_INDEX = [
     "section": "Chemical Products / Processing aids",
     "type": "product",
     "keywords": "Hot Liquor Treatment | Chemical Products | Processing aids | chemical products | processing aids | hot liquor treatment"
+  },
+  {
+    "href": "/shop/chemical-products/processing-aids/microcid-sb/",
+    "title": "Microcid SB",
+    "description": "Microcid SB is a brewery-grade antimicrobial and antioxidant stabiliser designed for use in finished beer. Based on a synergistic blend of potassium sorbate and sulphite compounds, it protects against yeast and bacterial spoilage while preventing oxidative degradation, helping to preserve the intended flavour and stability of the final product.",
+    "section": "Chemical Products / Processing aids",
+    "type": "product",
+    "keywords": "Microcid SB | Chemical Products | Processing aids | chemical products | processing aids | microcid sb | antimicrobial stabiliser | antioxidant stabiliser"
   },
   {
     "href": "/shop/chemical-products/processing-aids/",

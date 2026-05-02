@@ -98,7 +98,7 @@
           </a>
           <ul class="category-nav__dropdown" role="list">
             <li><a href="${root}/shop/brewing-ingredients/malts/" class="category-nav__dropdown-link">Base &amp; Speciality Malts</a></li>
-            <li><a href="${root}/shop/brewing-ingredients/yeast-fermentation/" class="category-nav__dropdown-link">Yeast</a></li>
+            <li><a href="${root}/shop/brewing-ingredients/yeast/" class="category-nav__dropdown-link">Yeast</a></li>
             <li><a href="${root}/shop/brewing-ingredients/sugars-adjuncts/" class="category-nav__dropdown-link">Sugars &amp; Adjuncts</a></li>
           </ul>
         </div>
@@ -214,7 +214,7 @@
             </div>
             <ul class="mobile-nav__sub" id="mobile-nav-brewing-sub" role="list">
               <li><a href="${root}/shop/brewing-ingredients/malts/" class="mobile-nav__link mobile-nav__link--sub">Malts</a></li>
-              <li><a href="${root}/shop/brewing-ingredients/yeast-fermentation/" class="mobile-nav__link mobile-nav__link--sub">Yeast</a></li>
+              <li><a href="${root}/shop/brewing-ingredients/yeast/" class="mobile-nav__link mobile-nav__link--sub">Yeast</a></li>
               <li><a href="${root}/shop/brewing-ingredients/sugars-adjuncts/" class="mobile-nav__link mobile-nav__link--sub">Sugars and Adjuncts</a></li>
             </ul>
           </li>

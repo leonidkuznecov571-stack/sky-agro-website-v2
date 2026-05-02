@@ -74,12 +74,10 @@
           <fieldset class="packaging-options">
             <legend class="packaging-options__legend">Format</legend>
             <div class="packaging-options__grid">
-
-              <!-- TODO: confirm available pack sizes -->
               <label class="packaging-option">
-                <input type="radio" name="format" value="bag" checked>
+                <input type="radio" name="format" value="25kg" checked>
                 <span class="packaging-option__card">
-                  <span class="packaging-option__size">25 kg bag</span>
+                  <span class="packaging-option__size">25 kg</span>
                 </span>
               </label>
 
@@ -88,7 +86,7 @@
 
           <div class="product-info__purchase">
             <div class="product-info__price-block">
-              <span class="product-info__price" id="selected-price" aria-live="polite">Price on request</span>
+              <span class="product-info__price" id="selected-price" aria-live="polite">£54.00</span>
               <span class="product-info__price-unit" id="selected-unit"></span>
             </div>
             <div class="product-info__qty" id="qty-block">
@@ -190,7 +188,7 @@
               </div>
             </a>
             <div class="prod-card__footer">
-              <p class="prod-card__price">Coming soon</p>
+              <p class="prod-card__price">&pound;145.00</p>
             </div>
           </li>
 
@@ -225,8 +223,8 @@
   <script src="../../../../js/related-products.js"></script>
 
   <script type="application/json" data-product-pricing>{
-  "bag": {
-    "label": "Price on request",
+  "25kg": {
+    "price": 54,
     "unit": ""
   }
 }</script>
