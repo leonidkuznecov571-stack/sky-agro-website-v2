@@ -1,29 +1,47 @@
-(function () {
-  'use strict';
+(() => {
+  const initialised = new WeakSet();
 
-  var filterButtons = Array.from(document.querySelectorAll('[data-blog-filter]'));
-  var cards = Array.from(document.querySelectorAll('[data-blog-category]'));
+  function init(scope) {
+    var root = scope && typeof scope.querySelectorAll === 'function' ? scope : document;
+    var filterButtons = Array.from(root.querySelectorAll('[data-blog-filter]'));
+    var cards = Array.from(root.querySelectorAll('[data-blog-category]'));
 
-  if (!filterButtons.length || !cards.length) {
-    return;
-  }
+    if (!filterButtons.length || !cards.length) {
+      return;
+    }
 
-  function setFilter(filter) {
     filterButtons.forEach(function (button) {
-      var isActive = button.getAttribute('data-blog-filter') === filter;
-      button.classList.toggle('is-active', isActive);
-      button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-    });
+      if (initialised.has(button)) {
+        return;
+      }
 
-    cards.forEach(function (card) {
-      var matches = filter === 'all' || card.getAttribute('data-blog-category') === filter;
-      card.hidden = !matches;
+      initialised.add(button);
+      button.addEventListener('click', function () {
+        var filter = button.getAttribute('data-blog-filter');
+
+        filterButtons.forEach(function (entry) {
+          var isActive = entry.getAttribute('data-blog-filter') === filter;
+          entry.classList.toggle('is-active', isActive);
+          entry.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+        });
+
+        cards.forEach(function (card) {
+          var matches = filter === 'all' || card.getAttribute('data-blog-category') === filter;
+          card.hidden = !matches;
+        });
+      });
     });
   }
 
-  filterButtons.forEach(function (button) {
-    button.addEventListener('click', function () {
-      setFilter(button.getAttribute('data-blog-filter'));
-    });
-  });
-}());
+  window.SkyAgroBlogFilter = {
+    init: init
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () {
+      init(document);
+    }, { once: true });
+  } else {
+    init(document);
+  }
+})();

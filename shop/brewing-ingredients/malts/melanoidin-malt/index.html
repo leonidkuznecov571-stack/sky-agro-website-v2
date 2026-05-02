@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../../../css/layout.css">
   <link rel="stylesheet" href="../../../../css/components.css">
   <link rel="stylesheet" href="../../../../css/pages.css">
+  <link rel="stylesheet" href="../../../../css/catalogue.css">
 
   <script src="../../../../js/header.js" defer></script>
   <script src="../../../../js/footer.js" defer></script>
@@ -195,6 +196,7 @@
             <div class="product-tabs__content prose">
               <p>
                 Produced through a specialised high-temperature process, SKY Melanoidin Malt develops intense malt character and a complex aromatic profile. It contributes deep reddish hues and enhances both body and flavour stability.
+              </p>
               <p>
                 It is particularly effective in replicating decoction-style malt intensity in modern brewing systems. Used in controlled quantities, it adds depth and richness to malt-driven beers without requiring complex processing.
               </p>
@@ -542,50 +544,28 @@
 
   <script src="../../../../js/tabs.js"></script>
   <script src="../../../../js/related-products.js"></script>
-  <script>
-    (function () {
-      var PRICES = {
-        bag:    { milled: { price: 22.50,  unit: ''    },
-                  whole:  { price: 22.50,  unit: ''    } },
-        pallet: { milled: { price: 850.00, unit: '' },
-                  whole:  { price: 840.00, unit: '' } }
-      };
 
-      var priceEl = document.getElementById('selected-price');
-      var unitEl  = document.getElementById('selected-unit');
-
-      function update() {
-        var format  = document.querySelector('input[name="format"]:checked').value;
-        var milling = document.querySelector('input[name="milling"]:checked').value;
-        var p = PRICES[format][milling];
-        priceEl.textContent = '£' + p.price.toFixed(2);
-        unitEl.textContent = '/ ' + p.unit;
-      }
-
-      document.querySelectorAll('input[name="format"], input[name="milling"]').forEach(function (r) {
-        r.addEventListener('change', update);
-      });
-
-      // Quantity +/- buttons
-      var qtyInput = document.getElementById('qty');
-      document.querySelectorAll('.qty-control__btn').forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          var delta = parseInt(this.dataset.qty, 10);
-          qtyInput.value = Math.max(1, Math.min(99, parseInt(qtyInput.value, 10) + delta));
-        });
-      });
-
-      // Gallery thumbnail switcher
-      var mainImg = document.getElementById('gallery-main-img');
-      document.querySelectorAll('.product-gallery__thumb').forEach(function (thumb) {
-        thumb.addEventListener('click', function () {
-          document.querySelectorAll('.product-gallery__thumb').forEach(function (t) { t.classList.remove('is-active'); });
-          this.classList.add('is-active');
-          mainImg.src = this.dataset.src;
-        });
-      });
-    }());
-  </script>
-
+  <script type="application/json" data-product-pricing>{
+  "bag": {
+    "milled": {
+      "price": 22.5,
+      "unit": ""
+    },
+    "whole": {
+      "price": 22.5,
+      "unit": ""
+    }
+  },
+  "pallet": {
+    "milled": {
+      "price": 850,
+      "unit": ""
+    },
+    "whole": {
+      "price": 840,
+      "unit": ""
+    }
+  }
+}</script>
 </body>
 </html>

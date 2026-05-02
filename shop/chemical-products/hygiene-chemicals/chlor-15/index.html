@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../../../css/layout.css">
   <link rel="stylesheet" href="../../../../css/components.css">
   <link rel="stylesheet" href="../../../../css/pages.css">
+  <link rel="stylesheet" href="../../../../css/catalogue.css">
 
   <script src="../../../../js/header.js" defer></script>
   <script src="../../../../js/footer.js" defer></script>
@@ -164,6 +165,7 @@
             <div class="product-tabs__content prose">
               <p>
                 Chlor 15 Chlorine Disinfectant is a chlorine-based disinfectant developed for sanitation applications in the food and beverage industry. The product is specifically designed for use in CIP (Clean-in-Place) systems, providing effective microbial control and reliable disinfecting performance across processing equipment.
+              </p>
               <p>
                 Based on sodium hypochlorite, Chlor 15 delivers strong sanitising action against a broad spectrum of microorganisms, including bacteria, spores, yeasts, moulds, and viruses. It also helps remove staining, odours, and residual contamination from surfaces.
               </p>
@@ -382,48 +384,21 @@
   <footer class="site-footer"></footer>
 
   <script src="../../../../js/tabs.js"></script>
-  <script>
-    (function () {
-      var PRICES = {
-        '25l': { price: 33.71, unit: '' },
-        '200l': { price: 263.34, unit: '' },
-        'ibc': { price: 1239.34, unit: '' }
-      };
+<script src="../../../../js/related-products.js"></script>
 
-      var priceEl = document.getElementById('selected-price');
-      var unitEl  = document.getElementById('selected-unit');
-
-      function update() {
-        var format = document.querySelector('input[name="format"]:checked').value;
-        var p = PRICES[format];
-        priceEl.textContent = p.label || ('£' + p.price.toFixed(2));
-        unitEl.textContent = '/ ' + p.unit;
-      }
-
-      document.querySelectorAll('input[name="format"]').forEach(function (r) {
-        r.addEventListener('change', update);
-      });
-
-      // Quantity +/- buttons
-      var qtyInput = document.getElementById('qty');
-      document.querySelectorAll('.qty-control__btn').forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          var delta = parseInt(this.dataset.qty, 10);
-          qtyInput.value = Math.max(1, Math.min(99, parseInt(qtyInput.value, 10) + delta));
-        });
-      });
-
-      // Gallery thumbnail switcher
-      var mainImg = document.getElementById('gallery-main-img');
-      document.querySelectorAll('.product-gallery__thumb').forEach(function (thumb) {
-        thumb.addEventListener('click', function () {
-          document.querySelectorAll('.product-gallery__thumb').forEach(function (t) { t.classList.remove('is-active'); });
-          this.classList.add('is-active');
-          mainImg.src = this.dataset.src;
-        });
-      });
-    }());
-  </script>
-  <script src="../../../../js/related-products.js"></script>
+  <script type="application/json" data-product-pricing>{
+  "25l": {
+    "price": 33.71,
+    "unit": ""
+  },
+  "200l": {
+    "price": 263.34,
+    "unit": ""
+  },
+  "ibc": {
+    "price": 1239.34,
+    "unit": ""
+  }
+}</script>
 </body>
 </html>

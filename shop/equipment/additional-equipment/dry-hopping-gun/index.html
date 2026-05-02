@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="../../../../css/layout.css">
   <link rel="stylesheet" href="../../../../css/components.css">
   <link rel="stylesheet" href="../../../../css/pages.css">
+  <link rel="stylesheet" href="../../../../css/catalogue.css">
   <script src="../../../../js/header.js" defer></script>
   <script src="../../../../js/footer.js" defer></script>
 </head>
@@ -300,28 +301,21 @@
   </main>
   <footer class="site-footer"></footer>
   <script src="../../../../js/tabs.js"></script>
-  <script>
-    (function () {
-      var PRICES = {
-        'standard-dry-hopping-gun': { label: 'Price on Request', unit: '' },
-        'high-capacity-gun': { label: 'Price on Request', unit: '' },
-        'inline-connection-configuration': { label: 'Price on Request', unit: '' }
-      };
-      var priceEl = document.getElementById('selected-price');
-      var unitEl = document.getElementById('selected-unit');
+<script src="../../../../js/related-products.js"></script>
 
-      function update() {
-        var format = document.querySelector('input[name="format"]:checked').value;
-        var option = PRICES[format];
-        priceEl.textContent = option.label;
-        unitEl.textContent = '/ ' + option.unit;
-      }
-
-      document.querySelectorAll('input[name="format"]').forEach(function (radio) {
-        radio.addEventListener('change', update);
-      });
-    }());
-  </script>
-  <script src="../../../../js/related-products.js"></script>
+  <script type="application/json" data-product-pricing>{
+  "standard-dry-hopping-gun": {
+    "label": "Price on Request",
+    "unit": ""
+  },
+  "high-capacity-gun": {
+    "label": "Price on Request",
+    "unit": ""
+  },
+  "inline-connection-configuration": {
+    "label": "Price on Request",
+    "unit": ""
+  }
+}</script>
 </body>
 </html>

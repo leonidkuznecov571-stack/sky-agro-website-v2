@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="../../../../css/layout.css">
   <link rel="stylesheet" href="../../../../css/components.css">
   <link rel="stylesheet" href="../../../../css/pages.css">
+  <link rel="stylesheet" href="../../../../css/catalogue.css">
   <script src="../../../../js/header.js" defer></script>
   <script src="../../../../js/footer.js" defer></script>
 </head>
@@ -270,26 +271,21 @@
   </main>
   <footer class="site-footer"></footer>
   <script src="../../../../js/tabs.js"></script>
-  <script>
-    (function () {
-      var PRICES = {
-        'modular': { label: 'Price on Request', unit: '' },
-        'integrated': { label: 'Price on Request', unit: '' },
-        'turnkey': { label: 'Price on Request', unit: '' }
-      };
-      var priceEl = document.getElementById('selected-price');
-      var unitEl = document.getElementById('selected-unit');
-      function update() {
-        var selectedFormat = document.querySelector('input[name="format"]:checked');
-        if (!selectedFormat) { return; }
-        var format = selectedFormat.value;
-        var option = PRICES[format];
-        priceEl.textContent = option.label;
-        unitEl.textContent = '';
-      }
-      document.querySelectorAll('input[name="format"]').forEach(function (radio) { radio.addEventListener('change', update); });
-    }());
-  </script>
-  <script src="../../../../js/related-products.js"></script>
+<script src="../../../../js/related-products.js"></script>
+
+  <script type="application/json" data-product-pricing>{
+  "modular": {
+    "label": "Price on Request",
+    "unit": ""
+  },
+  "integrated": {
+    "label": "Price on Request",
+    "unit": ""
+  },
+  "turnkey": {
+    "label": "Price on Request",
+    "unit": ""
+  }
+}</script>
 </body>
 </html>

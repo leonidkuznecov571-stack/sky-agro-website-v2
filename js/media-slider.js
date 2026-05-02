@@ -1,10 +1,18 @@
-(function () {
-  'use strict';
+(() => {
+  const initialised = new WeakSet();
 
-  var sliders = document.querySelectorAll('[data-media-slider]');
-  if (!sliders.length) return;
+  function init(scope) {
+    var root = scope && typeof scope.querySelectorAll === 'function' ? scope : document;
+    var sliders = root.querySelectorAll('[data-media-slider]');
+    if (!sliders.length) return;
 
-  sliders.forEach(function (slider) {
+    sliders.forEach(function (slider) {
+      if (initialised.has(slider)) {
+        return;
+      }
+
+      initialised.add(slider);
+
     var track = slider.querySelector('.media-slider__track');
     var slides = Array.from(slider.querySelectorAll('.media-slider__slide'));
     var prevBtn = slider.querySelector('[data-media-slider-prev]');
@@ -82,6 +90,19 @@
       }
     }, { passive: true });
 
-    goTo(0);
-  });
-}());
+      goTo(0);
+    });
+  }
+
+  window.SkyAgroMediaSlider = {
+    init: init
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () {
+      init(document);
+    }, { once: true });
+  } else {
+    init(document);
+  }
+})();

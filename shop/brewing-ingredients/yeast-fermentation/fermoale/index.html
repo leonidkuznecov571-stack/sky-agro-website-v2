@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../../../css/layout.css">
   <link rel="stylesheet" href="../../../../css/components.css">
   <link rel="stylesheet" href="../../../../css/pages.css">
+  <link rel="stylesheet" href="../../../../css/catalogue.css">
 
   <script src="../../../../js/header.js" defer></script>
   <script src="../../../../js/footer.js" defer></script>
@@ -404,39 +405,16 @@
 
   <script src="../../../../js/tabs.js"></script>
   <script src="../../../../js/related-products.js"></script>
-  <script>
-    (function () {
-      var PRICES = {
-        'pouch': { price: 37.50, unit: '' },
-        'box': { price: 712.50, unit: '' }
-      };
 
-      var priceEl = document.getElementById('selected-price');
-      var unitEl  = document.getElementById('selected-unit');
-
-      function update() {
-        var format = document.querySelector('input[name="format"]:checked').value;
-        var p = PRICES[format];
-        priceEl.textContent = p.label || ('£' + p.price.toFixed(2));
-        unitEl.textContent = '/ ' + p.unit;
-      }
-
-      document.querySelectorAll('input[name="format"]').forEach(function (r) {
-        r.addEventListener('change', update);
-      });
-
-      // Quantity +/- buttons
-      var qtyInput = document.getElementById('qty');
-      document.querySelectorAll('.qty-control__btn').forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          var delta = parseInt(this.dataset.qty, 10);
-          qtyInput.value = Math.max(1, Math.min(99, parseInt(qtyInput.value, 10) + delta));
-        });
-      });
-
-      // Gallery thumbnail switcher
-    }());
-  </script>
-
+  <script type="application/json" data-product-pricing>{
+  "pouch": {
+    "price": 37.5,
+    "unit": ""
+  },
+  "box": {
+    "price": 712.5,
+    "unit": ""
+  }
+}</script>
 </body>
 </html>

@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../../../css/layout.css">
   <link rel="stylesheet" href="../../../../css/components.css">
   <link rel="stylesheet" href="../../../../css/pages.css">
+  <link rel="stylesheet" href="../../../../css/catalogue.css">
 
   <script src="../../../../js/header.js" defer></script>
   <script src="../../../../js/footer.js" defer></script>
@@ -242,45 +243,17 @@
   <footer class="site-footer"></footer>
 
   <script src="../../../../js/tabs.js"></script>
-  <script>
-    (function () {
-      var PRICES = {
-        'pack100': { price: 20.00, unit: '' },
-        'pack500': { price: 40.00, unit: '' }
-      };
+<script src="../../../../js/related-products.js"></script>
 
-      var priceEl = document.getElementById('selected-price');
-      var unitEl = document.getElementById('selected-unit');
-
-      function update() {
-        var format = document.querySelector('input[name="format"]:checked').value;
-        var p = PRICES[format];
-        priceEl.textContent = p.label || ('£' + p.price.toFixed(2));
-        unitEl.textContent = '/ ' + p.unit;
-      }
-
-      document.querySelectorAll('input[name="format"]').forEach(function (r) {
-        r.addEventListener('change', update);
-      });
-
-      var qtyInput = document.getElementById('qty');
-      document.querySelectorAll('.qty-control__btn').forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          var delta = parseInt(this.dataset.qty, 10);
-          qtyInput.value = Math.max(1, Math.min(99, parseInt(qtyInput.value, 10) + delta));
-        });
-      });
-
-      var mainImg = document.getElementById('gallery-main-img');
-      document.querySelectorAll('.product-gallery__thumb').forEach(function (thumb) {
-        thumb.addEventListener('click', function () {
-          document.querySelectorAll('.product-gallery__thumb').forEach(function (t) { t.classList.remove('is-active'); });
-          this.classList.add('is-active');
-          mainImg.src = this.dataset.src;
-        });
-      });
-    }());
-  </script>
-  <script src="../../../../js/related-products.js"></script>
+  <script type="application/json" data-product-pricing>{
+  "pack100": {
+    "price": 20,
+    "unit": ""
+  },
+  "pack500": {
+    "price": 40,
+    "unit": ""
+  }
+}</script>
 </body>
 </html>

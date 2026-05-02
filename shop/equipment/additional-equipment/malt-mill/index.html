@@ -497,30 +497,21 @@
     </main>
     <footer class="site-footer"></footer>
     <script src="../../../../js/tabs.js"></script>
-    <script>
-      (function () {
-        var PRICES = {
-          "two-roller-mill": { label: "Price on Request", unit: "" },
-          "four-roller-mill": { label: "Price on Request", unit: "" },
-          "integrated-milling-system": { label: "Price on Request", unit: "" },
-        };
-        var priceEl = document.getElementById("selected-price");
-        var unitEl = document.getElementById("selected-unit");
-        function update() {
-          var format = document.querySelector(
-            'input[name="format"]:checked',
-          ).value;
-          var option = PRICES[format];
-          priceEl.textContent = option.label;
-          unitEl.textContent = "";
-        }
-        document
-          .querySelectorAll('input[name="format"]')
-          .forEach(function (radio) {
-            radio.addEventListener("change", update);
-          });
-      })();
-    </script>
-    <script src="../../../../js/related-products.js"></script>
-  </body>
+<script src="../../../../js/related-products.js"></script>
+  
+  <script type="application/json" data-product-pricing>{
+  "two-roller-mill": {
+    "label": "Price on Request",
+    "unit": ""
+  },
+  "four-roller-mill": {
+    "label": "Price on Request",
+    "unit": ""
+  },
+  "integrated-milling-system": {
+    "label": "Price on Request",
+    "unit": ""
+  }
+}</script>
+</body>
 </html>

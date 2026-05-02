@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/catalogue.css">
   <script src="js/header.js" defer></script>
   <script src="js/footer.js" defer></script>
 
@@ -148,129 +149,6 @@
   </main>
 
   <footer class="site-footer"></footer>
-
-  <script>
-    function makeToggle(btnId, inputId, showId, hideId) {
-      const btn  = document.getElementById(btnId);
-      const inp  = document.getElementById(inputId);
-      const show = document.getElementById(showId);
-      const hide = document.getElementById(hideId);
-      btn.addEventListener('click', () => {
-        const isHidden = inp.type === 'password';
-        inp.type = isHidden ? 'text' : 'password';
-        show.style.display = isHidden ? 'none' : '';
-        hide.style.display = isHidden ? ''     : 'none';
-        btn.setAttribute('aria-label',   isHidden ? 'Hide password' : 'Show password');
-        btn.setAttribute('aria-pressed', String(isHidden));
-      });
-    }
-
-    makeToggle('toggle-password', 'password',         'icon-eye-show',   'icon-eye-hide');
-    makeToggle('toggle-confirm',  'confirm-password', 'icon-eye-show-2', 'icon-eye-hide-2');
-
-    const pwInput = document.getElementById('password');
-    const segs    = [1,2,3,4].map(n => document.getElementById('seg' + n));
-    const strengthLabel = document.getElementById('password-strength-label');
-    const levels  = ['', 'Weak', 'Fair', 'Good', 'Strong'];
-    const colours = ['', 'active-1', 'active-2', 'active-3', 'active-4'];
-
-    function scorePassword(pw) {
-      if (!pw) return 0;
-      let score = 0;
-      if (pw.length >= 8)  score++;
-      if (pw.length >= 12) score++;
-      if (/[A-Z]/.test(pw) && /[a-z]/.test(pw)) score++;
-      if (/\d/.test(pw))   score++;
-      if (/[^A-Za-z0-9]/.test(pw)) score++;
-      return Math.min(4, score);
-    }
-
-    pwInput.addEventListener('input', () => {
-      const score = scorePassword(pwInput.value);
-      segs.forEach((seg, i) => {
-        seg.className = 'pw-strength__seg';
-        if (i < score) seg.classList.add(colours[score]);
-      });
-      strengthLabel.textContent = pwInput.value ? levels[score] : '';
-    });
-
-    function showError(fieldId, errorId, msg) {
-      const field = document.getElementById(fieldId);
-      if (field) { const input = field.querySelector('input'); if (input) input.classList.add('is-error'); }
-      const err = document.getElementById(errorId);
-      if (err) { err.textContent = msg; err.classList.add('is-visible'); err.style.display = ''; }
-    }
-
-    function clearError(inputEl, errorId) {
-      if (inputEl) inputEl.classList.remove('is-error');
-      const err = document.getElementById(errorId);
-      if (err) { err.textContent = ''; err.classList.remove('is-visible'); }
-    }
-
-    ['first-name','last-name','email','company','password','confirm-password'].forEach(id => {
-      const el = document.getElementById(id);
-      if (el) el.addEventListener('input', () => clearError(el, id + '-error'));
-    });
-
-    // TODO: wire to backend
-    const form  = document.getElementById('signup-form');
-    const terms = document.getElementById('terms');
-
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      let valid = true;
-
-      const firstName = document.getElementById('first-name');
-      const lastName  = document.getElementById('last-name');
-      const email     = document.getElementById('email');
-      const company   = document.getElementById('company');
-      const pw        = document.getElementById('password');
-      const confirm   = document.getElementById('confirm-password');
-
-      if (!firstName.value.trim()) { showError('field-first-name', 'first-name-error', 'First name is required.'); valid = false; }
-      if (!lastName.value.trim())  { showError('field-last-name',  'last-name-error',  'Last name is required.');  valid = false; }
-
-      if (!email.value.trim()) {
-        showError('field-email', 'email-error', 'Email address is required.'); valid = false;
-      } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
-        showError('field-email', 'email-error', 'Please enter a valid email address.'); valid = false;
-      }
-
-      if (!company.value.trim()) { showError('field-company', 'company-error', 'Company name is required.'); valid = false; }
-
-      if (!pw.value) {
-        showError('field-password', 'password-error', 'Please choose a password.'); valid = false;
-      } else if (pw.value.length < 8) {
-        showError('field-password', 'password-error', 'Password must be at least 8 characters.'); valid = false;
-      }
-
-      if (pw.value && confirm.value !== pw.value) {
-        showError('field-confirm', 'confirm-error', 'Passwords do not match.'); valid = false;
-      }
-
-      if (!terms.checked) {
-        terms.classList.add('is-error');
-        const termsErr = document.getElementById('terms-error');
-        termsErr.textContent = 'You must agree to the terms to continue.';
-        termsErr.classList.add('is-visible');
-        termsErr.style.display = '';
-        valid = false;
-      }
-
-      if (valid) {
-        // TODO: wire to backend
-      }
-    });
-
-    terms.addEventListener('change', () => {
-      if (terms.checked) {
-        terms.classList.remove('is-error');
-        const termsErr = document.getElementById('terms-error');
-        termsErr.classList.remove('is-visible');
-        termsErr.style.display = 'none';
-      }
-    });
-  </script>
 
 </body>
 </html>

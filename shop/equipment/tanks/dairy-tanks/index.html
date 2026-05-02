@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../../../css/layout.css">
   <link rel="stylesheet" href="../../../../css/components.css">
   <link rel="stylesheet" href="../../../../css/pages.css">
+  <link rel="stylesheet" href="../../../../css/catalogue.css">
 
   <script src="../../../../js/header.js" defer></script>
   <script src="../../../../js/footer.js" defer></script>
@@ -315,40 +316,21 @@
   <footer class="site-footer"></footer>
 
   <script src="../../../../js/tabs.js"></script>
-  <script>
-    (function () {
-      var PRICES = {
-        'insulated': { label: 'Price on Request', unit: '' },
-        'jacketed':  { label: 'Price on Request', unit: '' },
-        'open-top':  { label: 'Price on Request', unit: '' }
-      };
+<script src="../../../../js/related-products.js"></script>
 
-      var priceEl = document.getElementById('selected-price');
-      var unitEl  = document.getElementById('selected-unit');
-
-      function update() {
-        var format = document.querySelector('input[name="format"]:checked').value;
-        var option = PRICES[format];
-        priceEl.textContent = option.label;
-        unitEl.textContent = '';
-      }
-
-      document.querySelectorAll('input[name="format"]').forEach(function (radio) {
-        radio.addEventListener('change', update);
-      });
-
-      var mainImg = document.getElementById('gallery-main-img');
-      document.querySelectorAll('.product-gallery__thumb').forEach(function (thumb) {
-        thumb.addEventListener('click', function () {
-          document.querySelectorAll('.product-gallery__thumb').forEach(function (item) {
-            item.classList.remove('is-active');
-          });
-          this.classList.add('is-active');
-          mainImg.src = this.dataset.src;
-        });
-      });
-    }());
-  </script>
-  <script src="../../../../js/related-products.js"></script>
+  <script type="application/json" data-product-pricing>{
+  "insulated": {
+    "label": "Price on Request",
+    "unit": ""
+  },
+  "jacketed": {
+    "label": "Price on Request",
+    "unit": ""
+  },
+  "open-top": {
+    "label": "Price on Request",
+    "unit": ""
+  }
+}</script>
 </body>
 </html>

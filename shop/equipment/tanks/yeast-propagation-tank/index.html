@@ -428,31 +428,25 @@
     </main>
     <footer class="site-footer"></footer>
     <script src="../../../../js/tabs.js"></script>
-    <script>
-      (function () {
-        var PRICES = {
-          "standard-propagation-tank": { label: "Price on Request", unit: "" },
-          "aerated-propagation-tank": { label: "Price on Request", unit: "" },
-          "insulated-and-jacketed-tank": { label: "Price on Request", unit: "" },
-          "custom-yeast-tank": { label: "Price on Request", unit: "" },
-        };
-        var p = document.getElementById("selected-price");
-        var u = document.getElementById("selected-unit");
-        function update() {
-          var f = document.querySelector(
-            'input[name=\"format\"]:checked',
-          ).value;
-          var o = PRICES[f];
-          p.textContent = o.label;
-          u.textContent = "/ " + o.unit;
-        }
-        document
-          .querySelectorAll('input[name=\"format\"]')
-          .forEach(function (r) {
-            r.addEventListener("change", update);
-          });
-      })();
-    </script>
-    <script src="../../../../js/related-products.js"></script>
-  </body>
+<script src="../../../../js/related-products.js"></script>
+  
+  <script type="application/json" data-product-pricing>{
+  "standard-propagation-tank": {
+    "label": "Price on Request",
+    "unit": ""
+  },
+  "aerated-propagation-tank": {
+    "label": "Price on Request",
+    "unit": ""
+  },
+  "insulated-and-jacketed-tank": {
+    "label": "Price on Request",
+    "unit": ""
+  },
+  "custom-yeast-tank": {
+    "label": "Price on Request",
+    "unit": ""
+  }
+}</script>
+</body>
 </html>

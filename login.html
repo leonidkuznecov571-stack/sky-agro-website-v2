@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/catalogue.css">
   <script src="js/header.js" defer></script>
   <script src="js/footer.js" defer></script>
 
@@ -103,66 +104,6 @@
   </main>
 
   <footer class="site-footer"></footer>
-
-  <script>
-    const toggleBtn = document.getElementById('toggle-password');
-    const pwInput   = document.getElementById('password');
-    const eyeShow   = document.getElementById('icon-eye-show');
-    const eyeHide   = document.getElementById('icon-eye-hide');
-
-    toggleBtn.addEventListener('click', () => {
-      const isHidden = pwInput.type === 'password';
-      pwInput.type   = isHidden ? 'text' : 'password';
-      eyeShow.style.display = isHidden ? 'none' : '';
-      eyeHide.style.display = isHidden ? ''     : 'none';
-      toggleBtn.setAttribute('aria-label',   isHidden ? 'Hide password' : 'Show password');
-      toggleBtn.setAttribute('aria-pressed', String(isHidden));
-    });
-
-    // TODO: wire to backend
-    const form  = document.getElementById('login-form');
-    const email = document.getElementById('email');
-    const pw    = document.getElementById('password');
-
-    function showError(fieldId, errorId, msg) {
-      document.getElementById(fieldId).querySelector('input').classList.add('is-error');
-      const err = document.getElementById(errorId);
-      err.textContent = msg;
-      err.classList.add('is-visible');
-    }
-
-    function clearError(input, errorId) {
-      input.classList.remove('is-error');
-      const err = document.getElementById(errorId);
-      err.textContent = '';
-      err.classList.remove('is-visible');
-    }
-
-    email.addEventListener('input', () => clearError(email, 'email-error'));
-    pw.addEventListener('input',    () => clearError(pw, 'password-error'));
-
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      let valid = true;
-
-      if (!email.value.trim()) {
-        showError('field-email', 'email-error', 'Please enter your email address.');
-        valid = false;
-      } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
-        showError('field-email', 'email-error', 'Please enter a valid email address.');
-        valid = false;
-      }
-
-      if (!pw.value) {
-        showError('field-password', 'password-error', 'Please enter your password.');
-        valid = false;
-      }
-
-      if (valid) {
-        // TODO: wire to backend
-      }
-    });
-  </script>
 
 </body>
 </html>

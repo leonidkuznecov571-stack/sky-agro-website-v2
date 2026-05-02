@@ -1,3 +1,4 @@
+// Search-only metadata. Keep entries aligned with page copy and verify with `node scripts/validate-site.mjs`.
 window.SKY_AGRO_PRODUCT_INDEX = [
   {
     "href": "/shop/brewing-ingredients/",

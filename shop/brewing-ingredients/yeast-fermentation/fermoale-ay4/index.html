@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../../../css/layout.css">
   <link rel="stylesheet" href="../../../../css/components.css">
   <link rel="stylesheet" href="../../../../css/pages.css">
+  <link rel="stylesheet" href="../../../../css/catalogue.css">
 
   <script src="../../../../js/header.js" defer></script>
   <script src="../../../../js/footer.js" defer></script>
@@ -352,20 +353,16 @@
 
   <script src="../../../../js/tabs.js"></script>
   <script src="../../../../js/related-products.js"></script>
-  <script>
-    (function () {
-      var PRICES = {
-        'pouch': { price: 33.00, unit: '' },
-        'box': { price: 627.00, unit: '' }
-      };
-      var priceEl = document.getElementById('selected-price');
-      var unitEl  = document.getElementById('selected-unit');
-      function update() { var p = PRICES[document.querySelector('input[name="format"]:checked').value]; priceEl.textContent = p.label || ('£' + p.price.toFixed(2)); unitEl.textContent = '/ ' + p.unit; }
-      document.querySelectorAll('input[name="format"]').forEach(function (r) { r.addEventListener('change', update); });
-      var qtyInput = document.getElementById('qty');
-      document.querySelectorAll('.qty-control__btn').forEach(function (btn) { btn.addEventListener('click', function () { qtyInput.value = Math.max(1, Math.min(99, parseInt(qtyInput.value, 10) + parseInt(this.dataset.qty, 10))); }); });
-    }());
-  </script>
 
+  <script type="application/json" data-product-pricing>{
+  "pouch": {
+    "price": 33,
+    "unit": ""
+  },
+  "box": {
+    "price": 627,
+    "unit": ""
+  }
+}</script>
 </body>
 </html>
